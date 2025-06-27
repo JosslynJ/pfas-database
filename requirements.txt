@@ -1,4 +1,0 @@
-streamlit
-pandas
-rdkit-pypi
-st-aggrid
