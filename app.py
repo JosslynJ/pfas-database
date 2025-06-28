@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 from rdkit import Chem
 from rdkit.Chem import Draw
+from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 
 df = pd.read_csv("pfas_data.csv")
 
@@ -22,19 +23,25 @@ if selected_class:
 if selected_use:
     filtered_df = filtered_df[filtered_df["Potential_use"].isin(selected_use)]
 
-# 只显示表格
-st.dataframe(filtered_df)
+# ------- 这块替换为 AgGrid -------
+gb = GridOptionsBuilder.from_dataframe(filtered_df)
+gb.configure_selection('single', use_checkbox=False)  # 允许单选
+grid_options = gb.build()
 
-# 下拉菜单（你可以把它放在 sidebar，或者去掉 st.dataframe 只留下拉和详情）
-option = st.selectbox(
-    '👇 从下拉菜单中选择一个化合物（支持筛选后列表）',
-    filtered_df['Name'].values if not filtered_df.empty else ['无可选项']
+grid_response = AgGrid(
+    filtered_df,
+    gridOptions=grid_options,
+    update_mode=GridUpdateMode.SELECTION_CHANGED,
+    height=400,
+    fit_columns_on_grid_load=True,
+    allow_unsafe_jscode=True,
+    theme="streamlit"
 )
 
-if filtered_df.empty or option == '无可选项':
-    st.warning("没有符合条件的化合物。")
-else:
-    row = filtered_df[filtered_df['Name'] == option].iloc[0]
+selected = grid_response["selected_rows"]
+
+if selected:
+    row = pd.DataFrame(selected).iloc[0]  # 取出选中那一行
     st.markdown("### 🧬 Selected Compound Info")
     col1, col2 = st.columns([1, 2])
     with col1:
@@ -57,3 +64,5 @@ else:
         **Compound Class:** {row['Compound_class']}  
         **Potential Use:** {row['Potential_use']}
         """)
+else:
+    st.info("点击上表任意一行，即可查看结构式和详细信息！")
