@@ -30,12 +30,11 @@ if selected_use:
 # Configure AgGrid
 gb = GridOptionsBuilder.from_dataframe(filtered_df)
 gb.configure_selection("single", use_checkbox=False)
-# gb.configure_column("SMILES", hide=True)
+# gb.configure_column("SMILES", hide=True)  # 可以选择隐藏SMILES列
 grid_options = gb.build()
 
 st.write("Data shape:", filtered_df.shape)
 st.dataframe(filtered_df)
-
 
 # Render table
 grid_response = AgGrid(
@@ -52,22 +51,21 @@ selected = pd.DataFrame(grid_response["selected_rows"])
 
 if len(selected) > 0:
     row = selected.iloc[0]
-    st.write("你选中的row:", row)  # 新加的调试代码！
+    st.write("你选中的row:", row)  # 新加的调试代码
     st.markdown("### 🧬 Selected Compound Info")
 
     col1, col2 = st.columns([1, 2])
 
     with col1:
-    try:
-        mol = Chem.MolFromSmiles(row["SMILES"])
-        if mol is None:
-            st.error("SMILES 无法识别：" + str(row["SMILES"]))
-        else:
-            img = Draw.MolToImage(mol, size=(300, 300))
-            st.image(img, caption=f"Structure of {row['Name']}")
-    except Exception as e:
-        st.error(f"RDKit 错误: {e}")
-
+        try:
+            mol = Chem.MolFromSmiles(row["SMILES"])
+            if mol is None:
+                st.error("SMILES 无法识别：" + str(row["SMILES"]))
+            else:
+                img = Draw.MolToImage(mol, size=(300, 300))
+                st.image(img, caption=f"Structure of {row['Name']}")
+        except Exception as e:
+            st.error(f"RDKit 错误: {e}")
 
     with col2:
         st.markdown(f"""
