@@ -11,18 +11,14 @@ st.title("🔬 PFAS Chemical Database")
 # 载入数据
 df = pd.read_csv("pfas_data.csv")
 
-# 检查 SMILES 字段，不是字符串的一律转空字符串
-df["SMILES"] = df["SMILES"].astype(str).fillna("")
-
+# 过滤非法 SMILES 行，避免 RDKit 报错
 def is_valid_smiles(smiles):
     try:
-        mol = Chem.MolFromSmiles(smiles)
-        return mol is not None
+        return Chem.MolFromSmiles(smiles) is not None
     except:
         return False
 
-# 只保留合法分子
-df = df[df["SMILES"].apply(is_valid_smiles)].reset_index(drop=True)
+df = df[df["SMILES"].apply(is_valid_smiles)]
 
 # 侧边栏筛选
 st.sidebar.header("🔍 Filter Options")
@@ -39,11 +35,6 @@ if selected_class:
 if selected_use:
     filtered_df = filtered_df[filtered_df["Potential_use"].isin(selected_use)]
 
-# 防止筛选后空表格
-if len(filtered_df) == 0:
-    st.warning("No data matches your filter.")
-    st.stop()
-
 # 分页功能
 PAGE_SIZE = 50
 total_pages = max(1, math.ceil(len(filtered_df) / PAGE_SIZE))
@@ -51,7 +42,7 @@ page_num = st.sidebar.number_input("Page", min_value=1, max_value=total_pages, v
 
 start_idx = (page_num - 1) * PAGE_SIZE
 end_idx = start_idx + PAGE_SIZE
-page_df = filtered_df.iloc[start_idx:end_idx].reset_index(drop=True)
+page_df = filtered_df.iloc[start_idx:end_idx]
 
 # 配置 AgGrid
 gb = GridOptionsBuilder.from_dataframe(page_df)
@@ -75,20 +66,21 @@ if len(selected) > 0:
     row = selected.iloc[0]
     st.markdown("### 🧬 Selected Compound Info")
     col1, col2 = st.columns([1, 2])
-    try:
+    with col1:
         mol = Chem.MolFromSmiles(row["SMILES"])
         img = Draw.MolToImage(mol, size=(300, 300))
         st.image(img, caption=f"Structure of {row['Name']}")
-    except Exception as e:
-        st.error(f"Cannot render molecule: {e}")
     with col2:
         st.markdown(f"""
         **Name:** {row['Name']}  
-        **PubChem CID:** {row.get('PubChem_CID', '')}  
-        **Exact Mass:** {row.get('Exact_Mass', '')}  
-        **m/z:** {row.get('mz', '')}  
-        **Compound Class:** {row.get('Compound_class', '')}  
-        **Potential Use:** {row.get('Potential_use', '')}
+        **PubChem CID:** {row['PubChem_CID']}  
+        **Exact Mass:** {row['Exact_Mass']}  
+        **m/z:** {row['mz']}  
+        **Compound Class:** {row['Compound_class']}  
+        **Potential Use:** {row['Potential_use']}
         """)
 else:
     st.info("Click a row in the table to view compound structure and details.")
+
+# Debug 用，开发时可显示所有数据
+# st.dataframe(filtered_df)
