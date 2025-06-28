@@ -28,17 +28,23 @@ if selected_class:
 if selected_use:
     filtered_df = filtered_df[filtered_df["Potential_use"].isin(selected_use)]
 
-# 下拉菜单选择
+# 拼接唯一行号到选项中，保证每行都能选到
+filtered_df = filtered_df.reset_index()  # 添加index列，防止多重筛选后index混乱
+filtered_df['option'] = filtered_df['Name'] + " —— [行号:" + filtered_df['index'].astype(str) + "]"
+
 option = st.selectbox(
-    '👇 从下拉菜单中选择一个化合物（支持筛选后列表）',
-    filtered_df['Name'].values if not filtered_df.empty else ['无可选项']
+    '👇 从下拉菜单中选择一个化合物（支持筛选后列表，每行唯一）',
+    filtered_df['option'].values if not filtered_df.empty else ['无可选项']
 )
 
 if filtered_df.empty or option == '无可选项':
     st.warning("没有符合条件的化合物。")
 else:
-    # 展示详情
-    row = filtered_df[filtered_df['Name'] == option].iloc[0]
+    # 解析出选中的唯一行号
+    idx = int(option.split("行号:")[-1].replace("]", ""))
+    row = df.loc[idx]   # 一定要用原始df的loc，保证行号正确
+    # ... 下面显示结构式和信息的部分不变 ...
+
     st.markdown("### 🧬 Selected Compound Info")
 
     col1, col2 = st.columns([1, 2])
