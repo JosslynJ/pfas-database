@@ -8,7 +8,6 @@ st.set_page_config(page_title="PFAS Database", layout="wide")
 df = pd.read_csv("pfas_data.csv")
 st.title("🔬 PFAS Chemical Database")
 
-# Sidebar filters
 st.sidebar.header("🔍 Filter Options")
 compound_classes = df["Compound_class"].dropna().unique()
 potential_uses = df["Potential_use"].dropna().unique()
@@ -22,31 +21,31 @@ if selected_class:
 if selected_use:
     filtered_df = filtered_df[filtered_df["Potential_use"].isin(selected_use)]
 
+# 关键：配置 AgGrid 可以整行选中
 gb = GridOptionsBuilder.from_dataframe(filtered_df)
-gb.configure_selection("single", use_checkbox=False)
+gb.configure_selection(selection_mode="single", use_checkbox=True)  # 用checkbox，用户体验好！
 grid_options = gb.build()
 
 st.write("Data shape:", filtered_df.shape)
-st.dataframe(filtered_df)
 
 grid_response = AgGrid(
     filtered_df,
     gridOptions=grid_options,
     update_mode=GridUpdateMode.SELECTION_CHANGED,
-    height=500,
-    fit_columns_on_grid_load=True,
-    allow_unsafe_jscode=True
+    height=400,
+    allow_unsafe_jscode=True,
+    theme="streamlit"
 )
 
-# ------- robust selected-row handling --------
-selected = grid_response.get("selected_rows", None)
-st.write("DEBUG-selected:", selected)  # 这行你可以保留调试
+selected = grid_response.get("selected_rows", [])
+
+st.write("DEBUG-selected:", selected)
 
 if selected and isinstance(selected, list) and len(selected) > 0:
     row = selected[0]
-    st.write("DEBUG-row:", row)  # 调试
+    st.write("DEBUG-row:", row)
     smiles = row.get("SMILES", None)
-    st.write("DEBUG-SMILES:", smiles)  # 调试
+    st.write("DEBUG-SMILES:", smiles)
 
     st.markdown("### 🧬 Selected Compound Info")
     col1, col2 = st.columns([1, 2])
@@ -66,11 +65,4 @@ if selected and isinstance(selected, list) and len(selected) > 0:
     with col2:
         st.markdown(f"""
         **Name:** {row.get('Name', '')}  
-        **PubChem CID:** {row.get('PubChem_CID', '')}  
-        **Exact Mass:** {row.get('Exact_Mass', '')}  
-        **m/z:** {row.get('mz', '')}  
-        **Compound Class:** {row.get('Compound_class', '')}  
-        **Potential Use:** {row.get('Potential_use', '')}
-        """)
-else:
-    st.info("Click a row in the table to view compound structure and details.")
+        **PubChem CID:** {row.g
