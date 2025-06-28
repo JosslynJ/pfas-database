@@ -33,6 +33,10 @@ gb.configure_selection("single", use_checkbox=False)
 gb.configure_column("SMILES", hide=True)
 grid_options = gb.build()
 
+st.write("Data shape:", filtered_df.shape)
+st.dataframe(filtered_df)
+
+
 # Render table
 grid_response = AgGrid(
     filtered_df,
