@@ -30,9 +30,10 @@ if selected_use:
 # Configure AgGrid
 gb = GridOptionsBuilder.from_dataframe(filtered_df)
 gb.configure_selection("single", use_checkbox=False)
-# gb.configure_column("SMILES", hide=True)  # 可以选择隐藏SMILES列
+# gb.configure_column("SMILES", hide=True)
 grid_options = gb.build()
 
+# Debug: Show table and shape
 st.write("Data shape:", filtered_df.shape)
 st.dataframe(filtered_df)
 
@@ -47,34 +48,40 @@ grid_response = AgGrid(
 )
 
 # Handle selected row
-selected = pd.DataFrame(grid_response["selected_rows"])
+selected = grid_response["selected_rows"]
 
 if len(selected) > 0:
-    row = selected.iloc[0]
-    st.write("你选中的row:", row)  # 新加的调试代码
+    # 兼容 dict 或 DataFrame
+    row = selected[0]
+    st.write("DEBUG-选中的 row:", row)  # 调试代码，部署后可删除
+
+    smiles = row["SMILES"] if "SMILES" in row else None
+    st.write("DEBUG-SMILES:", smiles)  # 调试代码，部署后可删除
+
     st.markdown("### 🧬 Selected Compound Info")
-
     col1, col2 = st.columns([1, 2])
-
     with col1:
         try:
-            mol = Chem.MolFromSmiles(row["SMILES"])
-            if mol is None:
-                st.error("SMILES 无法识别：" + str(row["SMILES"]))
+            if smiles is None or pd.isna(smiles) or smiles == "":
+                st.warning("SMILES 字段为空！")
             else:
-                img = Draw.MolToImage(mol, size=(300, 300))
-                st.image(img, caption=f"Structure of {row['Name']}")
+                mol = Chem.MolFromSmiles(str(smiles))
+                if mol is None:
+                    st.error("SMILES 无法识别：" + str(smiles))
+                else:
+                    img = Draw.MolToImage(mol, size=(300, 300))
+                    st.image(img, caption=f"Structure of {row.get('Name', '')}")
         except Exception as e:
             st.error(f"RDKit 错误: {e}")
 
     with col2:
         st.markdown(f"""
-        **Name:** {row['Name']}  
-        **PubChem CID:** {row['PubChem_CID']}  
-        **Exact Mass:** {row['Exact_Mass']}  
-        **m/z:** {row['mz']}  
-        **Compound Class:** {row['Compound_class']}  
-        **Potential Use:** {row['Potential_use']}
+        **Name:** {row.get('Name', '')}  
+        **PubChem CID:** {row.get('PubChem_CID', '')}  
+        **Exact Mass:** {row.get('Exact_Mass', '')}  
+        **m/z:** {row.get('mz', '')}  
+        **Compound Class:** {row.get('Compound_class', '')}  
+        **Potential Use:** {row.get('Potential_use', '')}
         """)
 else:
     st.info("Click a row in the table to view compound structure and details.")
