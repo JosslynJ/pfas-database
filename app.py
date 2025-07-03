@@ -7,28 +7,28 @@ import py3Dmol                        # pip install py3Dmol
 from streamlit.components.v1 import html
 from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 
-# 1. 页面配置
-st.set_page_config(page_title="PFAS Database", layout="wide")
+# 1. 页面配置：宽屏 + 侧边栏初始收起
+st.set_page_config(
+    page_title="PFAS Database",
+    layout="wide",
+    initial_sidebar_state="collapsed"
+)
 
-# 2. 检查 CSV
+# 2. 检查 CSV 文件
 CSV_FILE = "pfas_fina.csv"
 if not os.path.exists(CSV_FILE):
     st.error(f"❌ 找不到文件: {CSV_FILE}")
     st.stop()
 
-# 3. 读取数据
+# 3. 读取数据并加上 ID 列
 df = pd.read_csv(CSV_FILE)
 df.insert(0, "ID", range(1, len(df) + 1))
 
-# 4. 把调试信息放到侧边栏 expander 里
-with st.sidebar.expander("🔧 Debug Info"):
+# 4. 侧边栏：调试信息（默认收起） + 筛选
+with st.sidebar.expander("🔧 Debug Info (collapsed)", expanded=False):
     st.write("✅ 已加载 CSV 行数:", df.shape[0], "，列数:", df.shape[1])
     st.write("列名:", df.columns.tolist())
 
-# 5. 标题
-st.title("🔬 PFAS Chemical Database")
-
-# 6. 侧边栏筛选
 st.sidebar.header("🔍 Filter Options")
 opts_pfas = df["Is_PFAS"].dropna().unique().tolist()
 opts_psc  = df["PFAS_Structure_Class"].dropna().unique().tolist()
@@ -40,14 +40,17 @@ sel_psc  = st.sidebar.multiselect("PFAS Structure Class", opts_psc)
 sel_sc   = st.sidebar.multiselect("Structure Class", opts_sc)
 sel_use  = st.sidebar.multiselect("Use Category", opts_use)
 
-# 7. 应用筛选
+# 5. 应用筛选
 fdf = df.copy()
 if sel_pfas: fdf = fdf[fdf["Is_PFAS"].isin(sel_pfas)]
 if sel_psc:  fdf = fdf[fdf["PFAS_Structure_Class"].isin(sel_psc)]
 if sel_sc:   fdf = fdf[fdf["Structure_Class"].isin(sel_sc)]
 if sel_use:  fdf = fdf[fdf["Use_Category"].isin(sel_use)]
 
-# 8. 构建 AgGrid（固定高度 400px）
+# 6. 主标题
+st.title("🔬 PFAS Chemical Database")
+
+# 7. 构建 AgGrid：固定高度 400px，内部滚动
 gb = GridOptionsBuilder.from_dataframe(fdf)
 gb.configure_selection("single", use_checkbox=False)
 gb.configure_column("SMILES", hide=True)
@@ -57,13 +60,13 @@ grid_response = AgGrid(
     fdf,
     gridOptions=grid_options,
     update_mode=GridUpdateMode.SELECTION_CHANGED,
-    height=400,               # 表格区域固定 400px，高于部分出现内部滚动
+    height=400,               # 高度固定
     fit_columns_on_grid_load=True,
     allow_unsafe_jscode=True
 )
 
-# 9. 列说明
-with st.expander("ℹ️ Column Descriptions"):
+# 8. 列说明（主视图下方）
+with st.expander("ℹ️ Column Descriptions", expanded=False):
     st.markdown("""
 - **Use Category**: e.g. Pharmaceutical, Pesticide…  
 - **Structure Class**: Aromatic, Heterocycle, Chain…  
@@ -71,7 +74,7 @@ with st.expander("ℹ️ Column Descriptions"):
 - **PFAS Status**: Yes/No per OECD PFAS definition  
     """)
 
-# 10. PubChem CID 获取函数
+# 9. PubChem CID 获取函数
 def get_cid(smiles, name):
     try:
         comps = pcp.get_compounds(smiles, namespace="smiles")
@@ -83,14 +86,13 @@ def get_cid(smiles, name):
     except: pass
     return None
 
-# 11. 详情 & 2D/3D 预览
+# 10. 详情 & 2D/3D 预览
 selected = pd.DataFrame(grid_response["selected_rows"])
 if not selected.empty:
     row = selected.iloc[0]
     st.markdown("### 🧬 Selected Compound Info")
     col1, col2 = st.columns([1, 2])
 
-    # 优先从 CAS_or_Identifier 提取 CID
     raw = str(row.get("CAS_or_Identifier", ""))
     if raw.startswith("CID:"):
         cid = int(raw.split("CID:")[1])
@@ -98,14 +100,12 @@ if not selected.empty:
         cid = get_cid(row["SMILES"], row["Name"])
 
     with col1:
-        # 2D 图像
         if cid:
             png = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/PNG"
             st.image(png, caption="2D Structure", use_column_width=True)
         else:
             st.warning("No CID → cannot fetch 2D image")
 
-        # 3D 预览
         if cid:
             sdf_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/SDF?record_type=3d"
             r = requests.get(sdf_url)
@@ -130,11 +130,11 @@ if not selected.empty:
 **PFAS Structure Class:** {row.get('PFAS_Structure_Class','')}  
 **Structure Class:** {row.get('Structure_Class','')}  
 **Use Category:** {row.get('Use_Category','')}
-""")
+    """)
 else:
     st.info("Click a row to view molecule details.")
 
-# 12. 页脚
+# 11. 页脚
 st.markdown("""
 <div style="
     position: fixed; bottom: 10px; right: 10px;
