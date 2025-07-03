@@ -3,6 +3,6 @@ pandas
 pubchempy
 streamlit-aggrid
 py3Dmol
-streamlit-lottie
 requests
+
 
