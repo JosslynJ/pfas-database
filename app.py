@@ -1,22 +1,33 @@
+import os
 import streamlit as st
 import pandas as pd
 import requests
 import pubchempy as pcp
-import py3Dmol                         # pip install py3Dmol
+import py3Dmol                        # pip install py3Dmol
 from streamlit.components.v1 import html
 from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 
 # 1. 页面配置
 st.set_page_config(page_title="PFAS Database", layout="wide")
 
-# 2. 载入数据
-df = pd.read_csv("pfas_fina.csv")
+# 2. 检查文件是否存在
+CSV_FILE = "pfas_fina.csv"
+if not os.path.exists(CSV_FILE):
+    st.error(f"❌ 找不到文件: {CSV_FILE}，请确认文件名和路径完全匹配。")
+    st.stop()
+
+# 3. 读取 CSV 并打印行列数
+df = pd.read_csv(CSV_FILE)
+st.write("✅ 已加载 CSV 行数:", df.shape[0], "，列数:", df.shape[1])
+st.write("列名:", df.columns.tolist())
+
+# 4. 插入 ID 列
 df.insert(0, "ID", range(1, len(df) + 1))
 
-# 3. 标题
+# 5. 标题
 st.title("🔬 PFAS Chemical Database")
 
-# 4. 侧边栏筛选
+# 6. 侧边栏筛选
 st.sidebar.header("🔍 Filter Options")
 opts_pfas = df["Is_PFAS"].dropna().unique().tolist()
 opts_psc  = df["PFAS_Structure_Class"].dropna().unique().tolist()
@@ -28,39 +39,38 @@ sel_psc  = st.sidebar.multiselect("PFAS Structure Class", opts_psc)
 sel_sc   = st.sidebar.multiselect("Structure Class", opts_sc)
 sel_use  = st.sidebar.multiselect("Use Category", opts_use)
 
-# 5. 应用筛选
+# 7. 应用筛选
 fdf = df.copy()
 if sel_pfas: fdf = fdf[fdf["Is_PFAS"].isin(sel_pfas)]
 if sel_psc:  fdf = fdf[fdf["PFAS_Structure_Class"].isin(sel_psc)]
 if sel_sc:   fdf = fdf[fdf["Structure_Class"].isin(sel_sc)]
 if sel_use:  fdf = fdf[fdf["Use_Category"].isin(sel_use)]
 
-# 6. 构建 AgGrid （固定高度、内部滚动）
+# 8. 构建 AgGrid（固定高度 400px，内部滚动）
 gb = GridOptionsBuilder.from_dataframe(fdf)
 gb.configure_selection("single", use_checkbox=False)
 gb.configure_column("SMILES", hide=True)
-# 不再使用 autoHeight
 grid_options = gb.build()
 
 grid_response = AgGrid(
     fdf,
     gridOptions=grid_options,
     update_mode=GridUpdateMode.SELECTION_CHANGED,
-    height=400,               # 固定 400px 高度，内部自动出现滚动条
+    height=400,
     fit_columns_on_grid_load=True,
     allow_unsafe_jscode=True
 )
 
-# 7. 列说明
+# 9. 列说明
 with st.expander("ℹ️ Column Descriptions"):
     st.markdown("""
-- **Use Category**: e.g. Pharmaceutical, Pesticide…  
-- **Structure Class**: Aromatic, Heterocycle, Chain…  
-- **PFAS Structure Class**: CF₃-containing, CF₂-containing…  
-- **PFAS Status**: Yes/No per OECD PFAS definition  
+- **Use Category**: 自动类别 (e.g. Pharmaceutical, Pesticide…)  
+- **Structure Class**: 结构类型 (Fluorinated aromatic, Chain…)  
+- **PFAS Structure Class**: CF₃/CF₂ 分类  
+- **PFAS Status**: Yes/No  
     """)
 
-# 8. PubChem CID 获取函数
+# 10. PubChem CID 获取函数
 def get_cid(smiles, name):
     try:
         comps = pcp.get_compounds(smiles, namespace="smiles")
@@ -72,14 +82,14 @@ def get_cid(smiles, name):
     except: pass
     return None
 
-# 9. 详情 & 2D/3D 预览
+# 11. 详情 & 2D/3D 预览
 selected = pd.DataFrame(grid_response["selected_rows"])
 if not selected.empty:
     row = selected.iloc[0]
     st.markdown("### 🧬 Selected Compound Info")
     col1, col2 = st.columns([1, 2])
 
-    # 确定 PubChem CID
+    # 确定 CID
     raw = str(row.get("CAS_or_Identifier", ""))
     if raw.startswith("CID:"):
         cid = int(raw.split("CID:")[1])
@@ -87,14 +97,14 @@ if not selected.empty:
         cid = get_cid(row["SMILES"], row["Name"])
 
     with col1:
-        # 2D 结构图
+        # 2D
         if cid:
             png_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/PNG"
             st.image(png_url, caption="2D Structure", use_column_width=True)
         else:
             st.warning("No CID → cannot fetch 2D image")
 
-        # 3D 交互式模型
+        # 3D
         if cid:
             sdf_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/SDF?record_type=3d"
             r = requests.get(sdf_url)
@@ -105,7 +115,7 @@ if not selected.empty:
                 view.zoomTo()
                 html(view._make_html(), height=300)
             else:
-                st.error("Failed to fetch 3D SDF")
+                st.error("3D SDF 下载失败")
         else:
             st.info("3D preview unavailable")
 
@@ -121,9 +131,9 @@ if not selected.empty:
 **Use Category:** {row.get('Use_Category','')}
 """)
 else:
-    st.info("Click a row to view details and structure.")
+    st.info("点击一行查看分子信息。")
 
-# 10. 页脚
+# 12. 页脚
 st.markdown("""
 <div style="
     position: fixed; bottom: 10px; right: 10px;
