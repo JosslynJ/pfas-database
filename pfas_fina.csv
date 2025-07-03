@@ -1,0 +1,732 @@
+Name,SMILES,Exact_Mass_Calc,F_Count,Is_PFAS,PFAS_Structure_Class,Structure_Class,Use_Category,CAS_or_Identifier
+Citalopram,CN(C)CCCC1(C2=C(CO1)C=C(C=C2)C#N)C3=CC=C(C=C3)F,324.1637915,1,No,Not PFAS,Other,Pharmaceutical,59729-33-8
+N-desmethylcitalopram,CNCCCC1(C2=C(CO1)C=C(C=C2)C#N)C3=CC=C(C=C3)F,310.1481414,1,No,Not PFAS,Other,Pharmaceutical,62498-67-3
+"N,N-didesmethylcitalopram",C1C2=C(C=CC(=C2)C#N)C(O1)(CCCN)C3=CC=C(C=C3)F,296.1324914,1,No,Not PFAS,Other,Pharmaceutical,62498-69-5
+Citalopram propionic acid,C1C2=C(C=CC(=C2)C#N)C(O1)(CCC(=O)O)C3=CC=C(C=C3)F,311.0957715,1,No,Not PFAS,Other,Pharmaceutical,CID:10403174
+Citalopram N-oxide,C[N+](C)(CCCC1(C2=C(CO1)C=C(C=C2)C#N)C3=CC=C(C=C3)F)[O-],340.1587061,1,No,Not PFAS,Other,Pharmaceutical,63284-72-0
+Fluoxetine,CNCCC(C1=CC=CC=C1)OC2=CC=C(C=C2)C(F)(F)F,309.1340489,3,Yes,Other PFAS,Fluoroalkyl chain,Pharmaceutical,54910-89-3
+Norfluoxetine,C1=CC=C(C=C1)C(CCN)OC2=CC=C(C=C2)C(F)(F)F,295.1183988,3,Yes,Other PFAS,Fluoroalkyl chain,Pharmaceutical,83891-03-6
+4-Trifluoromethylphenol,C1=CC(=CC=C1C(F)(F)F)O,162.0292494,3,Yes,Other PFAS,Fluoroalkyl chain,Fluorochemical / Surfactant,402-45-9
+Norfluoxetine alcohol,C1=CC=C(C=C1)C(CCO)OC2=CC=C(C=C2)C(F)(F)F,296.1024144,3,Yes,Other PFAS,Fluoroalkyl chain,Pharmaceutical,CID:72756505
+Norfluoxetine acid,C1=CC=C(C=C1)C(CC(=O)O)OC2=CC=C(C=C2)C(F)(F)F,310.0816789,3,Yes,PFCA,Fluoroalkyl chain,Pharmaceutical,CID:85432033
+Norfluoxetine glucuronide,C1=CC=C(C=C1)C(CCN[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O)OC3=CC=C(C=C3)C(F)(F)F,471.1504868,3,Yes,PFCA,Fluoroalkyl chain,Pharmaceutical,96735-72-7
+Norfluoxetine N-|A-D-Glucuronide,C1=CC=C(C=C1)C(CCN[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O)OC3=CC=C(C=C3)C(F)(F)F,471.1504868,3,Yes,PFCA,Fluoroalkyl chain,Pharmaceutical,96735-72-7
+Fluoxetine glucuronide,CN(CCC(C1=CC=CC=C1)OC2=CC=C(C=C2)C(F)(F)F)[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)C(=O)O)O)O)O,485.1661368,3,Yes,PFCA,Fluoroalkyl chain,Pharmaceutical,96735-71-6
+Paroxetine,C1CNC[C@H]([C@@H]1C2=CC=C(C=C2)F)COC3=CC4=C(C=C3)OCO4,329.1427217,1,No,Not PFAS,Other,Pharmaceutical,61869-08-7
+4-[[(3S 4R)-4-(4-Fluorophenyl)piperidin-3-yl]methoxy]benzene-1 2-diol,C1CNC[C@H]([C@@H]1C2=CC=C(C=C2)F)COC3=CC(=C(C=C3)O)O,317.1427217,1,No,Not PFAS,Other,Fluorochemical / Surfactant,159126-30-4
+Paroxetine-M,COC1=C(C=CC(=C1)OC[C@@H]2CNCC[C@H]2C3=CC=C(C=C3)F)O,331.1583718,1,No,Not PFAS,Other,Pharmaceutical,112058-90-9
+Paroxetine N-desmethyl,C1CNC[C@H]([C@@H]1C2=CC=C(C=C2)F)CO,209.1215924,1,No,Not PFAS,Other,Pharmaceutical,125224-43-3
+Fluvoxamine,COCCCC/C(=N\OCCN)/C1=CC=C(C=C1)C(F)(F)F,318.1555126,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,54739-18-3
+Fluticasone,C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)SCF)O)C)O)F)C)F,444.158215,3,No,Not PFAS,Other,Unknown,90566-53-3
+Atorvastatin,CC(C)C1=C(C(=C(N1CC[C@H](C[C@H](CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4,558.2530004,1,No,Not PFAS,Fluorinated heterocycle,Pharmaceutical,134523-00-5
+p-hydroxyatorvastatin,CC(C)C1=C(C(=C(N1CC[C@H](C[C@H](CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=C(C=C4)O,574.2479151,1,No,Not PFAS,Fluorinated heterocycle,Pharmaceutical,214217-88-6
+o-hydroxyatorvastatin,CC(C)C1=C(C(=C(N1CC[C@H](C[C@H](CC(=O)O)O)O)C2=CC=C(C=C2)F)C3=CC=CC=C3)C(=O)NC4=CC=CC=C4O,574.2479151,1,No,Not PFAS,Fluorinated heterocycle,Pharmaceutical,214217-86-4
+p-hydroxyatorvastatin lactone,CC(C)C1=C(C(=C(N1CC[C@@H]2C[C@H](CC(=O)O2)O)C3=CC=C(C=C3)F)C4=CC=CC=C4)C(=O)NC5=CC=C(C=C5)O,556.2373504,1,No,Not PFAS,Fluorinated heterocycle,Pharmaceutical,163217-70-7
+o-hydroxyatorvastatin lactone,CC(C)C1=C(C(=C(N1CC[C@@H]2C[C@H](CC(=O)O2)O)C3=CC=C(C=C3)F)C4=CC=CC=C4)C(=O)NC5=CC=CC=C5O,556.2373504,1,No,Not PFAS,Fluorinated heterocycle,Pharmaceutical,163217-74-1
+Atorvastatin lactone,CC(C)C1=C(C(=C(N1CC[C@@H]2C[C@H](CC(=O)O2)O)C3=CC=C(C=C3)F)C4=CC=CC=C4)C(=O)NC5=CC=CC=C5,540.2424358,1,No,Not PFAS,Fluorinated heterocycle,Pharmaceutical,125995-03-1
+Rosuvastatin,CC(C)C1=NC(=NC(=C1/C=C/[C@H](C[C@H](CC(=O)O)O)O)C2=CC=C(C=C2)F)N(C)S(=O)(=O)C,481.1682848,1,No,Not PFAS,Sulfonate structure,Pharmaceutical,287714-41-4
+N-desmethyl rosuvastatin,CC(C)C1=NC(=NC(=C1/C=C/[C@H](C[C@H](CC(=O)O)O)O)C2=CC=C(C=C2)F)NS(=O)(=O)C,467.1526348,1,No,Not PFAS,Sulfonate structure,Pharmaceutical,371775-74-5
+Rosuvastatin-5S-Lactone,CC(C)C1=NC(=NC(=C1/C=C/[C@@H]2C[C@H](CC(=O)O2)O)C3=CC=C(C=C3)F)N(C)S(=O)(=O)C,463.1577202,1,No,Not PFAS,Sulfonate structure,Pharmaceutical,503610-43-3
+Bicalutamide,CC(CS(=O)(=O)C1=CC=C(C=C1)F)(C(=O)NC2=CC(=C(C=C2)C#N)C(F)(F)F)O,430.0610408,4,Yes,Sulfonamide,Fluoroalkyl chain,Unknown,90357-06-5
+(R/S)bicalutamide-G,C[C@](CS(=O)(=O)C1=CC=C(C=C1)F)(C(=O)NC2=CC(=C(C=C2)C#N)C(F)(F)F)O,430.0610408,4,Yes,Other PFAS,Fluoroalkyl chain,Unknown,113299-40-4
+Celecoxib,CC1=CC=C(C=C1)C2=CC(=NN2C3=CC=C(C=C3)S(=O)(=O)N)C(F)(F)F,381.0758823,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,169590-42-5
+Hydroxycelecoxib,C1=CC(=CC=C1CO)C2=CC(=NN2C3=CC=C(C=C3)S(=O)(=O)N)C(F)(F)F,397.070797,3,Yes,Other PFAS,Fluoroalkyl chain,Metabolite,170571-00-3
+Celecoxib Carboxylic Acid,C1=CC(=CC=C1C2=CC(=NN2C3=CC=C(C=C3)S(=O)(=O)N)C(F)(F)F)C(=O)O,411.0500615,3,Yes,PFCA,Fluoroalkyl chain,Industrial Intermediate,170571-01-4
+Celecoxib glucuronide,C1=CC(=CC=C1C2=CC(=NN2C3=CC=C(C=C3)S(=O)(=O)N)C(F)(F)F)C(=O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)O)O)O)O,587.0821495,3,Yes,PFCA,Fluoroalkyl chain,Metabolite,264236-79-5
+Flecainide,C1CCNC(C1)CNC(=O)C2=C(C=CC(=C2)OCC(F)(F)F)OCC(F)(F)F,414.1378118,6,Yes,Other PFAS,Fluorinated aromatic,Unknown,54143-55-4
+meta-O-dealkylated flecainide,C1CCNC(C1)CNC(=O)C2=C(C=CC(=C2)O)OCC(F)(F)F,332.1347771,3,Yes,Other PFAS,Fluorinated aromatic,Unknown,83526-33-4
+meta-O-dealkylated lactam,C1CC(NC(=O)C1)CNC(=O)C2=C(C=CC(=C2)O)OCC(F)(F)F,346.1140417,3,Yes,Other PFAS,Fluorinated aromatic,Unknown,91933-52-7
+Sitagliptin,C1CN2C(=NN=C2C(F)(F)F)CN1C(=O)C[C@@H](CC3=CC(=C(C=C3F)F)F)N,407.1180794,6,Yes,Other PFAS,Fluorinated heterocycle,Unknown,486460-32-6
+Sitagliptin N-sulfate,C1CN2C(=NN=C2C(F)(F)F)CN1C(=O)C[C@@H](CC3=CC(=C(C=C3F)F)F)NS(=O)(=O)O,487.0748943,6,Yes,PFSA,Fluorinated heterocycle,Unknown,940002-57-3
+(-)-Sitagliptin carbamoyl glucuronide,C1CN2C(=NN=C2C(F)(F)F)CN1C(=O)C[C@@H](CC3=CC(=C(C=C3F)F)F)NC(=O)O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)O)O)O)O,627.1399966,6,Yes,PFCA,Fluorinated heterocycle,Metabolite,940002-59-5
+Betamethasone,C[C@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)CO)O)C)O)F)C,392.1999022,1,No,Not PFAS,Other,Unknown,378-44-9
+Dexamethasone,C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)CO)O)C)O)F)C,392.1999022,1,No,Not PFAS,Other,Unknown,1950/2/2
+Fluprednidene,C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1CC(=C)[C@@]2(C(=O)CO)O)CCC4=CC(=O)C=C[C@@]43C)F)O,390.1842522,1,No,Not PFAS,Other,Unknown,2193-87-5
+11-dehydrodexamethasone,C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3(C(=O)C[C@@]2([C@]1(C(=O)CO)O)C)F)C,390.1842522,1,No,Not PFAS,Other,Unknown,2964-81-0
+6 alpha-Hydroxydexamethasone,C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3(C(=O)C[C@@]2([C@]1(C(=O)CO)O)C)F)C,390.1842522,1,No,Not PFAS,Other,Metabolite,2964-81-0
+6 beta-Hydroxydexamethasone,C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)CO)O)C)O)F)C)O,408.1948169,1,No,Not PFAS,Other,Metabolite,111897-35-9
+Eflornithine,C(CC(C(F)F)(C(=O)O)N)CN,182.0866841,2,Yes,PFCA,Other,Unknown,70052-12-9
+Fluconazole,C1=CC(=C(C=C1F)F)C(CN2C=NC=N2)(CN3C=NC=N3)O,306.1040654,2,No,Not PFAS,Other,Unknown,86386-73-4
+Fluconazole N-oxide,C1=CC(=C(C=C1F)F)C(CN2C=NC=N2)(CN3C=[N+](C=N3)[O-])O,322.0989801,2,No,Not PFAS,Other,Unknown,1997296-62-4
+alpha-fluoro-beta-alanine,C(C(C(=O)O)F)N,107.0382567,1,No,Not PFAS,Other,Fluorochemical / Surfactant,3821-81-6
+Fluvastatin,CC(C)N1C2=CC=CC=C2C(=C1/C=C/[C@@H](C[C@@H](CC(=O)O)O)O)C3=CC=C(C=C3)F,411.1845865,1,No,Not PFAS,Fluorinated heterocycle,Pharmaceutical,93957-54-1
+N-desisopropyl fluvastatin,CC(C)N1C2=CC=CC=C2C(=C1CC[C@H](C[C@H](CC(=O)O)O)O)C3=CC=C(C=C3)F,413.2002366,1,No,Not PFAS,Fluorinated aromatic,Pharmaceutical,CID:5287418
+5/6-hydroxy fluvastatin/5/6-OH-fluvastatin,CC(C=C(C(=O)O)C1=CC=C(C=C1F)O)C[C@H](O)CN(C)C2=CC=CC=C2C(=O)O,417.1587657,1,No,Not PFAS,Other,Pharmaceutical,Unknown
+flunisolide,C[C@]12C[C@@H]([C@H]3[C@H]([C@@H]1C[C@@H]4[C@]2(OC(O4)(C)C)C(=O)CO)C[C@@H](C5=CC(=O)C=C[C@]35C)F)O,434.2104669,1,No,Not PFAS,Other,Unknown,3385/3/3
+dexamethasone acetate,C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C)O)C)O)F)C,434.2104669,1,No,Not PFAS,Other,Unknown,1177-87-3
+betamethasone acetate,C[C@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C)O)C)O)F)C,434.2104669,1,No,Not PFAS,Other,Unknown,987-24-6
+Triamcinolone acetonide,C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@@H]4[C@]2(OC(O4)(C)C)C(=O)CO)CCC5=CC(=O)C=C[C@@]53C)F)O,434.2104669,1,No,Not PFAS,Other,Pharmaceutical,76-25-5
+Fulvestrant,C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2O)[C@@H](CC4=C3C=CC(=C4)O)CCCCCCCCCS(=O)CCCC(C(F)(F)F)(F)F,606.3166075,5,Yes,Other PFAS,Fluoroalkyl chain,Unknown,129453-61-8
+Ciprofloxacin,C1CC1N2C=C(C(=O)C3=CC(=C(C=C32)N4CCNCC4)F)C(=O)O,331.1332197,1,No,Not PFAS,Fluorinated aromatic,Unknown,85721-33-1
+Sulfociprofloxacin,C1CC1N2C=C(C(=O)C3=CC(=C(C=C32)N4CCN(CC4)S(=O)(=O)O)F)C(=O)O,411.0900345,1,No,Not PFAS,Fluorinated aromatic,Unknown,105093-21-8
+Formylciprofloxacin,C1CC1N2C=C(C(=O)C3=CC(=C(C=C32)N4CCN(CC4)C=O)F)C(=O)O,359.1281343,1,No,Not PFAS,Fluorinated aromatic,Unknown,93594-39-9
+oxociprofloxacin,C1CC1N2C=C(C(=O)C3=CC(=C(C=C32)N4CCNC(=O)C4)F)C(=O)O,345.1124842,1,No,Not PFAS,Fluorinated aromatic,Unknown,103237-52-1
+Desethylene ciprofloxacin,C1CC1N2C=C(C(=O)C3=CC(=C(C=C32)NCCN)F)C(=O)O,305.1175696,1,No,Not PFAS,Fluorinated aromatic,Unknown,103222-12-4
+Enoxacin,CCN1C=C(C(=O)C2=CC(=C(N=C21)N3CCNCC3)F)C(=O)O,320.1284686,1,No,Not PFAS,Fluorinated heterocycle,Unknown,74011-58-8
+4-oxo-enoxacin,CCN1C=C(C(=O)C2=CC(=C(N=C21)N3CCNC(=O)C3)F)C(=O)O,334.1077332,1,No,Not PFAS,Fluorinated heterocycle,Unknown,87939-12-6
+Flucytosine,C1=NC(=O)NC(=C1F)N,129.03384,1,No,Not PFAS,Other,Unknown,2022-85-7
+Flufenamic acid,C1=CC=C(C(=C1)C(=O)O)NC2=CC=CC(=C2)C(F)(F)F,281.0663632,3,Yes,PFCA,Fluoroalkyl chain,Industrial Intermediate,530-78-9
+flubendazole,COC(=O)NC1=NC2=C(N1)C=C(C=C2)C(=O)C3=CC=C(C=C3)F,313.0862695,1,No,Not PFAS,Fluorinated heterocycle,Unknown,31430-15-6
+Flunitrazepam,CN1C(=O)CN=C(C2=C1C=CC(=C2)[N+](=O)[O-])C3=CC=CC=C3F,313.0862695,1,No,Not PFAS,Fluorinated heterocycle,Unknown,1622-62-4
+Fluphenazine,C1CN(CCN1CCCN2C3=CC=CC=C3SC4=C2C=C(C=C4)C(F)(F)F)CCO,437.1748681,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,69-23-8
+Fluphenazine sulfoxide,C1CN(CCN1CCCN2C3=CC=CC=C3[S@](=O)C4=C2C=C(C=C4)C(F)(F)F)CCO,453.1697827,3,Yes,Other PFAS,Fluorinated heterocycle,Metabolite,1674-76-6
+Flurazepam,CCN(CC)CCN1C(=O)CN=C(C2=C1C=CC(=C2)Cl)C3=CC=CC=C3F,387.1513683,1,No,Not PFAS,Fluorinated heterocycle,Unknown,17617-23-1
+Hydroxyethylflurazepam,CCN(CCN1C(=O)CN=C(C2=C1C=CC(=C2)Cl)C3=CC=CC=C3F)CCO,403.1462829,1,No,Not PFAS,Fluorinated heterocycle,Metabolite,67263-28-9
+Norflurazepam,C1C(=O)NC2=C(C=C(C=C2)Cl)C(=N1)C3=CC=CC=C3F,288.0465688,1,No,Not PFAS,Fluorinated heterocycle,Unknown,2886-65-9
+dexlansoprazole,CC1=C(C=CN=C1C[S@@](=O)C2=NC3=CC=CC=C3N2)OCC(F)(F)F,369.0758823,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,138530-94-6
+Lansoprazole,CC1=C(C=CN=C1CS(=O)C2=NC3=CC=CC=C3N2)OCC(F)(F)F,369.0758823,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,103577-45-3
+Lansoprazole sulfone,CC1=C(C=CN=C1CS(=O)(=O)C2=NC3=CC=CC=C3N2)OCC(F)(F)F,385.070797,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,131926-99-3
+Hydroxylansoprazole,CC1=C(C=CN=C1CS(=O)C2=NC3=C(N2)C=C(C=C3)O)OCC(F)(F)F,385.070797,3,Yes,Other PFAS,Fluoroalkyl chain,Metabolite,131926-98-2
+teriflunomide,C/C(=C(\C#N)/C(=O)NC1=CC=C(C=C1)C(F)(F)F)/O,270.0616122,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,163451-81-8
+Leflunomide,CC1=C(C=NO1)C(=O)NC2=CC=C(C=C2)C(F)(F)F,270.0616122,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,75706-12-6
+Midazolam,CC1=NC=C2N1C3=C(C=C(C=C3)Cl)C(=NC2)C4=CC=CC=C4F,325.0782033,1,No,Not PFAS,Fluorinated heterocycle,Unknown,59467-70-8
+1/4-hydroxymidazolam,C1C2=CN=C(N2C3=C(C=C(C=C3)Cl)C(=N1)C4=CC=CC=C4F)CO,341.0731179,1,No,Not PFAS,Fluorinated heterocycle,Metabolite,59468-90-5
+4-hydroxymidazolam glucuronide,CC1=NC=C2N1C3=C(C=C(C=C3)Cl)C(=NC2O[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)C(=O)O)O)O)O)C5=CC=CC=C5F,517.1052059,1,No,Not PFAS,Fluorinated heterocycle,Metabolite,81256-82-8
+cinolazepam,C1=CC=C(C(=C1)C2=NC(C(=O)N(C3=C2C=C(C=C3)Cl)CCC#N)O)F,357.0680326,1,No,Not PFAS,Other,Unknown,75696-02-5
+1 4-dihydroxymidazolam,C1=CC=C(C(=C1)C2=NC(C3=CN=C(N3C4=C2C=C(C=C4)Cl)CO)O)F,357.0680326,1,No,Not PFAS,Other,Metabolite,64740-68-7
+Midazolam-N-glucuronide,CC1=NC2=C(C=CC=C2)C(=N1)C3=CC=CC=C3N[C@H]4C(C(C(C(O4)CO)O)O)O,397.1637708,0,No,Not PFAS,Fluorinated heterocycle,Metabolite,Unknown
+Pantoprazole,COC1=C(C(=NC=C1)CS(=O)C2=NC3=C(N2)C=C(C=C3)OC(F)F)OC,383.0751334,2,Yes,Other PFAS,Other,Unknown,102625-70-7
+pantoprazole sulfide,COC1=C(C(=NC=C1)CSC2=NC3=C(N2)C=C(C=C3)OC(F)F)OC,367.0802188,2,Yes,Other PFAS,Other,Unknown,102625-64-9
+O-Desmethyl Pantoprazole O-Sulfate,COC1=C(C=CN=C1CS(=O)C2=NC3=C(N2)C=C(C=C3)OC(F)F)OS(=O)(=O)O,449.0162982,2,Yes,PFSA,Sulfonate structure,Unknown,1189856-53-8
+pantoprazole sulfone,COC1=C(C(=NC=C1)CS(=O)(=O)C2=NC3=C(N2)C=C(C=C3)OC(F)F)OC,399.070048,2,Yes,Other PFAS,Sulfonate structure,Unknown,127780-16-9
+Sulindac,CC\1=C(C2=C(/C1=C\C3=CC=C(C=C3)S(=O)C)C=CC(=C2)F)CC(=O)O,356.0882436,1,No,Not PFAS,Other,Unknown,38194-50-2
+Flutamide,CC(C)C(=O)NC1=CC(=C(C=C1)[N+](=O)[O-])C(F)(F)F,276.0721769,3,Yes,Sulfonamide,Fluoroalkyl chain,Unknown,13311-84-7
+Haloperidol,C1CN(CCC1(C2=CC=C(C=C2)Cl)O)CCCC(=O)C3=CC=C(C=C3)F,375.1401349,1,No,Not PFAS,Other,Polymer / Additive,52-86-8
+Reduced haloperidol,C1CN(CCC1(C2=CC=C(C=C2)Cl)O)CCCC(C3=CC=C(C=C3)F)O,377.1557849,1,No,Not PFAS,Other,Polymer / Additive,34104-67-1
+Haloperidol pyridinium ion derivative (HPP+),CC(CN1CCC(CC1)C2=CC=C(C=C2)F)C3=CC=[N+](C=C3),298.1839784,1,No,Not PFAS,Fluorinated heterocycle,Polymer / Additive,Unknown
+Haloperidol glucuronide,C1CN(CCC1(C2=CC=C(C=C2)Cl)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)C(=O)O)O)O)O)CCCC(=O)C4=CC=C(C=C4)F,551.1722229,1,No,Not PFAS,Other,Metabolite,100442-88-4
+Haloperidol 1 2 3 6-tetrahydropyridine,C1CN(CC=C1C2=CC=C(C=C2)Cl)CCCC(=O)C3=CC=C(C=C3)F,357.1295702,1,No,Not PFAS,Other,Polymer / Additive,52669-92-8
+fluorobenzoylpropionic acid,C1=CC(=C(C=C1C(=O)CCC(=O)O)F)F,214.0441506,2,No,Not PFAS,Other,Industrial Intermediate,84313-94-0
+p-Fluorobenzoylpropionic acid and 4-(4-chlorophenyl)-4-hydroxypiperidine,CC(C(=O)O)C(=O)C1=CC=C(C=C1)F,196.0535724,1,No,Not PFAS,Other,Metabolite,CID:22322565
+Mefloquine,C1CCN[C@H](C1)[C@H](C2=CC(=NC3=C2C=CC=C3C(F)(F)F)C(F)(F)F)O,378.1166825,6,Yes,Other PFAS,Fluorinated aromatic,Unknown,53230-10-7
+2 8-bis-trifluoromethyl-4-quinoline carboxylic acid,C1=CC2=C(C(=C1)C(F)(F)F)N=C(C=C2C(=O)O)C(F)(F)F,309.0224477,6,Yes,PFCA,Fluoroalkyl chain,Industrial Intermediate,35853-50-0
+Flurbiprofen,CC(C1=CC(=C(C=C1)C2=CC=CC=C2)F)C(=O)O,244.0899579,1,No,Not PFAS,Other,Unknown,5104-49-4
+4'-Hydroxyflurbiprofen,CC(C1=CC(=C(C=C1)C2=CC=C(C=C2)O)F)C(=O)O,260.0848725,1,No,Not PFAS,Other,Metabolite,52807-12-2
+Flurbiprofen glucuronide,CC(C1=CC(=C(C=C1)C2=CC=CC=C2)F)C(=O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)C(=O)O)O)O)O,420.1220459,1,No,Not PFAS,Other,Metabolite,CID:71316898
+Norfloxacin,CCN1C=C(C(=O)C2=CC(=C(C=C21)N3CCNCC3)F)C(=O)O,319.1332197,1,No,Not PFAS,Fluorinated heterocycle,Unknown,70458-96-7
+Risperidone,CC1=C(C(=O)N2CCCCC2=N1)CCN3CCC(CC3)C4=NOC5=C4C=CC(=C5)F,410.2118043,1,No,Not PFAS,Fluorinated heterocycle,Unknown,106266-06-2
+Aprepitant,C[C@H](C1=CC(=CC(=C1)C(F)(F)F)C(F)(F)F)O[C@@H]2[C@@H](N(CCO2)CC3=NNC(=O)N3)C4=CC=C(C=C4)F,534.1501881,7,Yes,Other PFAS,Fluoroalkyl chain,Unknown,170729-80-3
+(2S 3R)-2-[(1R)-1-[3 5-bis(trifluoromethyl)phenyl]ethoxy]-3-(4-fluorophenyl)morpholine,C[C@H](OC[C@H]1CN(CCO1)C2=CC=C(C=C2)F)C3=CC(C(C(F)(F)F)=C3)C(F)(F)F,439.1382264,7,Yes,Other PFAS,Fluoroalkyl chain,Fluorochemical / Surfactant,Unknown
+1-[3 5-bis(trifluoromethyl)phenyl]ethanone,CC(=O)C1=CC(=CC(=C1)C(F)(F)F)C(F)(F)F,256.0322841,6,Yes,Other PFAS,Fluoroalkyl chain,Fluorochemical / Surfactant,30071-93-3
+Paliperidone,CC1=C(C(=O)N2CCCC(C2=N1)O)CCN3CCC(CC3)C4=NOC5=C4C=CC(=C5)F,426.2067189,1,No,Not PFAS,Fluorinated heterocycle,Unknown,144598-75-4
+Posaconazole,CC[C@@H]([C@H](C)O)N1C(=O)N(C=N1)C2=CC=C(C=C2)N3CCN(CC3)C4=CC=C(C=C4)OC[C@H]5C[C@](OC5)(CN6C=NC=N6)C7=C(C=C(C=C7)F)F,700.3297083,2,No,Not PFAS,Fluorinated heterocycle,Unknown,171228-49-2
+Desoximetasone,C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@H]1C(=O)CO)C)O)F)C,376.2049876,1,No,Not PFAS,Other,Unknown,382-67-2
+fluorometholone,C[C@H]1C[C@H]2[C@@H]3CC[C@@]([C@]3(C[C@@H]([C@@]2([C@@]4(C1=CC(=O)C=C4)C)F)O)C)(C(=O)C)O,376.2049876,1,No,Not PFAS,Other,Fluorochemical / Surfactant,426-13-1
+Fluocortolone,C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@H]3[C@H](C[C@@]2([C@H]1C(=O)CO)C)O)C)F,376.2049876,1,No,Not PFAS,Other,Unknown,152-97-6
+Emtricitabine,C1[C@H](O[C@H](S1)CO)N2C=C(C(=NC2=O)N)F,247.0426904,1,No,Not PFAS,Other,Unknown,143491-57-0
+Emtricitabine 3'-sulfoxide (M-III)/Emtricitabine 3'-sulfoxide (M-IV),C1C(C(C(O1)CO)N2C=CC(=NC2=O)F)S(=O)C,276.0580061,1,No,Not PFAS,Other,Metabolite,Unknown
+Emtricitabine O-glucuronide (M-II),C1[C@H](O[C@H](S1)CO[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O)N3C=C(C(=NC3=O)N)F,423.0747784,1,No,Not PFAS,Other,Metabolite,152128-78-4
+Gemcitabine,C1=CN(C(=O)N=C1N)[C@H]2C([C@@H]([C@H](O2)CO)O)(F)F,263.0717623,2,Yes,Other PFAS,Fluorinated heterocycle,Unknown,95058-81-4
+Gemcitabine diphosphate,C1=CN(C(=O)N=C1N)[C@H]2C([C@@H]([C@H](O2)COP(=O)(O)OP(=O)(O)O)O)(F)F,423.0044233,2,Yes,Other PFAS,Fluorinated heterocycle,Unknown,116371-66-5
+Gemcitabine triphosphate,C1=CN(C(=O)N=C1N)[C@H]2C([C@@H]([C@H](O2)COP(=O)(O)OP(=O)(O)OP(=O)(O)O)O)(F)F,502.9707538,2,Yes,Other PFAS,Fluorinated heterocycle,Unknown,110988-86-8
+2 2-difluorodeoxyuridine monophosphate,C1=CN(C(=O)NC1=O)[C@H]2C([C@@H]([C@H](O2)COP(=O)(O)O)O)(F)F,344.0221084,2,Yes,Other PFAS,Other,Fluorochemical / Surfactant,139729-89-8
+2' 2'-Difluorodeoxyuridine,C1=CN(C(=O)NC1=O)[C@H]2C([C@@H]([C@H](O2)CO)O)(F)F,264.0557779,2,Yes,Other PFAS,Other,Fluorochemical / Surfactant,806-458-5
+Nebivolol,C1CC2=C(C=CC(=C2)F)OC1C(CNCC(C3CCC4=C(O3)C=CC(=C4)F)O)O,405.1751647,2,No,Not PFAS,Fluorinated aromatic,Unknown,118457-14-0
+4-hydroxy Nebivolol,C1CC2=C(C=CC(=C2)F)OC1C(CNCC(C3CC(C4=C(O3)C=CC(=C4)F)O)O)O.O.Cl,475.1573217,2,No,Not PFAS,Fluorinated aromatic,Metabolite,178383-76-1
+Triamcinolone,C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@H]([C@@]2(C(=O)CO)O)O)CCC4=CC(=O)C=C[C@@]43C)F)O,394.1791668,1,No,Not PFAS,Other,Pharmaceutical,124-94-7
+6-beta-hydroxy-triamcinolone,C[C@H]1C[C@@H]2[C@@H]3CCC4=CC(=O)C=C[C@]4(C3=CC[C@@]2([C@]1(C(=O)CO)O)C)O[C@@H]5COC(CO5)(F)O,478.2002962,1,No,Not PFAS,Other,Pharmaceutical,Unknown
+Ofloxacin,CC1COC2=C3N1C=C(C(=O)C3=CC(=C2N4CCN(CC4)C)F)C(=O)O,361.1437843,1,No,Not PFAS,Fluorinated heterocycle,Unknown,82419-36-1
+Levofloxacin,C[C@H]1COC2=C3N1C=C(C(=O)C3=CC(=C2N4CCN(CC4)C)F)C(=O)O,361.1437843,1,No,Not PFAS,Fluorinated heterocycle,Unknown,100986-85-4
+Levofloxacin-N-oxide,C[C@H]1COC2=C3N1C=C(C(=O)C3=CC(=C2N4CC[N+](CC4)(C)[O-])F)C(=O)O,377.138699,1,No,Not PFAS,Fluorinated heterocycle,Unknown,117678-38-3
+Desmethyl-levofloxacin,C[C@H]1COC2=C3N1C=C(C(=O)C3=CC(=C2N4CCNCC4)F)C(=O)O,347.1281343,1,No,Not PFAS,Fluorinated heterocycle,Unknown,117707-40-1
+Sorafenib,CNC(=O)C1=NC=CC(=C1)OC2=CC=C(C=C2)NC(=O)NC3=CC(=C(C=C3)Cl)C(F)(F)F,464.0863027,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,284461-73-0
+Sorafenib N-oxide,CNC(=O)C1=[N+](C=CC(=C1)OC2=CC=C(C=C2)NC(=O)NC3=CC(=C(C=C3)Cl)C(F)(F)F)[O-],480.0812173,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,583840-03-3
+Sorafenib beta-D-Glucuronide,CNC(=O)C1=NC=CC(=C1)OC2=CC=C(C=C2)NC(=O)N([C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)C(=O)O)O)O)O)C4=CC(=C(C=C4)Cl)C(F)(F)F,640.1183907,3,Yes,PFCA,Fluoroalkyl chain,Metabolite,1130164-93-0
+Sunitinib,CCN(CC)CCNC(=O)C1=C(NC(=C1C)/C=C\2/C3=C(C=CC(=C3)F)NC2=O)C,398.2118043,1,No,Not PFAS,Other,Unknown,557795-19-4
+N-Desethyl Sunitinib,CCNCCNC(=O)C1=C(NC(=C1C)/C=C\2/C3=C(C=CC(=C3)F)NC2=O)C,370.1805042,1,No,Not PFAS,Other,Unknown,356068-97-8
+Nilotinib,CC1=C(C=C(C=C1)C(=O)NC2=CC(=CC(=C2)C(F)(F)F)N3C=C(N=C3)C)NC4=NC=CC(=N4)C5=CN=CC=C5,529.183793,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,641571-10-0
+Nilotinib N-Oxide,CC1=C(C=C(C=C1)C(=O)NC2=CC(=CC(=C2)C(F)(F)F)N3C=C(N=C3)C)NC4=NC=CC(=N4)C5=C[N+](=CC=C5)[O-],545.1787076,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1246817-85-5
+Ezetimibe,C1=CC(=CC=C1[C@@H]2[C@H](C(=O)N2C3=CC=C(C=C3)F)CC[C@@H](C4=CC=C(C=C4)F)O)O,409.14895,2,No,Not PFAS,Other,Unknown,163222-33-1
+Ezetimibe glucuronide/Ezetimibe hydroxy glucuronide,C1=CC(=CC=C1[C@@H]2[C@H](C(=O)N2C3=CC=C(C=C3)F)CC[C@@H](C4=CC=C(C=C4)F)O)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)C(=O)O)O)O)O,585.1810379,2,No,Not PFAS,Other,Metabolite,190448-57-8
+Ezetimibe ketone glucuronide,C1=CC(=CC=C1[C@@H]2[C@H](C(=O)N2C3=CC=C(C=C3)F)CCC(=O)C4=CC=C(C=C4)F)O[C@H]5[C@@H]([C@H]([C@@H]([C@H](O5)C(=O)O)O)O)O,583.1653879,2,No,Not PFAS,Other,Metabolite,861404-71-9
+Riluzole,C1=CC2=C(C=C1OC(F)(F)F)SC(=N2)N,234.0074684,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1744-22-5
+4-OH-riluzole,FC(F)(F)OC1=CC(O)=C(C=C1)C2=NC=NS2,262.0023831,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,Unknown
+5-OH-riluzole,FC(F)(F)OC1=CC=C(O)C=C1C2=NC=NS2,262.0023831,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,Unknown
+7-OH-riluzole,FC(F)(F)OC1=CC=C(C=C1)C2=NC(=NS2)O,262.0023831,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,Unknown
+N-OH-riluzole,FC(F)(F)OC1=CC=C(C=C1)C2=NC(N=O)=NS2,274.997632,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,Unknown
+diflorasone diacetate,C[C@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C)OC(=O)C)C)O)F)C)F,494.2116098,2,No,Not PFAS,Other,Unknown,33564-31-7
+Fluocinonide,CC(=O)OCC(=O)[C@@]12[C@@H](C[C@@H]3[C@@]1(C[C@@H]([C@]4([C@H]3C[C@@H](C5=CC(=O)C=C[C@@]54C)F)F)O)C)OC(O2)(C)C,494.2116098,2,No,Not PFAS,Other,Unknown,356-12-7
+Benperidol,C1CN(CCC1N2C3=CC=CC=C3NC2=O)CCCC(=O)C4=CC=C(C=C4)F,381.1852552,1,No,Not PFAS,Fluorinated heterocycle,Unknown,2062-84-2
+Etofenamate,C1=CC=C(C(=C1)C(=O)OCCOCCO)NC2=CC=CC(=C2)C(F)(F)F,369.1187927,3,Yes,PFCA,Fluoroalkyl chain,Unknown,30544-47-9
+Flunarizine,C1CN(CCN1C/C=C/C2=CC=CC=C2)C(C3=CC=C(C=C3)F)C4=CC=C(C=C4)F,404.2064053,2,No,Not PFAS,Fluorinated heterocycle,Unknown,52468-60-7
+Flunarizine metabolite M1,CN(C)CCC(C1=CC=C(C=C1)F)C2=CC=C(C=C2)F,275.148556,2,No,Not PFAS,Other,Metabolite,CID:171986305
+Flunarizine metabolite M2,CN(C)CCC(C1=CC=C(C=C1)F)C2=CC=C(C=C2)F.O,293.1591207,2,No,Not PFAS,Other,Metabolite,Unknown
+Flunarizine metabolite M3,CN(C)CCC(C1=CC=C(C=C1)F)N=C=O,222.1168413,1,No,Not PFAS,Other,Metabolite,Unknown
+Gatifloxacin,CC1CN(CCN1)C2=C(C=C3C(=C2OC)N(C=C(C3=O)C(=O)O)C4CC4)F,375.1594344,1,No,Not PFAS,Fluorinated heterocycle,Unknown,160738-57-8
+Efavirenz,C1CC1C#C[C@]2(C3=C(C=CC(=C3)Cl)NC(=O)O2)C(F)(F)F,315.0273909,3,Yes,PFCA,Fluorinated aromatic,Unknown,154598-52-4
+8-OH-efavirenz,C1CC1C#C[C@]2(C3=C(C(=CC(=C3)Cl)O)NC(=O)O2)C(F)(F)F,331.0223055,3,Yes,PFCA,Fluorinated aromatic,Unknown,205754-33-2
+Flupentixol sulfoxide,CN(C)CCCN1CCN(CC1)C2=CC=C(C=C2)C(=C3C=CC(=O)CS3=O)C(F)(F)F,455.1854328,3,Yes,Other PFAS,Fluorinated heterocycle,Metabolite,Unknown
+N-dealkyl flupentixol,CNCCCN1CC=NC1C2=CC=C(C=C2)C(=C3C=CC(=O)CS3)C(F)(F)F,409.143568,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,Unknown
+Capecitabine,CCCCCOC(=O)NC1=NC(=O)N(C=C1F)[C@H]2[C@@H]([C@@H]([C@H](O2)C)O)O,359.1492636,1,No,Not PFAS,Other,Unknown,154361-50-9
+floxuridine,C1[C@@H]([C@H](O[C@H]1N2C=C(C(=O)NC2=O)F)CO)O,246.0651997,1,No,Not PFAS,Other,Unknown,50-91-9
+Doxifluridine,C[C@@H]1[C@H]([C@H]([C@@H](O1)N2C=C(C(=O)NC2=O)F)O)O,246.0651997,1,No,Not PFAS,Other,Unknown,3094/9/5
+5'-Deoxy-5-fluorocytidine,C[C@@H]1[C@H]([C@H]([C@@H](O1)N2C=C(C(=NC2=O)N)F)O)O,245.0811841,1,No,Not PFAS,Other,Fluorochemical / Surfactant,66335-38-4
+5-fluorodeoxyuridine monophosphate (5-FdUMP),C1C(C(C(O1)COP(=O)(O)O)N2C=CC(=O)NC2=O)F,310.0366156,1,No,Not PFAS,Other,Fluorochemical / Surfactant,Unknown
+Nadifloxacin,CC1CCC2=C3N1C=C(C(=O)C3=CC(=C2N4CCC(CC4)O)F)C(=O)O,360.1485354,1,No,Not PFAS,Fluorinated aromatic,Unknown,124858-35-1
+Voriconazole,C[C@@H](C1=NC=NC=C1F)[C@](CN2C=NC=N2)(C3=C(C=C(C=C3)F)F)O,349.1150447,3,No,Not PFAS,Other,Unknown,137234-62-9
+Voriconazole N-Oxide/4-Hydroxyvoriconazole,C1=CC(=CC=C1COC2=NC=NC(=N2)N3C=CN(C3=O)[O])C(F)(F)F,352.0657488,3,Yes,Other PFAS,Fluoroalkyl chain,Metabolite,Unknown
+UK-51060,C1=CC(=C(C=C1F)F)C(=O)CN2C=NC=N2,223.0557183,2,No,Not PFAS,Other,Unknown,86404-63-9
+UK-215364,C1=CC(=C(C=C1F)F)C(CN2C=NC=N2)O,225.0713683,2,No,Not PFAS,Other,Unknown,206050-23-9
+Voriconazole O-glucuronide derivative (1),C1=CC(=C(C=C1COC2=NC=NC(=N2)N3C=CN(C3=O))C(F)(F)F)O[C@H]4C(C(C(C(O4)CO)O)O)O,515.1263973,3,Yes,Other PFAS,Fluoroalkyl chain,Metabolite,Unknown
+4-Hydroxyvoriconazole 4-O-glucuronide,C1=CC(=C(C=C1COC2=NC=NC(=N2)N3C=CN(C3=O))C(F)(F)F)O[C@H]4C(C(C(C(O4)CO)O)O)O,515.1263973,3,Yes,Other PFAS,Fluoroalkyl chain,Metabolite,Unknown
+Linezolid,CC(=O)NC[C@H]1CN(C(=O)O1)C2=CC(=C(C=C2)N3CCOCC3)F,337.1437843,1,No,Not PFAS,Other,Unknown,165800-03-3
+PNU-142300,CC(=O)NC[C@H]1CN(C(=O)O1)C2=CC(=C(C=C2)NCCOCC(=O)O)F,369.1336136,1,No,Not PFAS,Other,Unknown,368891-69-4
+PNU-142586,CC(=O)NC[C@H]1CN(C(=O)O1)C2=CC(=C(C=C2)N(CCO)CC(=O)O)F,369.1336136,1,No,Not PFAS,Other,Unknown,368891-70-7
+Rufinamide,C1=CC(=C(C(=C1)F)CN2C=C(N=N2)C(=O)N)F,238.0666173,2,No,Not PFAS,Other,Unknown,106308-44-5
+CGP-47292,C1=CC(=C(C(=C1)F)CN2C=C(N=N2)C(=O)O)F,239.0506329,2,No,Not PFAS,Other,Unknown,166196-11-8
+Hexafluoroisopropanol,C(C(F)(F)F)(C(F)(F)F)O,168.000984,6,Yes,Other PFAS,Fluoroalkyl chain,Fluorochemical / Surfactant,920-66-1
+Lapatinib,CS(=O)(=O)CCNCC1=CC=C(O1)C2=CC3=C(C=C2)N=CN=C3NC4=CC(=C(C=C4)OCC5=CC(=CC=C5)F)Cl,580.1347322,1,No,Not PFAS,Sulfonate structure,Unknown,231277-92-2
+Mizolastine,CN(C1CCN(CC1)C2=NC3=CC=CC=C3N2CC4=CC=C(C=C4)F)C5=NC=CC(=O)N5,432.2073876,1,No,Not PFAS,Fluorinated aromatic,Unknown,108612-45-9
+Cinacalcet,C[C@H](C1=CC=CC2=CC=CC=C21)NCCCC3=CC(=CC=C3)C(F)(F)F,357.1704344,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,226256-56-0
+Pipamperone,C1CCN(CC1)C2(CCN(CC2)CCCC(=O)C3=CC=C(C=C3)F)C(=O)N,375.2322054,1,No,Not PFAS,Fluorinated aromatic,Unknown,1893-33-0
+Flupirtine,CCOC(=O)NC1=C(N=C(C=C1)NCC2=CC=C(C=C2)F)N,304.133554,1,No,Not PFAS,Other,Unknown,56995-20-1
+D13223-N2-beta-D-Glucuronide,CC(=O)NC1=C(N=C(C=C1)NCC2=CC=C(C=C2)F)N[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)C(=O)O)O)O)O,450.1550773,1,No,Not PFAS,Other,Metabolite,1147289-76-6
+Para-fluorohippuric acid,C1=CC(=CC=C1F)C(=O)NCC(=O)O,197.0488213,1,No,Not PFAS,Other,Industrial Intermediate,366-79-0
+Moxifloxacin,COC1=C2C(=CC(=C1N3C[C@@H]4CCCN[C@@H]4C3)F)C(=O)C(=CN2C5CC5)C(=O)O,401.1750845,1,No,Not PFAS,Fluorinated heterocycle,Unknown,151096-09-2
+Tipranavir,CCC[C@]1(CC(=C(C(=O)O1)[C@H](CC)C2=CC(=CC=C2)NS(=O)(=O)C3=NC=C(C=C3)C(F)(F)F)O)CCC4=CC=CC=C4,602.2062278,3,Yes,PFCA,Fluoroalkyl chain,Unknown,174484-41-4
+Raltegravir,CC1=NN=C(O1)C(=O)NC(C)(C)C2=NC(=C(C(=O)N2C)O)C(=O)NCC3=CC=C(C=C3)F,444.155746,1,No,Not PFAS,Other,Unknown,518048-05-0
+Raltegravir-glucoronide (m2),CC1=NN(C(=C1C2=NC=C(C=C2F)F)C(=O)NC3CCCN3C(=O)COC4C(C(C(C(O4)CO)O)O)O)C,541.1984193,2,No,Not PFAS,Other,Unknown,Unknown
+Maraviroc,CC1=NN=C(N1C2C[C@H]3CC[C@@H](C2)N3CC[C@@H](C4=CC=CC=C4)NC(=O)C5CCC(CC5)(F)F)C(C)C,513.3279174,2,Yes,Other PFAS,Fluorinated heterocycle,Unknown,376348-65-1
+Clobetasol,C[C@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)CCl)O)C)O)F)C,410.1660153,1,No,Not PFAS,Other,Unknown,25122-41-2
+Niaprazine,CC(CCN1CCN(CC1)C2=CC=C(C=C2)F)NC(=O)C3=CN=CC=C3,356.2012396,1,No,Not PFAS,Fluorinated heterocycle,Unknown,27367-90-4
+para-Fluorophenylpiperazine,C1CN(CCN1)C2=CC=C(C=C2)F,180.1062766,1,No,Not PFAS,Fluorinated heterocycle,Fluorochemical / Surfactant,2252-63-3
+Diflunisal,C1=CC(=C(C=C1C2=C(C=C(C=C2)F)F)C(=O)O)O,250.0441506,2,No,Not PFAS,Other,Unknown,22494-42-4
+Diflunisal phenolic glucuronide,C1=CC(=C(C=C1C2=C(C=C(C=C2)F)F)C(=O)O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)C(=O)O)O)O)O,426.0762385,2,No,Not PFAS,Other,Metabolite,58446-29-0
+Diflunisal acyl glucuronide,C1=CC(=C(C=C1C2=C(C=C(C=C2)F)F)C(=O)O[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)C(=O)O)O)O)O)O,426.0762385,2,No,Not PFAS,Other,Metabolite,58446-30-3
+mosapride,CCOC1=CC(=C(C=C1C(=O)NCC2CN(CCO2)CC3=CC=C(C=C3)F)Cl)N,421.1568476,1,No,Not PFAS,Other,Unknown,112885-41-3
+revaprazan,CC1C2=CC=CC=C2CCN1C3=NC(=NC(=C3C)C)NC4=CC=C(C=C4)F,362.190675,1,No,Not PFAS,Fluorinated heterocycle,Unknown,199463-33-7
+vonoprazan,CNCC1=CN(C(=C1)C2=CC=CC=C2F)S(=O)(=O)C3=CN=CC=C3,345.094726,1,No,Not PFAS,Sulfonate structure,Unknown,881681-00-1
+cisapride,CO[C@H]1CN(CC[C@H]1NC(=O)C2=CC(=C(C=C2OC)N)Cl)CCCOC3=CC=C(C=C3)F,465.1830623,1,No,Not PFAS,Other,Unknown,81098-60-4
+fosaprepitant,C[C@H](C1=CC(=CC(=C1)C(F)(F)F)C(F)(F)F)O[C@@H]2[C@@H](N(CCO2)CC3=NN(C(=O)N3)P(=O)(O)O)C4=CC=C(C=C4)F,614.1165186,7,Yes,Other PFAS,Fluoroalkyl chain,Unknown,172673-20-0
+fosnetupitant,CC1=CC=CC=C1C2=CC(=NC=C2N(C)C(=O)C(C)(C)C3=CC(=CC(=C3)C(F)(F)F)C(F)(F)F)N4CC[N+](CC4)(C)COP(=O)(O)[O-],688.2249262,6,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1703748-89-3
+netupitant,CC1=CC=CC=C1C2=CC(=NC=C2N(C)C(=O)C(C)(C)C3=CC(=CC(=C3)C(F)(F)F)C(F)(F)F)N4CCN(CC4)C,578.248031,6,Yes,Other PFAS,Fluoroalkyl chain,Unknown,290297-26-6
+rolapitant,C[C@H](C1=CC(=CC(=C1)C(F)(F)F)C(F)(F)F)OC[C@]2(CC[C@]3(CCC(=O)N3)CN2)C4=CC=CC=C4,500.1898474,6,Yes,Other PFAS,Fluoroalkyl chain,Unknown,552292-08-7
+dirlotapide,CN1C2=C(C=C(C=C2)NC(=O)C3=CC=CC=C3C4=CC=C(C=C4)C(F)(F)F)C=C1C(=O)N[C@@H](C5=CC=CC=C5)C(=O)N(C)CC6=CC=CC=C6,674.2504756,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,481658-94-0
+dexfenfluramine,CCN[C@@H](C)CC1=CC(=CC=C1)C(F)(F)F,231.1234842,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,3239-44-9
+fenfluramine,CCNC(C)CC1=CC(=CC=C1)C(F)(F)F,231.1234842,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,458-24-2
+tolrestat,CN(CC(=O)O)C(=S)C1=CC=CC2=C1C=CC(=C2C(F)(F)F)OC,357.064649,3,Yes,PFCA,Fluoroalkyl chain,Unknown,82964-04-3
+gemigliptin,C1CC(CN(C1=O)C[C@H](CC(=O)N2CCC3=C(C2)N=C(N=C3C(F)(F)F)C(F)(F)F)N)(F)F,489.1411006,8,Yes,Other PFAS,Fluorinated aromatic,Unknown,911637-19-9
+canagliflozin,CC1=C(C=C(C=C1)[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)CO)O)O)O)CC3=CC=C(S3)C4=CC=C(C=C4)F,444.1406731,1,No,Not PFAS,Other,Unknown,695-192-1
+ipragliflozin,C1=CC=C2C(=C1)C=C(S2)CC3=C(C=CC(=C3)[C@H]4[C@@H]([C@H]([C@@H]([C@H](O4)CO)O)O)O)F,404.109373,1,No,Not PFAS,Other,Unknown,761423-87-4
+omarigliptin,CS(=O)(=O)N1C=C2CN(CC2=N1)[C@@H]3C[C@@H]([C@H](OC3)C4=C(C=CC(=C4)F)F)N,398.1224179,2,No,Not PFAS,Fluorinated heterocycle,Unknown,1226781-44-7
+trelagliptin,CN1C(=O)C=C(N(C1=O)CC2=C(C=CC(=C2)F)C#N)N3CCC[C@H](C3)N,357.1601031,1,No,Not PFAS,Fluorinated heterocycle,Unknown,865759-25-7
+nitisinone,C1CC(=O)C(C(=O)C1)C(=O)C2=C(C=C(C=C2)C(F)(F)F)[N+](=O)[O-],329.0511071,3,Yes,Other PFAS,Fluorinated aromatic,Unknown,104206-65-7
+telotristat ethyl,CCOC(=O)[C@H](CC1=CC=C(C=C1)C2=CC(=NC(=N2)N)O[C@H](C3=C(C=C(C=C3)Cl)N4C=CC(=N4)C)C(F)(F)F)N,574.170701,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1033805-22-9
+ticagrelor,CCCSC1=NC(=C2C(=N1)N(N=N2)[C@@H]3C[C@@H]([C@H]([C@H]3O)O)OCCO)N[C@@H]4C[C@H]4C5=CC(=C(C=C5)F)F,522.1860808,2,No,Not PFAS,Fluorinated heterocycle,Unknown,274693-27-5
+vorapaxar,CCOC(=O)N[C@@H]1CC[C@@H]2[C@@H](C1)C[C@@H]3[C@H]([C@H]2/C=C/C4=NC=C(C=C4)C5=CC(=CC=C5)F)[C@H](OC3=O)C,492.2424358,1,No,Not PFAS,Other,Unknown,618385-01-6
+cangrelor,CSCCNC1=C2C(=NC(=N1)SCCC(F)(F)F)N(C=N2)[C@H]3[C@@H]([C@@H]([C@H](O3)COP(=O)(O)OP(=O)(C(P(=O)(O)O)(Cl)Cl)O)O)O,774.9483132,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,163706-06-7
+triflusal,CC(=O)OC1=C(C=CC(=C1)C(F)(F)F)C(=O)O,248.0296434,3,Yes,PFCA,Fluoroalkyl chain,Unknown,322-79-2
+fostamatinib,CC1(C(=O)N(C2=C(O1)C=CC(=N2)NC3=NC(=NC=C3F)NC4=CC(=C(C(=C4)OC)OC)OC)COP(=O)(O)O)C,580.1482913,1,No,Not PFAS,Other,Unknown,901119-35-5
+esaxerenone,CC1=C(N(C=C1C(=O)NC2=CC=C(C=C2)S(=O)(=O)C)CCO)C3=CC=CC=C3C(F)(F)F,466.1174128,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1632006-28-0
+flosequinan,CN1C=C(C(=O)C2=C1C=C(C=C2)F)S(=O)C,239.0416278,1,No,Not PFAS,Fluorinated heterocycle,Unknown,76568-02-0
+ketanserin,C1CN(CCC1C(=O)C2=CC=C(C=C2)F)CCN3C(=O)C4=CC=CC=C4NC3=O,395.1645198,1,No,Not PFAS,Other,Unknown,74050-98-9
+riociguat,CN(C1=C(N=C(N=C1N)C2=NN(C3=C2C=CC=N3)CC4=CC=CC=C4F)N)C(=O)OC,422.1615001,1,No,Not PFAS,Fluorinated heterocycle,Unknown,625115-55-1
+bendroflumethiazide,C1=CC=C(C=C1)CC2NC3=C(C=C(C(=C3)C(F)(F)F)S(=O)(=O)N)S(=O)(=O)N2,421.0377826,3,Yes,Other PFAS,Fluoroalkyl chain,Pesticide,73-48-3
+hydroflumethiazide,C1NC2=C(C=C(C(=C2)C(F)(F)F)S(=O)(=O)N)S(=O)(=O)N1,330.9908324,3,Yes,Other PFAS,Fluorinated heterocycle,Pesticide,135-09-1
+polythiazide,CN1C(NC2=CC(=C(C=C2S1(=O)=O)S(=O)(=O)N)Cl)CSCC(F)(F)F,438.9708812,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,346-18-9
+butofilolol,CCCC(=O)C1=C(C=CC(=C1)F)OCC(CNC(C)(C)C)O,311.1896719,1,No,Not PFAS,Other,Unknown,64552-17-6
+mibefradil,CC(C)[C@H]1C2=C(CC[C@@]1(CCN(C)CCCC3=NC4=CC=CC=C4N3)OC(=O)COC)C=C(C=C2)F,495.2897203,1,No,Not PFAS,Other,Unknown,116644-53-2
+lidoflazine,CC1=C(C(=CC=C1)C)NC(=O)CN2CCN(CC2)CCCC(C3=CC=C(C=C3)F)C4=CC=C(C=C4)F,491.2748192,2,No,Not PFAS,Other,Unknown,3416-26-0
+cerivastatin,CC(C)C1=C(C(=C(C(=N1)C(C)C)COC)C2=CC=C(C=C2)F)/C=C/[C@H](C[C@H](CC(=O)O)O)O,459.2421014,1,No,Not PFAS,Fluorinated heterocycle,Pharmaceutical,145599-86-6
+pitavastatin,C1CC1C2=NC3=CC=CC=C3C(=C2/C=C/[C@H](C[C@H](CC(=O)O)O)O)C4=CC=C(C=C4)F,421.1689365,1,No,Not PFAS,Fluorinated aromatic,Pharmaceutical,147511-69-1
+laropiprant,CS(=O)(=O)C1=CC(=CC2=C1N(C3=C2CC[C@@H]3CC(=O)O)CC4=CC=C(C=C4)Cl)F,435.070735,1,No,Not PFAS,Fluorinated heterocycle,Unknown,571170-77-9
+lomitapide,C1CN(CCC1NC(=O)C2=CC=CC=C2C3=CC=C(C=C3)C(F)(F)F)CCCCC4(C5=CC=CC=C5C6=CC=CC=C64)C(=O)NCC(F)(F)F,693.2789967,6,Yes,Other PFAS,Fluorinated heterocycle,Unknown,182431-12-5
+benfluorex,CC(CC1=CC(=CC=C1)C(F)(F)F)NCCOC(=O)C2=CC=CC=C2,351.1446135,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,23602-78-0
+flutrimazole,C1=CC=C(C=C1)C(C2=CC=C(C=C2)F)(C3=CC=CC=C3F)N4C=CN=C4,346.128155,2,No,Not PFAS,Other,Unknown,119006-77-8
+halometasone,C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C(=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)CO)O)C)O)F)C)Cl)F,444.1515081,2,No,Not PFAS,Other,Unknown,50629-82-8
+difluprednate,CCCC(=O)O[C@@]1(CC[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2C[C@@H](C4=CC(=O)C=C[C@@]43C)F)F)O)C)C(=O)COC(=O)C,508.2272599,2,No,Not PFAS,Other,Unknown,245-815-4
+fluticasone furoate,C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)SCF)OC(=O)C5=CC=CO5)C)O)F)C)F,538.1636943,3,No,Not PFAS,Other,Unknown,397864-44-7
+amcinonide,CC(=O)OCC(=O)[C@@]12[C@@H](C[C@@H]3[C@@]1(C[C@@H]([C@]4([C@H]3CCC5=CC(=O)C=C[C@@]54C)F)O)C)OC6(O2)CCCC6,502.2366817,1,No,Not PFAS,Other,Unknown,51022-69-6
+dexamethasone propionate,CCC(=O)O[C@@]1([C@@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)F)O)C)C)C(=O)CO,448.226117,1,No,Not PFAS,Other,Unknown,15423-89-9
+betamethasone dipropionate,CCC(=O)OCC(=O)[C@]1([C@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)F)O)C)C)OC(=O)CC,504.2523317,1,No,Not PFAS,Other,Unknown,227-005-2
+dexamethasone phosphate,C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COP(=O)(O)O)O)C)O)F)C,472.1662328,1,No,Not PFAS,Other,Unknown,312-93-6
+betamethasone dihydrogen phosphate,C[C@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COP(=O)(O)O)O)C)O)F)C,472.1662328,1,No,Not PFAS,Other,Unknown,360-63-4
+dexamethasone valerate,CCCCC(=O)O[C@@]1([C@@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)F)O)C)C)C(=O)CO,476.2574171,1,No,Not PFAS,Other,Unknown,33755-46-3
+betamethasone valerate,CCCCC(=O)O[C@@]1([C@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)F)O)C)C)C(=O)CO,476.2574171,1,No,Not PFAS,Other,Unknown,2152-44-5
+clobetasol propionate,CCC(=O)O[C@@]1([C@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)F)O)C)C)C(=O)CCl,466.19223,1,No,Not PFAS,Other,Unknown,25122-46-7
+clobetasone butyrate,CCCC(=O)O[C@@]1([C@H](C[C@@H]2[C@@]1(CC(=O)[C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)F)C)C)C(=O)CCl,478.19223,1,No,Not PFAS,Other,Unknown,25122-57-0
+clocortolone pivalate,C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@H]1C(=O)COC(=O)C(C)(C)C)C)O)Cl)C)F,494.2235302,1,No,Not PFAS,Other,Unknown,34097-16-0
+dexamethasone cipecilate,C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C5CCCCC5)OC(=O)C6CC6)C)O)F)C,570.2992819,1,No,Not PFAS,Other,Unknown,132245-57-9
+dexamethasone linoleate,CCCCC/C=C\C/C=C\CCCCCCCC(=O)OCC(=O)[C@]1([C@@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)F)O)C)C)O,654.4295678,1,No,Not PFAS,Other,Unknown,39026-39-6
+dexamethasone metasulfobenzoate ,C[C@@H]1C[C@H]2[C@@H]3CCC4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C5=CC(=CC=C5)S(=O)(=O)O)O)C)O)F)C,576.1829319,1,No,Not PFAS,Sulfonate structure,Unknown,16978-57-7
+dexamethasone palmitate,CCCCCCCCCCCCCCCC(=O)OCC(=O)[C@]1([C@@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)F)O)C)C)O,630.4295678,1,No,Not PFAS,Other,Unknown,14899-36-6
+diflucortolone valerate,CCCCC(=O)OCC(=O)[C@H]1[C@@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2C[C@@H](C4=CC(=O)C=C[C@@]43C)F)F)O)C)C,478.2530807,2,No,Not PFAS,Other,Unknown,59198-70-8
+fluazacort,CC1=N[C@@]2([C@H](O1)C[C@@H]3[C@@]2(C[C@@H]([C@]4([C@H]3CCC5=CC(=O)C=C[C@@]54C)F)O)C)C(=O)COC(=O)C,459.2057159,1,No,Not PFAS,Other,Unknown,19888-56-3
+fludrocortisone acetate,CC(=O)OCC(=O)[C@]1(CC[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)CC[C@@]43C)F)O)C)O,422.2104669,1,No,Not PFAS,Other,Unknown,514-36-3
+fludroxycortide,C[C@]12CCC(=O)C=C1[C@H](C[C@@H]3[C@@H]2[C@H](C[C@]4([C@H]3C[C@@H]5[C@]4(OC(O5)(C)C)C(=O)CO)C)O)F,436.226117,1,No,Not PFAS,Other,Unknown,1524-88-5
+flumethasone pivalate,C[C@@H]1C[C@H]2[C@@H]3C[C@@H](C4=CC(=O)C=C[C@@]4([C@]3([C@H](C[C@@]2([C@]1(C(=O)COC(=O)C(C)(C)C)O)C)O)F)C)F,494.2479953,2,No,Not PFAS,Other,Pesticide,2002-29-1
+fluocinolone acetonide,C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1C[C@@H]4[C@]2(OC(O4)(C)C)C(=O)CO)C[C@@H](C5=CC(=O)C=C[C@@]53C)F)F)O,452.2010451,2,No,Not PFAS,Other,Unknown,200-668-5
+fluocortin butyl,CCCCOC(=O)C(=O)[C@H]1[C@@H](C[C@@H]2[C@@]1(C[C@@H]([C@H]3[C@H]2C[C@@H](C4=CC(=O)C=C[C@]34C)F)O)C)C,446.2468524,1,No,Not PFAS,Other,Unknown,41767-29-7
+fluprednidene acetate,CC(=O)OCC(=O)[C@]1(C(=C)C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2CCC4=CC(=O)C=C[C@@]43C)F)O)C)O,432.1948169,1,No,Not PFAS,Other,Unknown,1255-35-2
+fluticasone propionate,CCC(=O)O[C@@]1([C@@H](C[C@@H]2[C@@]1(C[C@@H]([C@]3([C@H]2C[C@@H](C4=CC(=O)C=C[C@@]43C)F)F)O)C)C)C(=O)SCF,500.1844298,3,No,Not PFAS,Other,Unknown,80474-14-2
+halcinonide,C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@]2([C@H](C[C@]4([C@H]3C[C@@H]5[C@]4(OC(O5)(C)C)C(=O)CCl)C)O)F,454.19223,1,No,Not PFAS,Fluorinated aromatic,Unknown,3093-35-4
+halopredone,C[C@]12C[C@@H]([C@]3([C@H]([C@@H]1CC[C@@]2(C(=O)CO)O)C[C@H](C4=CC(=O)C(=C[C@@]43C)Br)F)F)O,474.0853424,2,No,Not PFAS,Other,Unknown,57781-15-4
+triamcinolone benetonide,CC(CNC(=O)C1=CC=CC=C1)C(=O)OCC(=O)[C@@]23[C@@H](C[C@@H]4[C@@]2(C[C@@H]([C@]5([C@H]4CCC6=CC(=O)C=C[C@@]65C)F)O)C)OC(O3)(C)C,623.2894455,1,No,Not PFAS,Other,Pharmaceutical,31002-79-6
+flibanserin,C1CN(CCN1CCN2C3=CC=CC=C3NC2=O)C4=CC=CC(=C4)C(F)(F)F,390.166746,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,167933-07-5
+fluoxymesterone,C[C@]12CCC(=O)C=C1CC[C@@H]3[C@@]2([C@H](C[C@]4([C@H]3CC[C@]4(C)O)C)O)F,336.210073,1,No,Not PFAS,Fluorinated aromatic,Unknown,76-43-7
+dutasteride,C[C@]12CC[C@H]3[C@H]([C@@H]1CC[C@@H]2C(=O)NC4=C(C=CC(=C4)C(F)(F)F)C(F)(F)F)CC[C@@H]5[C@@]3(C=CC(=O)N5)C,528.2211475,6,Yes,Other PFAS,Fluoroalkyl chain,Unknown,164656-23-9
+lubiprostone,CCCCC([C@]1(CC[C@H]2[C@H](O1)CC(=O)[C@@H]2CCCCCCC(=O)O)O)(F)F,390.2217806,2,Yes,Other PFAS,Other,Unknown,333963-40-9
+silodosin,C[C@H](CC1=CC2=C(C(=C1)C(=O)N)N(CC2)CCCO)NCCOC3=CC=CC=C3OCC(F)(F)F,495.2344912,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,160970-54-7
+elagolix,CC1=C(C(=O)N(C(=O)N1CC2=C(C=CC=C2F)C(F)(F)F)C[C@@H](C3=CC=CC=C3)NCCCC(=O)O)C4=C(C(=CC=C4)OC)F,631.2105622,5,Yes,PFCA,Fluorinated heterocycle,Unknown,834153-87-6
+falecalcitriol,C[C@H](CCCC(C(F)(F)F)(C(F)(F)F)O)[C@H]1CC[C@@H]\2[C@@]1(CCC/C2=C\C=C/3\C[C@H](C[C@@H](C3=C)O)O)C,524.2725144,6,Yes,Other PFAS,Fluoroalkyl chain,Unknown,83805-11-2
+pefloxacin,CCN1C=C(C(=O)C2=CC(=C(C=C21)N3CCN(CC3)C)F)C(=O)O,333.1488697,1,No,Not PFAS,Fluorinated heterocycle,Unknown,70458-92-3
+flomoxef,CO[C@@]1([C@@H]2N(C1=O)C(=C(CO2)CSC3=NN=NN3CCO)C(=O)O)NC(=O)CSC(F)F,496.0646454,2,Yes,PFCA,Other,Unknown,99665-00-6
+lomefloxacin,CCN1C=C(C(=O)C2=CC(=C(C(=C21)F)N3CCNC(C3)C)F)C(=O)O,351.1394479,2,No,Not PFAS,Fluorinated heterocycle,Unknown,98079-51-7
+tosufloxacin,C1CN(CC1N)C2=C(C=C3C(=O)C(=CN(C3=N2)C4=C(C=C(C=C4)F)F)C(=O)O)F,404.109625,3,No,Not PFAS,Fluorinated heterocycle,Unknown,100490-36-6
+temafloxacin,CC1CN(CCN1)C2=C(C=C3C(=C2)N(C=C(C3=O)C(=O)O)C4=C(C=C(C=C4)F)F)F,417.1300261,3,No,Not PFAS,Fluorinated heterocycle,Unknown,108319-06-8
+fleroxacin,CN1CCN(CC1)C2=C(C=C3C(=C2F)N(C=C(C3=O)C(=O)O)CCF)F,369.1300261,3,No,Not PFAS,Fluorinated heterocycle,Unknown,79660-72-3
+rufloxacin,CN1CCN(CC1)C2=C(C=C3C4=C2SCCN4C=C(C3=O)C(=O)O)F,363.1052907,1,No,Not PFAS,Fluorinated heterocycle,Unknown,101363-10-4
+sparfloxacin,C[C@@H]1CN(C[C@@H](N1)C)C2=C(C(=C3C(=C2F)N(C=C(C3=O)C(=O)O)C4CC4)N)F,392.165997,2,No,Not PFAS,Fluorinated heterocycle,Unknown,110871-86-8
+flurithromycin,CC[C@@H]1[C@@]([C@@H]([C@H](C(=O)[C@@](C[C@@]([C@@H]([C@H]([C@@H]([C@H](C(=O)O1)C)O[C@H]2C[C@@]([C@H]([C@@H](O2)C)O)(C)OC)C)O[C@H]3[C@@H]([C@H](C[C@H](O3)C)N(C)C)O)(C)O)(C)F)C)O)(C)O,751.4518194,1,No,Not PFAS,Other,Unknown,82664-20-8
+trovafloxacin,C1[C@@H]2[C@@H](C2N)CN1C3=C(C=C4C(=O)C(=CN(C4=N3)C5=C(C=C(C=C5)F)F)C(=O)O)F,416.109625,3,No,Not PFAS,Fluorinated heterocycle,Unknown,147059-72-1
+balofloxacin,CNC1CCCN(C1)C2=C(C=C3C(=C2OC)N(C=C(C3=O)C(=O)O)C4CC4)F,389.1750845,1,No,Not PFAS,Fluorinated aromatic,Unknown,127294-70-6
+pazufloxacin,C[C@H]1COC2=C3N1C=C(C(=O)C3=CC(=C2C4(CC4)N)F)C(=O)O,318.1015852,1,No,Not PFAS,Fluorinated heterocycle,Unknown,127045-41-4
+prulifloxacin,CC1N2C3=CC(=C(C=C3C(=O)C(=C2S1)C(=O)O)F)N4CCN(CC4)CC5=C(OC(=O)O5)C,461.1056846,1,No,Not PFAS,Fluorinated heterocycle,Unknown,123447-62-1
+gemifloxacin,CO/N=C/1\CN(CC1CN)C2=C(C=C3C(=O)C(=CN(C3=N2)C4CC4)C(=O)O)F,389.1499323,1,No,Not PFAS,Other,Unknown,175463-14-6
+garenoxacin,C[C@@H]1C2=C(CN1)C=C(C=C2)C3=C(C4=C(C=C3)C(=O)C(=CN4C5CC5)C(=O)O)OC(F)F,426.1391136,2,Yes,PFCA,Fluorinated heterocycle,Unknown,194804-75-6
+sitafloxacin,C1CC12CN(C[C@H]2N)C3=C(C=C4C(=C3Cl)N(C=C(C4=O)C(=O)O)[C@@H]5C[C@@H]5F)F,409.1004756,2,No,Not PFAS,Fluorinated aromatic,Unknown,127254-12-0
+besifloxacin,C1CCN(C[C@@H](C1)N)C2=C(C=C3C(=C2Cl)N(C=C(C3=O)C(=O)O)C4CC4)F,393.1255474,1,No,Not PFAS,Fluorinated aromatic,Unknown,141388-76-3
+finafloxacin,C1CC1N2C=C(C(=O)C3=CC(=C(C(=C32)C#N)N4C[C@H]5[C@H](C4)OCCN5)F)C(=O)O,398.1390333,1,No,Not PFAS,Fluorinated aromatic,Unknown,209342-40-5
+tedizolid,CN1N=C(N=N1)C2=NC=C(C=C2)C3=C(C=C(C=C3)N4C[C@@H](OC4=O)CO)F,370.1189666,1,No,Not PFAS,Fluorinated heterocycle,Unknown,856866-72-3
+delafloxacin,C1C(CN1C2=C(C=C3C(=C2Cl)N(C=C(C3=O)C(=O)O)C4=C(C=C(C(=N4)N)F)F)F)O,440.0499172,3,No,Not PFAS,Fluorinated heterocycle,Unknown,189279-58-1
+eravacycline,CN(C)[C@H]1[C@@H]2C[C@@H]3CC4=C(C=C(C(=C4C(=C3C(=O)[C@@]2(C(=C(C1=O)C(=O)N)O)O)O)O)NC(=O)CN5CCCC5)F,558.2125922,1,No,Not PFAS,Other,Unknown,1207283-85-9
+lascufloxacin,COC1=C2C(=CC(=C1N3C[C@@H]([C@@H](C3)F)CNC4CC4)F)C(=O)C(=CN2CCF)C(=O)O,439.1718909,3,No,Not PFAS,Fluorinated heterocycle,Unknown,848416-07-9
+pretomanid,C1[C@@H](COC2=NC(=CN21)[N+](=O)[O-])OCC3=CC=C(C=C3)OC(F)(F)F,359.0729051,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,187235-37-6
+florfenicol,CS(=O)(=O)C1=CC=C(C=C1)[C@H]([C@@H](CF)NC(=O)C(Cl)Cl)O,357.0004625,1,No,Not PFAS,Sulfonate structure,Veterinary Medicine,73231-34-2
+flucloxacillin,CC1=C(C(=NO1)C2=C(C=CC=C2Cl)F)C(=O)N[C@H]3[C@@H]4N(C3=O)[C@H](C(S4)(C)C)C(=O)O,453.0561475,1,No,Not PFAS,Other,Unknown,5250-39-5
+flumequine,CC1CCC2=C3N1C=C(C(=O)C3=CC(=C2)F)C(=O)O,261.0801215,1,No,Not PFAS,Fluorinated aromatic,Pesticide,42835-25-6
+grepafloxacin,CC1CN(CCN1)C2=C(C(=C3C(=C2)N(C=C(C3=O)C(=O)O)C4CC4)C)F,359.1645198,1,No,Not PFAS,Fluorinated heterocycle,Unknown,119914-60-2
+fosfluconazole,C1=CC(=C(C=C1F)F)C(CN2C=NC=N2)(CN3C=NC=N3)OP(=O)(O)O,386.070396,2,No,Not PFAS,Other,Unknown,194798-83-9
+efinaconazole,C[C@H]([C@](CN1C=NC=N1)(C2=C(C=C(C=C2)F)F)O)N3CCC(=C)CC3,348.1761678,2,No,Not PFAS,Fluorinated heterocycle,Unknown,164650-44-6
+tavaborole,B1(C2=C(CO1)C=C(C=C2)F)O,152.0444881,1,No,Not PFAS,Other,Unknown,174671-46-6
+isavuconazonium sulfate,C[C@@H](C1=NC(=CS1)C2=CC=C(C=C2)C#N)[C@](CN3C=[N+](C=N3)C(C)OC(=O)N(C)C4=C(C=CC=N4)COC(=O)CNC)(C5=C(C=CC(=C5)F)F)O.OS(=O)(=O)[O-],814.2014732,2,No,Not PFAS,Sulfonate structure,Unknown,946075-13-4
+fosravuconazole,C[C@@H](C1=NC(=CS1)C2=CC=C(C=C2)C#N)[C@](CN3C=NC=N3)(C4=C(C=C(C=C4)F)F)OCOP(=O)(O)O,547.0890828,2,No,Not PFAS,Other,Unknown,351227-64-0
+delamanid,C[C@@]1(CN2C=C(N=C2O1)[N+](=O)[O-])COC3=CC=C(C=C3)N4CCC(CC4)OC5=CC=C(C=C5)OC(F)(F)F,534.1726192,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,681492-22-8
+clevudine,CC1=CN(C(=O)NC1=O)[C@@H]2[C@@H]([C@H]([C@@H](O2)CO)O)F,260.0808497,1,No,Not PFAS,Other,Unknown,163252-36-6
+elvitegravir,CC(C)[C@@H](CO)N1C=C(C(=O)C2=C1C=C(C(=C2)CC3=C(C(=CC=C3)Cl)F)OC)C(=O)O,447.1248787,1,No,Not PFAS,Fluorinated heterocycle,Unknown,697761-98-1
+dolutegravir,C[C@@H]1CCO[C@@H]2N1C(=O)C3=C(C(=O)C(=CN3C2)C(=O)NCC4=C(C=C(C=C4)F)F)O,419.1292771,2,No,Not PFAS,Fluorinated heterocycle,Unknown,1051375-16-6
+sofosbuvir,C[C@@H](C(=O)OC(C)C)N[P@](=O)(OC[C@@H]1[C@H]([C@@]([C@@H](O1)N2C=CC(=O)NC2=O)(C)F)O)OC3=CC=CC=C3,529.1625444,1,No,Not PFAS,Other,Unknown,1190307-88-0
+favipiravir,C1=C(N=C(C(=O)N1)C(=O)N)F,157.0287546,1,No,Not PFAS,Fluorinated heterocycle,Unknown,259793-96-9
+ledipasvir,CC(C)[C@@H](C(=O)N1CC2(CC2)C[C@H]1C3=NC=C(N3)C4=CC5=C(C=C4)C6=C(C5(F)F)C=C(C=C6)C7=CC8=C(C=C7)N=C(N8)[C@@H]9[C@H]1CC[C@H](C1)N9C(=O)[C@H](C(C)C)NC(=O)OC)NC(=O)OC,888.4134379,2,Yes,Other PFAS,Fluorinated heterocycle,Unknown,1256388-51-8
+glecaprevir,CC1(CC1)S(=O)(=O)NC(=O)[C@]2(C[C@H]2C(F)F)NC(=O)[C@@H]3C[C@@H]4CN3C(=O)[C@@H](NC(=O)O[C@@H]5CCC[C@H]5OC/C=C/C(C6=NC7=CC=CC=C7N=C6O4)(F)F)C(C)(C)C,838.2983109,4,Yes,PFCA,Sulfonate structure,Unknown,1365970-03-1
+letermovir,COC1=C(C=C(C=C1)C(F)(F)F)N2[C@H](C3=C(C(=CC=C3)F)N=C2N4CCN(CC4)C5=CC(=CC=C5)OC)CC(=O)O,572.2046683,4,Yes,PFCA,Fluoroalkyl chain,Unknown,917389-32-3
+pibrentasvir,C[C@H]([C@@H](C(=O)N1CCC[C@H]1C2=NC3=C(N2)C=C(C(=C3)F)[C@H]4CC[C@@H](N4C5=CC(=C(C(=C5)F)N6CCC(CC6)C7=CC=C(C=C7)F)F)C8=CC9=C(C=C8F)N=C(N9)[C@@H]1CCCN1C(=O)[C@H]([C@@H](C)OC)NC(=O)OC)NC(=O)OC)OC,1112.4907,5,No,Not PFAS,Fluorinated heterocycle,Unknown,1353900-92-1
+baloxavir marboxil,COC(=O)OCOC1=C2C(=O)N3CCOC[C@H]3N(N2C=CC1=O)[C@H]4C5=C(CSC6=CC=CC=C46)C(=C(C=C5)F)F,571.1224775,2,No,Not PFAS,Other,Unknown,1985606-14-1
+bictegravir,C1C[C@@H]2C[C@H]1N3[C@H](O2)CN4C=C(C(=O)C(=C4C3=O)O)C(=O)NCC5=C(C=C(C=C5F)F)F,449.1198553,3,No,Not PFAS,Other,Unknown,1611493-60-7
+doravirine,CN1C(=NNC1=O)CN2C=CC(=C(C2=O)OC3=CC(=CC(=C3)C#N)Cl)C(F)(F)F,425.0502516,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,1338225-97-0
+tecovirimat,C1[C@@H]2[C@H]1[C@@H]3C=C[C@H]2[C@@H]4[C@H]3C(=O)N(C4=O)NC(=O)C5=CC=C(C=C5)C(F)(F)F,376.103477,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,869572-92-9
+voxilaprevir,CC[C@@H]1[C@@H]2CN([C@@H]1C(=O)N[C@@]3(C[C@H]3C(F)F)C(=O)NS(=O)(=O)C4(CC4)C)C(=O)[C@@H](NC(=O)O[C@@H]5C[C@H]5CCCCC(C6=NC7=C(C=C(C=C7)OC)N=C6O2)(F)F)C(C)(C)C,868.3452611,4,Yes,PFCA,Sulfonate structure,Unknown,1535212-07-7
+nilutamide,CC1(C(=O)N(C(=O)N1)C2=CC(=C(C=C2)[N+](=O)[O-])C(F)(F)F)C,317.0623405,3,Yes,Sulfonamide,Fluorinated heterocycle,Unknown,63612-50-0
+fludarabine,C1=NC2=C(N=C(N=C2N1[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)O)F)N,285.0873321,1,No,Not PFAS,Fluorinated heterocycle,Unknown,21679-14-1
+valrubicin,CCCCC(=O)OCC(=O)[C@]1(C[C@@H](C2=C(C1)C(=C3C(=C2O)C(=O)C4=C(C3=O)C=CC=C4OC)O)O[C@H]5C[C@@H]([C@@H]([C@@H](O5)C)O)NC(=O)C(F)(F)F)O,723.2138749,3,Yes,PFCA,Fluoroalkyl chain,Unknown,56124-62-0
+gefitinib,COC1=C(C=C2C(=C1)N=CN=C2NC3=CC(=C(C=C3)F)Cl)OCCCN4CCOCC4,446.1520965,1,No,Not PFAS,Other,Unknown,184475-35-2
+clofarabine,C1=NC2=C(N=C(N=C2N1[C@H]3[C@H]([C@@H]([C@H](O3)CO)O)F)Cl)N,303.0534451,1,No,Not PFAS,Fluorinated heterocycle,Unknown,123318-82-1
+vinflunine,CC[C@@]12C=CCN3[C@@H]1[C@]4(CC3)[C@H]([C@]([C@@H]2OC(=O)C)(C(=O)OC)O)N(C5=CC(=C(C=C45)[C@]6(C[C@@H]7C[C@H](CN(C7)CC8=C6NC9=CC=CC=C89)C(C)(F)F)C(=O)OC)OC)C,816.3909711,2,Yes,Other PFAS,Other,Unknown,162652-95-1
+crizotinib,C[C@H](C1=C(C=CC(=C1Cl)F)Cl)OC2=C(N=CC(=C2)C3=CN(N=C3)C4CCNCC4)N,449.1185439,1,No,Not PFAS,Other,Unknown,877399-52-5
+vandetanib,CN1CCC(CC1)COC2=C(C=C3C(=C2)N=CN=C3NC4=C(C=C(C=C4)Br)F)OC,474.1066663,1,No,Not PFAS,Fluorinated heterocycle,Unknown,443913-73-3
+vemurafenib,CCCS(=O)(=O)NC1=C(C(=C(C=C1)F)C(=O)C2=CNC3=C2C=C(C=N3)C4=CC=C(C=C4)Cl)F,489.0725466,2,No,Not PFAS,Sulfonate structure,Unknown,918504-65-1
+cabozantinib,COC1=CC2=C(C=CN=C2C=C1OC)OC3=CC=C(C=C3)NC(=O)C4(CC4)C(=O)NC5=CC=C(C=C5)F,501.1699991,1,No,Not PFAS,Other,Unknown,849217-68-1
+enzalutamide,CC1(C(=O)N(C(=S)N1C2=CC(=C(C=C2)C(=O)NC)F)C3=CC(=C(C=C3)C#N)C(F)(F)F)C,464.0930096,4,Yes,Sulfonamide,Fluorinated heterocycle,Unknown,915087-33-1
+ponatinib,CC1=C(C=C(C=C1)C(=O)NC2=CC(=C(C=C2)CN3CCN(CC3)C)C(F)(F)F)C#CC4=CN=C5N4N=CC=C5,532.2198441,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,943319-70-8
+radotinib,CC1=C(C=C(C=C1)C(=O)NC2=CC(=CC(=C2)C(F)(F)F)N3C=C(N=C3)C)NC4=NC=CC(=N4)C5=NC=CN=C5,530.179042,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,926037-48-1
+regorafenib,CNC(=O)C1=NC=CC(=C1)OC2=CC(=C(C=C2)NC(=O)NC3=CC(=C(C=C3)Cl)C(F)(F)F)F,482.0768809,4,Yes,Other PFAS,Fluoroalkyl chain,Unknown,755037-03-7
+afatinib,CN(C)C/C=C/C(=O)NC1=C(C=C2C(=C1)C(=NC=N2)NC3=CC(=C(C=C3)F)Cl)O[C@H]4CCOC4,485.1629956,1,No,Not PFAS,Other,Unknown,850140-72-6
+dabrafenib,CC(C)(C)C1=NC(=C(S1)C2=NC(=NC=C2)N)C3=C(C(=CC=C3)NS(=O)(=O)C4=C(C=CC=C4F)F)F,519.1010515,3,No,Not PFAS,Sulfonate structure,Unknown,1195765-45-7
+trametinib,CC1=C2C(=C(N(C1=O)C)NC3=C(C=C(C=C3)I)F)C(=O)N(C(=O)N2C4=CC=CC(=C4)NC(=O)C)C5CC5,615.0778804,1,No,Not PFAS,Other,Unknown,871700-17-3
+idelalisib,CC[C@@H](C1=NC2=C(C(=CC=C2)F)C(=O)N1C3=CC=CC=C3)NC4=NC=NC5=C4NC=N5,415.1556864,1,No,Not PFAS,Fluorinated heterocycle,Unknown,870281-82-6
+olaparib,C1CC1C(=O)N2CCN(CC2)C(=O)C3=C(C=CC(=C3)CC4=NNC(=O)C5=CC=CC=C54)F,434.1754188,1,No,Not PFAS,Fluorinated aromatic,Unknown,763113-22-0
+cobimetinib,C1CCN[C@@H](C1)C2(CN(C2)C(=O)C3=C(C(=C(C=C3)F)F)NC4=C(C=C(C=C4)I)F)O,531.0630596,3,No,Not PFAS,Fluorinated aromatic,Unknown,934660-93-2
+rucaparib,CNCC1=CC=C(C=C1)C2=C3CCNC(=O)C4=C3C(=CC(=C4)F)N2,323.1433904,1,No,Not PFAS,Other,Unknown,283173-50-2
+abemaciclib,CCN1CCN(CC1)CC2=CN=C(C=C2)NC3=NC=C(C(=N3)C4=CC5=C(C(=C4)F)N=C(N5C(C)C)C)F,506.2717995,2,No,Not PFAS,Fluorinated heterocycle,Unknown,1231929-97-7
+enasidenib,CC(C)(CNC1=NC(=NC(=N1)C2=NC(=CC=C2)C(F)(F)F)NC3=CC(=NC=C3)C(F)(F)F)O,473.1398775,6,Yes,Other PFAS,Fluorinated heterocycle,Unknown,1446502-11-9
+apalutamide,CNC(=O)C1=C(C=C(C=C1)N2C(=S)N(C(=O)C23CCC3)C4=CC(=C(N=C4)C#N)C(F)(F)F)F,477.0882586,4,Yes,Sulfonamide,Fluoroalkyl chain,Unknown,956104-40-8
+binimetinib,CN1C=NC2=C1C=C(C(=C2F)NC3=C(C=C(C=C3)Br)F)C(=O)NOCCO,440.0295589,2,No,Not PFAS,Fluorinated heterocycle,Unknown,606143-89-9
+dacomitinib,COC1=C(C=C2C(=C1)N=CN=C2NC3=CC(=C(C=C3)F)Cl)NC(=O)/C=C/CN4CCCCC4,469.1680809,1,No,Not PFAS,Other,Unknown,829-313-8
+encorafenib,C[C@@H](CNC1=NC=CC(=N1)C2=CN(N=C2C3=C(C(=CC(=C3)Cl)NS(=O)(=O)C)F)C(C)C)NC(=O)OC,539.1517792,1,No,Not PFAS,Fluorinated heterocycle,Unknown,1269440-17-6
+ivosidenib,C1CC(=O)N([C@@H]1C(=O)N(C2=CC(=CN=C2)F)[C@@H](C3=CC=CC=C3Cl)C(=O)NC4CC(C4)(F)F)C5=NC=CC(=C5)C#N,582.1394009,3,Yes,Other PFAS,Fluorinated aromatic,Unknown,1448347-49-6
+larotrectinib,C1C[C@@H](N(C1)C2=NC3=C(C=NN3C=C2)NC(=O)N4CC[C@@H](C4)O)C5=C(C=CC(=C5)F)F,428.1772304,2,No,Not PFAS,Other,Unknown,1223403-58-4
+lorlatinib,C[C@@H]1C2=C(C=CC(=C2)F)C(=O)N(CC3=NN(C(=C3C4=CC(=C(N=C4)N)O1)C#N)C)C,406.1553521,1,No,Not PFAS,Other,Unknown,1454846-35-5
+talazoparib,CN1C(=NC=N1)[C@@H]2[C@H](NC3=CC(=CC4=C3C2=NNC4=O)F)C5=CC=C(C=C5)F,380.1197155,2,No,Not PFAS,Fluorinated heterocycle,Unknown,1207456-01-6
+alpelisib,CC1=C(SC(=N1)NC(=O)N2CCC[C@H]2C(=O)N)C3=CC(=NC=C3)C(C)(C)C(F)(F)F,441.1446306,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,1217486-61-7
+entrectinib,CN1CCN(CC1)C2=CC(=C(C=C2)C(=O)NC3=NNC4=C3C=C(C=C4)CC5=CC(=CC(=C5)F)F)NC6CCOCC6,560.2711308,2,No,Not PFAS,Fluorinated heterocycle,Unknown,1108743-60-7
+pexidartinib,C1=CC(=NC=C1CC2=CNC3=C2C=C(C=N3)Cl)NCC4=CN=C(C=C4)C(F)(F)F,417.0968078,3,Yes,Other PFAS,Fluorinated aromatic,Unknown,1029044-16-3
+selinexor,C1=CN=C(C=N1)NNC(=O)/C=C\N2C=NC(=N2)C3=CC(=CC(=C3)C(F)(F)F)C(F)(F)F,443.0929273,6,Yes,Other PFAS,Fluorinated heterocycle,Unknown,1393477-72-9
+carmofur,CCCCCCNC(=O)N1C=C(C(=O)NC1=O)F,257.1175696,1,No,Not PFAS,Fluorinated heterocycle,Unknown,61422-45-5
+exisulind,CC\1=C(C2=C(/C1=C\C3=CC=C(C=C3)S(=O)(=O)C)C=CC(=C2)F)CC(=O)O,372.0831582,1,No,Not PFAS,Sulfonate structure,Unknown,59973-80-7
+fluorouracil,C1=C(C(=O)NC(=O)N1)F,130.0178556,1,No,Not PFAS,Fluorinated heterocycle,Fluorochemical / Surfactant,200-085-6
+tegafur,C1CC(OC1)N2C=C(C(=O)NC2=O)F,200.0597204,1,No,Not PFAS,Fluorinated aromatic,Unknown,17902-23-7
+siponimod,CCC1=C(C=CC(=C1)/C(=N/OCC2=CC(=C(C=C2)C3CCCCC3)C(F)(F)F)/C)CN4CC(C4)C(=O)O,516.2599776,3,Yes,PFCA,Fluoroalkyl chain,Unknown,1230487-00-9
+upadacitinib,CC[C@@H]1CN(C[C@@H]1C2=CN=C3N2C4=C(NC=C4)N=C3)C(=O)NCC(F)(F)F,380.1572439,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1310726-60-3
+lumiracoxib,CC1=CC(=C(C=C1)NC2=C(C=CC=C2Cl)F)CC(=O)O,293.0618846,1,No,Not PFAS,Other,Unknown,220991-20-8
+polmacoxib,CC1(C(=O)C(=C(O1)C2=CC=C(C=C2)S(=O)(=O)N)C3=CC(=CC=C3)F)C,361.0784072,1,No,Not PFAS,Sulfonate structure,Unknown,301692-76-2
+antrafenine,C1CN(CCN1CCOC(=O)C2=CC=CC=C2NC3=C4C=CC(=CC4=NC=C3)C(F)(F)F)C5=CC=CC(=C5)C(F)(F)F,588.1959954,6,Yes,Other PFAS,Fluorinated heterocycle,Unknown,55300-29-3
+floctafenine,C1=CC=C(C(=C1)C(=O)OCC(CO)O)NC2=C3C=CC=C(C3=NC=C2)C(F)(F)F,406.1140417,3,Yes,PFCA,Fluoroalkyl chain,Unknown,23779-99-9
+flufenisal,CC(=O)OC1=C(C=C(C=C1)C2=CC=C(C=C2)F)C(=O)O,274.0641371,1,No,Not PFAS,Other,Unknown,22494-27-5
+flunoxaprofen,C[C@@H](C1=CC2=C(C=C1)OC(=N2)C3=CC=C(C=C3)F)C(=O)O,285.0801215,1,No,Not PFAS,Other,Unknown,66934-18-7
+niflumic acid,C1=CC(=CC(=C1)NC2=C(C=CC=N2)C(=O)O)C(F)(F)F,282.0616122,3,Yes,PFCA,Fluoroalkyl chain,Pesticide,4394-00-7
+talniflumate,C1=CC=C2C(=C1)C(OC2=O)OC(=O)C3=C(N=CC=C3)NC4=CC=CC(=C4)C(F)(F)F,414.0827416,3,Yes,Other PFAS,Fluoroalkyl chain,Pesticide,66898-62-2
+ufenamate,CCCCOC(=O)C1=CC=CC=C1NC2=CC=CC(=C2)C(F)(F)F,337.1289635,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,67330-25-0
+ataluren,C1=CC=C(C(=C1)C2=NC(=NO2)C3=CC(=CC=C3)C(=O)O)F,284.0597204,1,No,Not PFAS,Other,Unknown,775304-57-9
+droperidol,C1CN(CC=C1N2C3=CC=CC=C3NC2=O)CCCC(=O)C4=CC=C(C=C4)F,379.1696052,1,No,Not PFAS,Fluorinated heterocycle,Polymer / Additive,548-73-2
+progabide,C1=CC(=CC=C1C(=NCCCC(=O)N)C2=C(C=CC(=C2)F)O)Cl,334.0884337,1,No,Not PFAS,Other,Unknown,62666-20-0
+ezogabine,CCOC(=O)NC1=C(C=C(C=C1)NCC2=CC=C(C=C2)F)N,303.138305,1,No,Not PFAS,Other,Unknown,150812-12-7
+safinamide,C[C@@H](C(=O)N)NCC1=CC=C(C=C1)OCC2=CC(=CC=C2)F,302.1430561,1,No,Not PFAS,Other,Unknown,133865-89-1
+timiperone,C1CN(CCC1N2C3=CC=CC=C3NC2=S)CCCC(=O)C4=CC=C(C=C4)F,397.1624116,1,No,Not PFAS,Fluorinated heterocycle,Unknown,57648-21-2
+sertindole,C1CN(CCC1C2=CN(C3=C2C=C(C=C3)Cl)C4=CC=C(C=C4)F)CCN5CCNC5=O,440.1779174,1,No,Not PFAS,Other,Unknown,106516-24-9
+blonanserin,CCN1CCN(CC1)C2=NC3=C(CCCCCC3)C(=C2)C4=CC=C(C=C4)F,367.2423762,1,No,Not PFAS,Fluorinated heterocycle,Unknown,132810-10-7
+iloperidone,CC(=O)C1=CC(=C(C=C1)OCCCN2CCC(CC2)C3=NOC4=C3C=CC(=C4)F)OC,426.1954856,1,No,Not PFAS,Other,Polymer / Additive,133454-47-4
+pimavanserin,CC(C)COC1=CC=C(C=C1)CNC(=O)N(CC2=CC=C(C=C2)F)C3CCN(CC3)C,427.2635055,1,No,Not PFAS,Other,Unknown,706779-91-1
+biriperone,C1CN2CC3=C(CC2CN1CCCC(=O)C4=CC=C(C=C4)F)C5=CC=CC=C5N3,391.2059907,1,No,Not PFAS,Fluorinated heterocycle,Unknown,41510-23-0
+bromperidol,C1CN(CCC1(C2=CC=C(C=C2)Br)O)CCCC(=O)C3=CC=C(C=C3)F,419.0896193,1,No,Not PFAS,Other,Unknown,10457-90-6
+flupentixol,C1CN(CCN1CC/C=C\2/C3=CC=CC=C3SC4=C2C=C(C=C4)C(F)(F)F)CCO,434.1639691,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,53772-82-0
+fluspirilene,C1CN(CCC12C(=O)NCN2C3=CC=CC=C3)CCCC(C4=CC=C(C=C4)F)C5=CC=C(C=C5)F,475.2435191,2,No,Not PFAS,Other,Unknown,1841-19-6
+haloperidol decanoate,CCCCCCCCCC(=O)OC1(CCN(CC1)CCCC(=O)C2=CC=C(C=C2)F)C3=CC=C(C=C3)Cl,529.2759001,1,No,Not PFAS,Other,Polymer / Additive,74050-97-8
+isofloxythepin,CC(C)C1=CC2=C(C=C1)SC3=C(CC2N4CCN(CC4)CCO)C=CC(=C3)F,400.1984628,1,No,Not PFAS,Other,Unknown,70931-18-9
+melperone,CC1CCN(CC1)CCCC(=O)C2=CC=C(C=C2)F,263.1685425,1,No,Not PFAS,Fluorinated aromatic,Unknown,3575-80-2
+moperone,CC1=CC=C(C=C1)C2(CCN(CC2)CCCC(=O)C3=CC=C(C=C3)F)O,355.1947573,1,No,Not PFAS,Other,Polymer / Additive,1050-79-9
+penfluridol,C1CN(CCC1(C2=CC(=C(C=C2)Cl)C(F)(F)F)O)CCCC(C3=CC=C(C=C3)F)C4=CC=C(C=C4)F,523.1701333,5,Yes,Other PFAS,Fluoroalkyl chain,Unknown,26864-56-2
+pimozide,C1CN(CCC1N2C3=CC=CC=C3NC2=O)CCCC(C4=CC=C(C=C4)F)C5=CC=C(C=C5)F,461.227869,2,No,Not PFAS,Fluorinated heterocycle,Unknown,2062-78-4
+trifluoperazine,CN1CCN(CC1)CCCN2C3=CC=CC=C3SC4=C2C=C(C=C4)C(F)(F)F,407.1643034,3,Yes,Other PFAS,Fluorinated heterocycle,Polymer / Additive,117-89-5
+triflupromazine,CN(C)CCCN1C2=CC=CC=C2SC3=C1C=C(C=C3)C(F)(F)F,352.1221043,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,146-54-3
+doxefazepam,C1=CC=C(C(=C1)C2=NC(C(=O)N(C3=C2C=C(C=C3)Cl)CCO)O)F,348.0676982,1,No,Not PFAS,Other,Unknown,40762-15-0
+ethyl loflazepate,CCOC(=O)C1C(=O)NC2=C(C=C(C=C2)Cl)C(=N1)C3=CC=CC=C3F,360.0676982,1,No,Not PFAS,Fluorinated heterocycle,Unknown,29177-84-2
+fludiazepam,CN1C(=O)CN=C(C2=C1C=CC(=C2)Cl)C3=CC=CC=C3F,302.0622189,1,No,Not PFAS,Fluorinated heterocycle,Unknown,3900-31-0
+flutazolam,C1COC2(N1CC(=O)N(C3=C2C=C(C=C3)Cl)CCO)C4=CC=CC=C4F,376.0989983,1,No,Not PFAS,Fluorinated heterocycle,Unknown,27060-91-9
+flutoprazepam,C1CC1CN2C(=O)CN=C(C3=C2C=CC(=C3)Cl)C4=CC=CC=C4F,342.093519,1,No,Not PFAS,Fluorinated aromatic,Unknown,25967-29-7
+halazepam,C1C(=O)N(C2=C(C=C(C=C2)Cl)C(=N1)C3=CC=CC=C3)CC(F)(F)F,352.0590253,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,23092-17-3
+haloxazolam,C1COC2(N1CC(=O)NC3=C2C=C(C=C3)Br)C4=CC=CC=C4F,376.022268,1,No,Not PFAS,Fluorinated heterocycle,Unknown,59128-97-1
+quazepam,C1C(=S)N(C2=C(C=C(C=C2)Cl)C(=N1)C3=CC=CC=C3F)CC(F)(F)F,386.0267599,4,Yes,Other PFAS,Fluorinated heterocycle,Unknown,36735-22-5
+oxaflozane,CC(C)N1CCOC(C1)C2=CC(=CC=C2)C(F)(F)F,273.1340489,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,247-855-8
+afloqualone,CC1=CC=CC=C1N2C(=NC3=C(C2=O)C=C(C=C3)N)CF,283.1120903,1,No,Not PFAS,Fluorinated heterocycle,Unknown,56287-74-2
+lomerizine,COC1=C(C(=C(C=C1)CN2CCN(CC2)C(C3=CC=C(C=C3)F)C4=CC=C(C=C4)F)OC)OC,468.2224493,2,No,Not PFAS,Other,Unknown,101477-55-8
+halofantrine,CCCCN(CCCC)CCC(C1=C2C=CC(=CC2=C3C=C(C=C(C3=C1)Cl)Cl)C(F)(F)F)O,499.1656546,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,69756-53-2
+tafenoquine,CC1=CC(=NC2=C1C(=C(C=C2NC(C)CCCN)OC)OC3=CC=CC(=C3)C(F)(F)F)OC,463.2082764,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,106635-80-7
+astemizole,COC1=CC=C(C=C1)CCN2CCC(CC2)NC3=NC4=CC=CC=C4N3CC5=CC=C(C=C5)F,458.2481898,1,No,Not PFAS,Other,Unknown,68844-77-9
+mabuterol,CC(C)(C)NCC(C1=CC(=C(C(=C1)Cl)N)C(F)(F)F)O,310.1059755,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,56341-08-3
+flutropium bromide,C[N+]1([C@@H]2CC[C@H]1CC(C2)OC(=O)C(C3=CC=CC=C3)(C4=CC=CC=C4)O)CCF.[Br-],477.1314841,1,No,Not PFAS,Other,Unknown,63516-07-4
+levocabastine,C[C@@H]1CN(CC[C@@]1(C2=CC=CC=C2)C(=O)O)C3CCC(CC3)(C#N)C4=CC=C(C=C4)F,420.2213064,1,No,Not PFAS,Other,Unknown,79516-68-0
+ramatroban,C1CC2=C(C[C@@H]1NS(=O)(=O)C3=CC=C(C=C3)F)C4=CC=CC=C4N2CCC(=O)O,416.1206064,1,No,Not PFAS,Fluorinated aromatic,Unknown,116649-85-5
+roflumilast,C1CC1COC2=C(C=CC(=C2)C(=O)NC3=C(C=NC=C3Cl)Cl)OC(F)F,402.0349541,2,Yes,Other PFAS,Fluorinated aromatic,Pesticide,162401-32-3
+almitrine,C=CCNC1=NC(=NC(=N1)N2CCN(CC2)C(C3=CC=C(C=C3)F)C4=CC=C(C=C4)F)NCC=C,477.2452504,2,No,Not PFAS,Fluorinated heterocycle,Unknown,27469-53-0
+lumacaftor,CC1=C(N=C(C=C1)NC(=O)C2(CC2)C3=CC4=C(C=C3)OC(O4)(F)F)C5=CC(=CC=C5)C(=O)O,452.1183781,2,Yes,Other PFAS,Other,Unknown,936727-05-8
+tezacaftor,CC(C)(CO)C1=CC2=CC(=C(C=C2N1C[C@H](CO)O)F)NC(=O)C3(CC3)C4=CC5=C(C=C4)OC(O5)(F)F,520.1821212,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,1152311-62-0
+travoprost,CC(C)OC(=O)CCC/C=C\C[C@H]1[C@H](C[C@H]([C@@H]1/C=C/[C@H](COC2=CC=CC(=C2)C(F)(F)F)O)O)O,500.2385735,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,157283-68-6
+tafluprost,CC(C)OC(=O)CCC/C=C\C[C@H]1[C@H](C[C@H]([C@@H]1/C=C/C(COC2=CC=CC=C2)(F)F)O)O,452.2374306,2,Yes,Other PFAS,Other,Unknown,209860-87-7
+ripasudil,C[C@H]1CNCCCN1S(=O)(=O)C2=CC=CC3=CN=CC(=C32)F,323.110376,1,No,Not PFAS,Fluorinated heterocycle,Unknown,223645-67-8
+diisopropyl fluorophosphate,CC(C)OP(=O)(OC(C)C)F,184.0664592,1,No,Not PFAS,Other,Fluorochemical / Surfactant,200-247-6
+trifluridine,C1[C@@H]([C@H](O[C@H]1N2C=C(C(=O)NC2=O)C(F)(F)F)CO)O,296.0620061,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,70-00-8
+flumazenil,CCOC(=O)C1=C2CN(C(=O)C3=C(N2C=N1)C=CC(=C3)F)C,303.1019195,1,No,Not PFAS,Fluorinated heterocycle,Pesticide,78755-81-4
+elexacaftor,C[C@H]1CC(N(C1)C2=C(C=CC(=N2)N3C=CC(=N3)OCC(C)(C)C(F)(F)F)C(=O)NS(=O)(=O)C4=CN(N=C4C)C)(C)C,597.2345082,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,2216712-66-0
+lasmiditan,CN1CCC(CC1)C(=O)C2=NC(=CC=C2)NC(=O)C3=C(C=C(C=C3F)F)F,377.1351115,3,No,Not PFAS,Fluorinated heterocycle,Unknown,439239-90-4
+lemborexant,CC1=NC(=NC=C1OC[C@]2(C[C@H]2C(=O)NC3=NC=C(C=C3)F)C4=CC(=CC=C4)F)C,410.1554323,2,No,Not PFAS,Other,Unknown,1369764-02-2
+lumateperone,CN1CCN2[C@H]3CCN(C[C@H]3C4=C2C1=CC=C4)CCCC(=O)C5=CC=C(C=C5)F,393.2216407,1,No,Not PFAS,Fluorinated heterocycle,Unknown,313368-91-1
+ubrogepant,C[C@@H]1[C@@H](C[C@@H](C(=O)N1CC(F)(F)F)NC(=O)C2=CC3=C(C[C@@]4(C3)C5=C(NC4=O)N=CC=C5)N=C2)C6=CC=CC=C6,549.1987744,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,1374248-77-7
+Relugolix,CN(C)CC1=C(SC2=C1C(=O)N(C(=O)N2CC3=C(C=CC=C3F)F)C4=NN=C(C=C4)OC)C5=CC=C(C=C5)NC(=O)NOC,623.1762444,2,No,Not PFAS,Other,Unknown,737789-87-6
+Berotralstat,C1CC1CN[C@@H](C2=CC(=C(C=C2)F)NC(=O)C3=CC(=NN3C4=CC=CC(=C4)CN)C(F)(F)F)C5=CC=CC(=C5)C#N,562.2104223,4,Yes,Other PFAS,Fluorinated aromatic,Unknown,1809010-50-1
+Pralsetinib,CC1=CC(=NN1)NC2=NC(=NC(=C2)C)C3CCC(CC3)(C(=O)N[C@@H](C)C4=CN=C(C=C4)N5C=C(C=N5)F)OC,533.2662995,1,No,Not PFAS,Fluorinated heterocycle,Unknown,2097132-94-8
+Ripretinib,CCN1C2=CC(=NC=C2C=C(C1=O)C3=CC(=C(C=C3Br)F)NC(=O)NC4=CC=CC=C4)NC,509.0862652,1,No,Not PFAS,Fluorinated heterocycle,Unknown,1442472-39-0
+Capmatinib,CNC(=O)C1=C(C=C(C=C1)C2=NN3C(=CN=C3N=C2)CC4=CC5=C(C=C4)N=CC=C5)F,412.1447874,1,No,Not PFAS,Other,Unknown,1029712-80-8
+Pemigatinib,CCN1C2=C3C=C(NC3=NC=C2CN(C1=O)C4=C(C(=CC(=C4F)OC)OC)F)CN5CCOCC5,487.2031108,2,No,Not PFAS,Fluorinated heterocycle,Unknown,1513857-77-6
+Selumetinib,CN1C=NC2=C1C=C(C(=C2F)NC3=C(C=C(C=C3)Br)Cl)C(=O)NOCCO,456.0000083,1,No,Not PFAS,Fluorinated heterocycle,Unknown,606143-52-6
+Osilodrostat,C1CC2=CN=CN2[C@H]1C3=C(C=C(C=C3)C#N)F,227.0858755,1,No,Not PFAS,Fluorinated aromatic,Unknown,928134-65-0
+Rimegepant,C1C[C@H](C2=C(C=CC=N2)[C@H]([C@@H]1C3=C(C(=CC=C3)F)F)N)OC(=O)N4CCC(CC4)N5C6=C(NC5=O)N=CC=C6,534.2190952,2,No,Not PFAS,Other,Unknown,1289023-67-1
+Avapritinib,C[C@](C1=CC=C(C=C1)F)(C2=CN=C(N=C2)N3CCN(CC3)C4=NC=NN5C4=CC(=C5)C6=CN(N=C6)C)N,498.2404191,1,No,Not PFAS,Other,Unknown,1703793-34-3
+Asciminib,C1CN(C[C@@H]1O)C2=C(C=C(C=N2)C(=O)NC3=CC=C(C=C3)OC(F)(F)Cl)C4=CC=NN4,449.1066236,2,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1492952-76-7
+Avacopan,CC1=C(C(=CC=C1)F)C(=O)N2CCC[C@@H]([C@@H]2C3=CC=C(C=C3)NC4CCCC4)C(=O)NC5=CC(=C(C=C5)C)C(F)(F)F,581.2665402,4,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1346623-17-3
+Atogepant,C[C@@H]1[C@@H](C[C@@H](C(=O)N1CC(F)(F)F)NC(=O)C2=CC3=C(C[C@@]4(C3)C5=C(NC4=O)N=CC=C5)N=C2)C6=C(C=CC(=C6F)F)F,603.1705089,6,Yes,Other PFAS,Fluorinated heterocycle,Unknown,1374248-81-3
+Belzutifan,CS(=O)(=O)C1=C2[C@@H]([C@@H]([C@@H](C2=C(C=C1)OC3=CC(=CC(=C3)C#N)F)F)F)O,383.0439135,3,No,Not PFAS,Sulfonate structure,Unknown,1672668-24-4
+Sotorasib,C[C@H]1CN(CCN1C2=NC(=O)N(C3=NC(=C(C=C32)F)C4=C(C=CC=C4F)O)C5=C(C=CN=C5C(C)C)C)C(=O)C=C,560.2347453,2,No,Not PFAS,Fluorinated heterocycle,Unknown,2296729-00-3
+Melphalan flufenamide,CCOC(=O)[C@H](CC1=CC=C(C=C1)F)NC(=O)[C@H](CC2=CC=C(C=C2)N(CCCl)CCCl)N,497.1648254,1,No,Not PFAS,Other,Unknown,380449-51-4
+Umbralisib,C[C@@H](C1=C(C(=O)C2=C(O1)C=CC(=C2)F)C3=CC(=CC=C3)F)N4C5=NC=NC(=C5C(=N4)C6=CC(=C(C=C6)OC(C)C)F)N,571.1831243,3,No,Not PFAS,Other,Unknown,1532533-67-7
+Cabotegravir,C[C@H]1CO[C@H]2N1C(=O)C3=C(C(=O)C(=CN3C2)C(=O)NCC4=C(C=C(C=C4)F)F)O,405.1136271,2,No,Not PFAS,Fluorinated heterocycle,Unknown,1051375-10-0
+Vericiguat,COC(=O)NC1=C(N=C(N=C1N)C2=NN(C3=C2C=C(C=N3)F)CC4=CC=CC=C4F)N,426.1364282,2,No,Not PFAS,Fluorinated heterocycle,Unknown,1350653-20-1
+Lenacapavir,CC(C)(C#CC1=NC(=C(C=C1)C2=C3C(=C(C=C2)Cl)C(=NN3CC(F)(F)F)NS(=O)(=O)C)[C@H](CC4=CC(=CC(=C4)F)F)NC(=O)CN5C6=C([C@H]7C[C@H]7C6(F)F)C(=N5)C(F)(F)F)S(=O)(=O)C,967.143519,10,Yes,Other PFAS,Fluoroalkyl chain,Unknown,2189684-44-2
+Adagrasib,CN1CCC[C@H]1COC2=NC3=C(CCN(C3)C4=CC=CC5=C4C(=CC=C5)Cl)C(=N2)N6CCN([C@H](C6)CC#N)C(=O)C(=C)F,603.2524793,1,No,Not PFAS,Fluorinated heterocycle,Unknown,2326521-71-3
+Oteseconazole,C1=CC(=CC=C1C2=CN=C(C=C2)C([C@](CN3C=NN=N3)(C4=C(C=C(C=C4)F)F)O)(F)F)OCC(F)(F)F,527.1192223,7,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1340593-59-0
+Nirogacestat,CCC[C@@H](C(=O)NC1=CN(C=N1)C(C)(C)CNCC(C)(C)C)N[C@H]2CCC3=C(C2)C(=CC(=C3)F)F,489.3279174,2,No,Not PFAS,Fluorinated heterocycle,Unknown,1290543-63-3
+Repotrectinib,C[C@H]1CNC(=O)C2=C3N=C(C=CN3N=C2)N[C@@H](C4=C(O1)C=CC(=C4)F)C,355.144453,1,No,Not PFAS,Other,Unknown,1802220-02-5
+Etrasimod,C1CCC(C1)C2=C(C=C(C=C2)COC3=CC4=C(C=C3)NC5=C4CC[C@@H]5CC(=O)O)C(F)(F)F,457.1864784,3,Yes,PFCA,Fluorinated aromatic,Unknown,1206123-37-6
+Lotilaner,CC1=C(SC(=C1)C2=NO[C@@](C2)(C3=CC(=C(C(=C3)Cl)Cl)Cl)C(F)(F)F)C(=O)NCC(=O)NCC(F)(F)F,594.9725647,6,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1369852-71-0
+Nirmatrelvir,CC1([C@@H]2[C@H]1[C@H](N(C2)C(=O)[C@H](C(C)(C)C)NC(=O)C(F)(F)F)C(=O)N[C@@H](C[C@@H]3CCNC3=O)C#N)C,499.2406392,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,2628280-40-8
+Fezolinetant,C[C@@H]1C2=NN=C(N2CCN1C(=O)C3=CC=C(C=C3)F)C4=NC(=NS4)C,358.1012083,1,No,Not PFAS,Fluorinated heterocycle,Unknown,1629229-37-3
+Leniolisib,CCC(=O)N1CC[C@@H](C1)NC2=NC=NC3=C2CN(CC3)C4=CC(=C(N=C4)OC)C(F)(F)F,450.1991087,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,1354690-24-6
+Omaveloxolone,C[C@@]12CC[C@]3(CCC(C[C@H]3[C@H]1C(=O)C=C4[C@]2(CC[C@@H]5[C@@]4(C=C(C(=O)C5(C)C)C#N)C)C)(C)C)NC(=O)C(C)(F)F,554.3319997,2,Yes,Other PFAS,Other,Unknown,1474034-05-3
+Pirtobrutinib,C[C@@H](C(F)(F)F)N1C(=C(C(=N1)C2=CC=C(C=C2)CNC(=O)C3=C(C=CC(=C3)F)OC)C(=O)N)N,479.1580524,4,Yes,Other PFAS,Fluorinated heterocycle,Unknown,2101700-15-4
+Ensartinib,C[C@@H]1CN(C[C@@H](N1)C)C(=O)C2=CC=C(C=C2)NC(=O)C3=NN=C(C(=C3)O[C@H](C)C4=C(C=CC(=C4Cl)F)Cl)N,560.1505723,1,No,Not PFAS,Fluorinated heterocycle,Unknown,1370651-20-9
+Crinecerfont,CC1=C(C=C(C=C1)[C@H](CC2CC2)N(CC#C)C3=NC(=C(S3)C)C4=C(C=C(C(=C4)C)OC)Cl)F,482.1594904,1,No,Not PFAS,Other,Unknown,752253-39-7
+Acoramidis,CC1=C(C(=NN1)C)CCCOC2=C(C=CC(=C2)C(=O)O)F,292.1223206,1,No,Not PFAS,Fluorinated heterocycle,Unknown,950-296-9
+Revumenib,CCN(C(C)C)C(=O)C1=C(C=CC(=C1)F)OC2=CN=CN=C2N3CC4(C3)CCN(CC4)CC5CCC(CC5)NS(=O)(=O)CC,630.3363532,1,No,Not PFAS,Sulfonate structure,Unknown,2169919-21-3
+Inavolisib,C[C@@H](C(=O)N)NC1=CC2=C(C=C1)C3=NC(=CN3CCO2)N4[C@@H](COC4=O)C(F)F,407.1405105,2,Yes,Other PFAS,Other,Unknown,2060571-02-8
+Seladelpar,CCO[C@H](COC1=CC=C(C=C1)C(F)(F)F)CSC2=CC(=C(C=C2)OCC(=O)O)C,444.1218295,3,Yes,PFCA,Fluoroalkyl chain,Unknown,851528-79-5
+Vorasidenib,C[C@H](C(F)(F)F)NC1=NC(=NC(=N1)C2=NC(=CC=C2)Cl)N[C@H](C)C(F)(F)F,414.0794414,6,Yes,Other PFAS,Fluorinated heterocycle,Unknown,1644545-52-7
+Tovorafenib,C[C@H](C1=NC=C(S1)C(=O)NC2=NC=C(C(=C2)C(F)(F)F)Cl)NC(=O)C3=C(C(=NC=N3)N)Cl,505.0102336,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1096708-71-2
+Danicopan,CC1=NC=C(C=N1)C2=CC3=C(C=C2)N(N=C3C(=O)C)CC(=O)N4C[C@@H](C[C@H]4C(=O)NC5=NC(=CC=C5)Br)F,579.1029779,1,No,Not PFAS,Fluorinated heterocycle,Unknown,1903768-17-1
+acifluorfen,C1=CC(=C(C=C1C(F)(F)F)Cl)OC2=CC(=C(C=C2)[N+](=O)[O-])C(=O)O,360.9964847,3,Yes,PFCA,Fluoroalkyl chain,Unknown,50594-66-6
+acrinathrin,CC1([C@H]([C@H]1C(=O)O[C@H](C#N)C2=CC(=CC=C2)OC3=CC=CC=C3)/C=C\C(=O)OC(C(F)(F)F)C(F)(F)F)C,541.1323921,6,Yes,PFCA,Fluoroalkyl chain,Unknown,101007-06-1
+afoxolaner,C1C(=NOC1(C2=CC(=CC(=C2)Cl)C(F)(F)F)C(F)(F)F)C3=CC=C(C4=CC=CC=C43)C(=O)NCC(=O)NCC(F)(F)F,625.0814731,9,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1093861-60-9
+amidoflumet,COC(=O)C1=C(C=CC(=C1)Cl)NS(=O)(=O)C(F)(F)F,316.973641,3,Yes,Other PFAS,Fluoroalkyl chain,Pesticide,84466-05-7
+amisulbrom,CC1=C(C2=C(N1S(=O)(=O)C3=NN(C=N3)S(=O)(=O)N(C)C)C=C(C=C2)F)Br,464.9576362,1,No,Not PFAS,Fluorinated heterocycle,Unknown,348635-87-0
+beflubutamid,CCC(C(=O)NCC1=CC=CC=C1)OC2=CC(=C(C=C2)F)C(F)(F)F,355.1195417,4,Yes,Other PFAS,Fluoroalkyl chain,Unknown,113614-08-7
+trifluralin,CCCN(CCC)C1=C(C=C(C=C1[N+](=O)[O-])C(F)(F)F)[N+](=O)[O-],335.1092907,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1582-09-8
+benfluralin,CCCCN(CC)C1=C(C=C(C=C1[N+](=O)[O-])C(F)(F)F)[N+](=O)[O-],335.1092907,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1861-40-1
+benthiavalicarb-isopropyl,C[C@H](C1=NC2=C(S1)C=C(C=C2)F)NC(=O)[C@H](C(C)C)NC(=O)OC(C)C,381.1522408,1,No,Not PFAS,Other,Unknown,177406-68-7
+benzovindiflupyr,CN1C=C(C(=N1)C(F)F)C(=O)NC2=CC=CC3=C2C4CCC3C4=C(Cl)Cl,397.0560239,2,Yes,Other PFAS,Fluorinated heterocycle,Unknown,1072957-71-1
+bicyclopyrone,COCCOCC1=C(C=CC(=N1)C(F)(F)F)C(=C2C(=O)[C@@H]3CC[C@@H](C3)C2=O)O,399.1293574,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,352010-68-5
+bifenthrin,CC1=C(C=CC=C1C2=CC=CC=C2)COC(=O)[C@@H]3[C@@H](C3(C)C)/C=C(/C(F)(F)F)\Cl,422.1260423,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,82657-04-3
+bistrifluron,C1=CC(=C(C(=C1)F)C(=O)NC(=O)NC2=CC(=CC(=C2Cl)C(F)(F)F)C(F)(F)F)F,446.0068309,8,Yes,Other PFAS,Fluoroalkyl chain,Unknown,201593-84-2
+bixafen,CN1C=C(C(=N1)C(F)F)C(=O)NC2=C(C=C(C=C2)F)C3=CC(=C(C=C3)Cl)Cl,413.030952,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,581809-46-3
+broflanilide,CN(C1=CC=CC(=C1F)C(=O)NC2=C(C=C(C=C2Br)C(C(F)(F)F)(C(F)(F)F)F)C(F)(F)F)C(=O)C3=CC=CC=C3,662.0063002,11,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1207727-04-5
+brofluthrinate,CC(C)C(C1=CC=C(C=C1)OC(F)F)C(=O)OC(C#N)C2=CC(=CC=C2)OC3=CC=C(C=C3)Br,529.0700267,2,Yes,PFCA,Other,Unknown,160791-64-0
+bromethalin,CN(C1=C(C=C(C=C1[N+](=O)[O-])[N+](=O)[O-])C(F)(F)F)C2=C(C=C(C=C2Br)Br)Br,574.7938767,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,63333-35-7
+butafenacil,CC(C)(C(=O)OCC=C)OC(=O)C1=C(C=CC(=C1)N2C(=O)C=C(N(C2=O)C)C(F)(F)F)Cl,474.0805486,3,Yes,PFCA,Fluoroalkyl chain,Unknown,134605-64-4
+carfentrazone-ethyl,CCOC(=O)C(CC1=CC(=C(C=C1Cl)F)N2C(=O)N(C(=N2)C)C(F)F)Cl,411.0364313,3,Yes,Other PFAS,Other,Unknown,128639-02-1
+chlorfenapyr,CCOCN1C(=C(C(=C1C(F)(F)F)Br)C#N)C2=CC=C(C=C2)Cl,405.9695374,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,122453-73-0
+chlorfluazuron,C1=CC(=C(C(=C1)F)C(=O)NC(=O)NC2=CC(=C(C(=C2)Cl)OC3=C(C=C(C=N3)C(F)(F)F)Cl)Cl)F,538.9629653,5,Yes,Other PFAS,Fluoroalkyl chain,Unknown,71422-67-8
+clodinafop,C[C@H](C(=O)O)OC1=CC=C(C=C1)OC2=C(C=C(C=N2)Cl)F,311.0360637,1,No,Not PFAS,Other,Unknown,114420-56-3
+clodinafop-propargyl,C[C@H](C(=O)OCC#C)OC1=CC=C(C=C1)OC2=C(C=C(C=N2)Cl)F,349.0517138,1,No,Not PFAS,Other,Unknown,105512-06-9
+cloransulam,CCOC1=NC(=CC2=NC(=NN21)S(=O)(=O)NC3=C(C=CC=C3Cl)C(=O)O)F,415.0153454,1,No,Not PFAS,Sulfonate structure,Unknown,159518-97-5
+cloransulam-methyl,CCOC1=NC(=CC2=NC(=NN21)S(=O)(=O)NC3=C(C=CC=C3Cl)C(=O)OC)F,429.0309954,1,No,Not PFAS,Sulfonate structure,Unknown,147150-35-4
+cyflufenamid,C1CC1CO/N=C(/C2=C(C=CC(=C2F)F)C(F)(F)F)\NC(=O)CC3=CC=CC=C3,412.1210189,5,Yes,Other PFAS,Fluorinated aromatic,Unknown,180409-60-3
+cyflumetofen,CC(C)(C)C1=CC=C(C=C1)C(C#N)(C(=O)C2=CC=CC=C2C(F)(F)F)C(=O)OCCOC,447.1657429,3,Yes,PFCA,Fluoroalkyl chain,Pesticide,400882-07-7
+cyfluthrin,CC1(C(C1C(=O)OC(C#N)C2=CC(=C(C=C2)F)OC3=CC=CC=C3)C=C(Cl)Cl)C,433.064777,1,No,Not PFAS,Other,Unknown,68359-37-5
+cyhalodiamide,CC1=C(C=CC(=C1)C(C(F)(F)F)(C(F)(F)F)F)NC(=O)C2=C(C(=CC=C2)Cl)C(=O)NC(C)(C)C#N,523.089752,7,Yes,Sulfonamide,Fluoroalkyl chain,Unknown,1262605-53-7
+dichlofluanid,CN(C)S(=O)(=O)N(C1=CC=CC=C1)SC(F)(Cl)Cl,331.9623032,1,No,Not PFAS,Fluoroalkyl chain,Unknown,1085-98-9
+diclosulam,CCOC1=NC(=CC2=NC(=NN21)S(=O)(=O)NC3=C(C=CC=C3Cl)Cl)F,404.9865438,1,No,Not PFAS,Sulfonate structure,Unknown,145701-21-9
+difenopenten-ethyl,CCOC(=O)/C=C/C(C)OC1=CC=C(C=C1)OC2=CC=C(C=C2)C(F)(F)F,380.1235437,3,Yes,Other PFAS,Fluoroalkyl chain,Polymer / Additive,71101-05-8
+diflovidazin,C1=CC=C(C(=C1)C2=NN=C(N=N2)C3=C(C=CC=C3F)F)Cl,304.0327303,2,No,Not PFAS,Other,Unknown,162320-67-4
+diflubenzuron,C1=CC(=C(C(=C1)F)C(=O)NC(=O)NC2=CC=C(C=C2)Cl)F,310.0320616,2,No,Not PFAS,Other,Unknown,35367-38-5
+diflufenican,C1=CC(=CC(=C1)OC2=C(C=CC=N2)C(=O)NC3=C(C=C(C=C3)F)F)C(F)(F)F,394.0740687,5,Yes,Other PFAS,Fluoroalkyl chain,Pesticide,83164-33-4
+diflufenzopyr,C/C(=N\NC(=O)NC1=CC(=CC(=C1)F)F)/C2=C(C=CC=N2)C(=O)O,334.0877467,2,No,Not PFAS,Other,Unknown,109293-97-2
+diflumetorim,CCC(C1=CC=C(C=C1)OC(F)F)NC2=NC=NC(=C2Cl)C,327.0949963,2,Yes,Other PFAS,Other,Pesticide,130339-07-0
+dimefluthrin,CC(=CC1C(C1(C)C)C(=O)OCC2=C(C(=C(C(=C2F)F)COC)F)F)C,374.1505074,4,No,Not PFAS,Other,Unknown,271241-14-6
+dithiopyr,CC(C)CC1=C(C(=NC(=C1C(=O)SC)C(F)(F)F)C(F)F)C(=O)SC,401.0542619,5,Yes,Other PFAS,CF3 group structure,Unknown,97886-45-8
+epoxiconazole,C1=CC=C(C(=C1)[C@@H]2[C@@](O2)(CN3C=NC=N3)C4=CC=C(C=C4)F)Cl,329.0731179,1,No,Not PFAS,Other,Unknown,133855-98-8
+ethalfluralin,CCN(CC(=C)C)C1=C(C=C(C=C1[N+](=O)[O-])C(F)(F)F)[N+](=O)[O-],333.0936406,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,55283-68-6
+ethiprole,CCS(=O)C1=C(N(N=C1C#N)C2=C(C=C(C=C2Cl)C(F)(F)F)Cl)N,395.9826219,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,181587-01-9
+etoxazole,CCOC1=C(C=CC(=C1)C(C)(C)C)C2COC(=N2)C3=C(C=CC=C3F)F,359.1696854,2,No,Not PFAS,Other,Unknown,153233-91-1
+fipronil,C1=C(C=C(C(=C1Cl)N2C(=C(C(=N2)C#N)S(=O)C(F)(F)F)N)Cl)C(F)(F)F,435.9387064,6,Yes,Other PFAS,Fluoroalkyl chain,Unknown,120068-37-3
+flamprop-isopropyl,CC(C)OC(=O)C(C)N(C1=CC(=C(C=C1)F)Cl)C(=O)C2=CC=CC=C2,363.1037494,1,No,Not PFAS,Other,Unknown,52756-22-6
+flamprop-M,C[C@H](C(=O)O)N(C1=CC(=C(C=C1)F)Cl)C(=O)C2=CC=CC=C2,321.0567992,1,No,Not PFAS,Other,Unknown,90134-59-1
+flamprop-methyl,CC(C(=O)OC)N(C1=CC(=C(C=C1)F)Cl)C(=O)C2=CC=CC=C2,335.0724492,1,No,Not PFAS,Other,Unknown,52756-25-9
+flazasulfuron,COC1=CC(=NC(=N1)NC(=O)NS(=O)(=O)C2=C(C=CC=N2)C(F)(F)F)OC,407.0511241,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,104040-78-0
+flocoumafen,C1C(CC2=CC=CC=C2C1C3=C(C4=CC=CC=C4OC3=O)O)C5=CC=C(C=C5)OCC6=CC=C(C=C6)C(F)(F)F,542.1704939,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,90035-08-8
+flometoquin,CCC1=C(C(=C2C=C(C(=CC2=N1)C)OC3=CC=C(C=C3)OC(F)(F)F)OC(=O)OC)C,435.1293574,3,Yes,PFCA,Fluorinated heterocycle,Unknown,875775-74-9
+flonicamid,C1=CN=CC(=C1C(F)(F)F)C(=O)NCC#N,229.0462965,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,158062-67-0
+florasulam,COC1=NC=C(C2=NC(=NN21)S(=O)(=O)NC3=C(C=CC=C3F)F)F,359.0299948,3,No,Not PFAS,Sulfonate structure,Unknown,145701-23-1
+fluazaindolizine,COC1=CC(=C(C=C1)Cl)S(=O)(=O)NC(=O)C2=CN3C=C(C=C(C3=N2)Cl)C(F)(F)F,466.9721168,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1254304-22-7
+fluazifop-butyl,CCCCOC(=O)C(C)OC1=CC=C(C=C1)OC2=NC=C(C=C2)C(F)(F)F,383.1344428,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,69806-50-4
+fluazifop-P,C[C@H](C(=O)O)OC1=CC=C(C=C1)OC2=NC=C(C=C2)C(F)(F)F,327.0718425,3,Yes,PFCA,Fluoroalkyl chain,Unknown,83066-88-0
+fluazinam,C1=C(C=NC(=C1Cl)NC2=C(C=C(C(=C2[N+](=O)[O-])Cl)C(F)(F)F)[N+](=O)[O-])C(F)(F)F,463.9513793,6,Yes,Other PFAS,Fluoroalkyl chain,Unknown,79622-59-6
+flubendiamide,CC1=C(C=CC(=C1)C(C(F)(F)F)(C(F)(F)F)F)NC(=O)C2=C(C(=CC=C2)I)C(=O)NC(C)(C)CS(=O)(=O)C,682.0233237,7,Yes,Sulfonamide,Fluoroalkyl chain,Unknown,272451-65-7
+flucarbazone,CN1C(=NN(C1=O)C(=O)NS(=O)(=O)C2=CC=CC=C2OC(F)(F)F)OC,396.0351397,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,145026-88-6
+flucetosulfuron,CC(C(C1=C(C=CC=N1)S(=O)(=O)NC(=O)NC2=NC(=CC(=N2)OC)OC)OC(=O)COC)F,487.1173119,1,No,Not PFAS,Fluorinated heterocycle,Unknown,412928-75-7
+flucythrinate,CC(C)C(C1=CC=C(C=C1)OC(F)F)C(=O)OC(C#N)C2=CC(=CC=C2)OC3=CC=CC=C3,451.1595147,2,Yes,PFCA,Other,Unknown,70124-77-5
+fludioxonil,C1=CC(=C2C(=C1)OC(O2)(F)F)C3=CNC=C3C#N,248.0397339,2,Yes,Other PFAS,Other,Unknown,131341-86-1
+fluensulfone,C1=C(SC(=N1)S(=O)(=O)CCC(=C(F)F)F)Cl,290.9402327,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,318290-98-1
+flufenacet,CC(C)N(C1=CC=C(C=C1)F)C(=O)COC2=NN=C(S2)C(F)(F)F,363.0664605,4,Yes,Other PFAS,Fluoroalkyl chain,Unknown,142459-58-3
+flufenoxuron,C1=CC(=C(C(=C1)F)C(=O)NC(=O)NC2=C(C=C(C=C2)OC3=C(C=C(C=C3)C(F)(F)F)Cl)F)F,488.0362392,6,Yes,Other PFAS,Fluoroalkyl chain,Unknown,101463-69-8
+flufenoxystrobin,CO/C=C(\C1=CC=CC=C1COC2=C(C=C(C=C2)C(F)(F)F)Cl)/C(=O)OC,400.0689213,3,Yes,PFCA,Fluoroalkyl chain,Unknown,918162-02-4
+flufiprole,CC(=C)CNC1=C(C(=NN1C2=C(C=C(C=C2Cl)C(F)(F)F)Cl)C#N)S(=O)C(F)(F)F,489.9856566,6,Yes,Other PFAS,Fluorinated heterocycle,Unknown,704886-18-0
+fluhexafon,CON=C1CCC(CC1)C(C#N)S(=O)(=O)CCC(F)(F)F,326.0911981,3,Yes,Other PFAS,Fluorinated aromatic,Unknown,1097630-26-6
+flumethrin,CC1(C(C1C(=O)OC(C#N)C2=CC(=C(C=C2)F)OC3=CC=CC=C3)/C=C(/C4=CC=C(C=C4)Cl)\Cl)C,509.0960771,1,No,Not PFAS,Other,Pesticide,69770-45-2
+flumetralin,CCN(CC1=C(C=CC=C1Cl)F)C2=C(C=C(C=C2[N+](=O)[O-])C(F)(F)F)[N+](=O)[O-],421.0452464,4,Yes,Other PFAS,Fluoroalkyl chain,Pesticide,62924-70-3
+flumetsulam,CC1=NC2=NC(=NN2C=C1)S(=O)(=O)NC3=C(C=CC=C3F)F,325.044502,2,No,Not PFAS,Sulfonate structure,Pesticide,98967-40-9
+flumiclorac,C1CCC2=C(C1)C(=O)N(C2=O)C3=CC(=C(C=C3F)Cl)OCC(=O)O,353.0466284,1,No,Not PFAS,Fluorinated aromatic,Pesticide,87547-04-4
+flumiclorac-pentyl,CCCCCOC(=O)COC1=C(C=C(C(=C1)N2C(=O)C3=C(C2=O)CCCC3)F)Cl,423.1248787,1,No,Not PFAS,Other,Pesticide,87546-18-7
+flumioxazin,C#CCN1C(=O)COC2=CC(=C(C=C21)N3C(=O)C4=C(C3=O)CCCC4)F,354.1015852,1,No,Not PFAS,Fluorinated heterocycle,Pesticide,103361-09-7
+flumorph,COC1=C(C=C(C=C1)/C(=C/C(=O)N2CCOCC2)/C3=CC=C(C=C3)F)OC,371.1532864,1,No,Not PFAS,Other,Pesticide,211867-47-9
+fluometuron,CN(C)C(=O)NC1=CC=CC(=C1)C(F)(F)F,232.0823476,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,2164-17-2
+fluopicolide,C1=CC(=C(C(=C1)Cl)C(=O)NCC2=C(C=C(C=N2)C(F)(F)F)Cl)Cl,381.9654306,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,239110-15-7
+fluopyram,C1=CC=C(C(=C1)C(=O)NCCC2=C(C=C(C=N2)C(F)(F)F)Cl)C(F)(F)F,396.04641,6,Yes,Other PFAS,Fluoroalkyl chain,Unknown,658066-35-4
+fluoroglycofen,C1=CC(=C(C=C1C(F)(F)F)Cl)OC2=CC(=C(C=C2)[N+](=O)[O-])C(=O)OCC(=O)O,419.001964,3,Yes,PFCA,Fluoroalkyl chain,Fluorochemical / Surfactant,77501-60-1
+fluoroglycofen-ethyl,CCOC(=O)COC(=O)C1=C(C=CC(=C1)OC2=C(C=C(C=C2)C(F)(F)F)Cl)[N+](=O)[O-],447.0332641,3,Yes,Other PFAS,Fluoroalkyl chain,Fluorochemical / Surfactant,77501-90-7
+fluoxastrobin,CO/N=C(\C1=CC=CC=C1OC2=C(C(=NC=N2)OC3=CC=CC=C3Cl)F)/C4=NOCCO4,458.0793255,1,No,Not PFAS,Other,Unknown,361377-29-9
+flupropanate,C(C(C(=O)O)(F)F)(F)F,145.9990922,4,Yes,Other PFAS,Other,Unknown,756-09-2
+flupyradifurone,C1C(=CC(=O)O1)N(CC2=CN=C(C=C2)Cl)CC(F)F,288.0477117,2,Yes,PFCA,Other,Unknown,951659-40-8
+flupyrsulfuron-methyl,COC1=CC(=NC(=N1)NC(=O)NS(=O)(=O)C2=C(C=CC(=N2)C(F)(F)F)C(=O)OC)OC,465.0566034,3,Yes,PFCA,Fluorinated heterocycle,Unknown,144740-53-4
+fluquinconazole,C1=CC2=C(C=C1F)C(=O)N(C(=N2)N3C=NC=N3)C4=C(C=C(C=C4)Cl)Cl,375.0089935,1,No,Not PFAS,Other,Unknown,136426-54-5
+fluralaner,CC1=C(C=CC(=C1)C2=NOC(C2)(C3=CC(=CC(=C3)Cl)Cl)C(F)(F)F)C(=O)NCC(=O)NCC(F)(F)F,555.0551161,6,Yes,Other PFAS,Fluoroalkyl chain,Unknown,864731-61-3
+fluridone,CN1C=C(C(=O)C(=C1)C2=CC(=CC=C2)C(F)(F)F)C3=CC=CC=C3,329.1027487,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,59756-60-4
+flurochloridone,C1C(C(C(=O)N1C2=CC=CC(=C2)C(F)(F)F)Cl)CCl,311.009154,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,61213-25-0
+fluroxypyr,C(C(=O)O)OC1=NC(=C(C(=C1Cl)N)Cl)F,253.9661256,1,No,Not PFAS,Other,Unknown,69377-81-7
+fluroxypyr-butometyl,CCCCOCC(C)OC(=O)COC1=NC(=C(C(=C1Cl)N)Cl)F,368.0705907,1,No,Not PFAS,Other,Unknown,154486-27-8
+fluroxypyr-meptyl,CCCCCCC(C)OC(=O)COC1=NC(=C(C(=C1Cl)N)Cl)F,366.0913261,1,No,Not PFAS,Other,Unknown,81406-37-3
+flurprimidol,CC(C)C(C1=CC=C(C=C1)OC(F)(F)F)(C2=CN=CN=C2)O,312.1085624,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,56425-91-3
+flurtamone,CNC1=C(C(=O)C(O1)C2=CC=CC=C2)C3=CC(=CC=C3)C(F)(F)F,333.0976633,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,96525-23-4
+flusilazole,C[Si](CN1C=NC=N1)(C2=CC=C(C=C2)F)C3=CC=C(C=C3)F,315.1003305,2,No,Not PFAS,Fluorinated heterocycle,Unknown,85509-19-9
+flusulfamide,C1=CC(=C(C=C1[N+](=O)[O-])Cl)NS(=O)(=O)C2=CC(=C(C=C2)Cl)C(F)(F)F,413.9455677,3,Yes,Sulfonamide,Fluoroalkyl chain,Unknown,106917-52-6
+fluthiacet-methyl,COC(=O)CSC1=C(C=C(C(=C1)N=C2N3CCCCN3C(=O)S2)F)Cl,403.0227392,1,No,Not PFAS,Other,Unknown,117337-19-6
+flutianil,COC1=CC=CC=C1N\2CCS/C2=C(/C#N)\SC3=C(C=CC(=C3)C(F)(F)F)F,426.0483679,4,Yes,Other PFAS,Fluorinated heterocycle,Unknown,958647-10-4
+flutolanil,CC(C)OC1=CC=CC(=C1)NC(=O)C2=CC=CC=C2C(F)(F)F,323.1133134,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,66332-96-5
+flutriafol,C1=CC=C(C(=C1)C(CN2C=NC=N2)(C3=CC=C(C=C3)F)O)F,301.1026685,2,No,Not PFAS,Other,Unknown,76674-21-0
+fluxametamide,CC1=C(C=CC(=C1)C2=NOC(C2)(C3=CC(=CC(=C3)Cl)Cl)C(F)(F)F)C(=O)NC=NOC,473.0520814,3,Yes,Sulfonamide,Fluoroalkyl chain,Unknown,928783-29-3
+fluxapyroxad,CN1C=C(C(=N1)C(F)F)C(=O)NC2=CC=CC=C2C3=CC(=C(C(=C3)F)F)F,381.0900531,5,Yes,Other PFAS,Fluorinated heterocycle,Unknown,907204-31-3
+fluxofenim,C1COC(O1)CON=C(C2=CC=C(C=C2)Cl)C(F)(F)F,309.0379556,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,88485-37-4
+fomesafen,CS(=O)(=O)NC(=O)C1=C(C=CC(=C1)OC2=C(C=C(C=C2)C(F)(F)F)Cl)[N+](=O)[O-],437.9900194,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,72178-02-0
+cyhalothrin,CC1(C(C1C(=O)OC(C#N)C2=CC(=CC=C2)OC3=CC=CC=C3)/C=C(/C(F)(F)F)\Cl)C,449.1005558,3,Yes,PFCA,Fluoroalkyl chain,Unknown,68085-85-8
+halauxifen,COC1=C(C=CC(=C1F)C2=NC(=C(C(=C2)N)Cl)C(=O)O)Cl,329.9974257,1,No,Not PFAS,Other,Unknown,943832-60-8
+halauxifen-methyl,COC1=C(C=CC(=C1F)C2=NC(=C(C(=C2)N)Cl)C(=O)OC)Cl,344.0130758,1,No,Not PFAS,Other,Unknown,943831-98-9
+haloxyfop-etotyl,CCOCCOC(=O)C(C)OC1=CC=C(C=C1)OC2=C(C=C(C=N2)C(F)(F)F)Cl,433.090385,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,87237-48-7
+haloxyfop-methyl,CC(C(=O)OC)OC1=CC=C(C=C1)OC2=C(C=C(C=N2)C(F)(F)F)Cl,375.0485202,3,Yes,PFCA,Fluoroalkyl chain,Unknown,69806-40-2
+haloxyfop-P,C[C@H](C(=O)O)OC1=CC=C(C=C1)OC2=C(C=C(C=N2)C(F)(F)F)Cl,361.0328702,3,Yes,PFCA,Fluoroalkyl chain,Unknown,95977-29-0
+oxyfluorfen,CCOC1=C(C=CC(=C1)OC2=C(C=C(C=C2)C(F)(F)F)Cl)[N+](=O)[O-],361.0328702,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,42874-03-3
+heptafluthrin,CC1(C(C1C(=O)OCC2=C(C(=C(C(=C2F)F)COC)F)F)/C=C\C(F)(F)F)C,414.1065919,7,Yes,PFCA,Fluoroalkyl chain,Unknown,1130296-65-9
+hexaflumuron,C1=CC(=C(C(=C1)F)C(=O)NC(=O)NC2=CC(=C(C(=C2)Cl)OC(C(F)F)(F)F)Cl)F,459.9816168,6,Yes,Other PFAS,Other,Pesticide,86479-06-3
+hydramethylnon,CC1(CN=C(NC1)NN=C(/C=C/C2=CC=C(C=C2)C(F)(F)F)/C=C/C3=CC=C(C=C3)C(F)(F)F)C,494.1905161,6,Yes,Other PFAS,Fluoroalkyl chain,Unknown,67485-29-4
+indaziflam,C[C@H]1CC2=C([C@@H]1NC3=NC(=NC(=N3)N)C(C)F)C=C(C=C2)C,301.1702739,1,No,Not PFAS,Other,Unknown,950782-86-2
+indoxacarb,COC(=O)[C@]12CC3=C(C1=NN(CO2)C(=O)N(C4=CC=C(C=C4)OC(F)(F)F)C(=O)OC)C=CC(=C3)Cl,527.0707122,3,Yes,PFCA,Fluoroalkyl chain,Unknown,173584-44-6
+ipfencarbazone,CC(C)N(C1=C(C=C(C=C1)F)F)C(=O)N2C=NN(C2=O)C3=C(C=C(C=C3)Cl)Cl,426.0461875,2,No,Not PFAS,Other,Unknown,212201-70-2
+isopyrazam,CC(C)C1C2CCC1C3=C2C=CC=C3NC(=O)C4=CN(N=C4C(F)F)C,359.1809188,2,Yes,Other PFAS,Other,Unknown,881685-58-1
+isoxaflutole,CS(=O)(=O)C1=C(C=CC(=C1)C(F)(F)F)C(=O)C2=C(ON=C2)C3CC3,359.0439135,3,Yes,Other PFAS,Fluoroalkyl chain,Pesticide,141112-29-0
+lactofen,CCOC(=O)C(C)OC(=O)C1=C(C=CC(=C1)OC2=C(C=C(C=C2)C(F)(F)F)Cl)[N+](=O)[O-],461.0489142,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,77501-63-4
+lufenuron,C1=CC(=C(C(=C1)F)C(=O)NC(=O)NC2=CC(=C(C=C2Cl)OC(C(C(F)(F)F)F)(F)F)Cl)F,509.9784232,8,Yes,Other PFAS,Fluoroalkyl chain,Unknown,103055-07-8
+mefluidide,CC1=CC(=C(C=C1NC(=O)C)NS(=O)(=O)C(F)(F)F)C,310.0598979,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,53780-34-0
+mefluidide-diolamine,CC1=CC(=C(C=C1NC(=O)C)NS(=O)(=O)C(F)(F)F)C.C(CO)NCCO,415.1388765,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,53780-36-2
+meperfluthrin,CC1([C@@H]([C@H]1C(=O)OCC2=C(C(=C(C(=C2F)F)COC)F)F)C=C(Cl)Cl)C,414.0412626,4,No,Not PFAS,Other,Unknown,915288-13-0
+metaflumizone,C1=CC(=CC(=C1)C(F)(F)F)/C(=N/NC(=O)NC2=CC=C(C=C2)OC(F)(F)F)/CC3=CC=C(C=C3)C#N,506.1177451,6,Yes,Other PFAS,Fluoroalkyl chain,Pesticide,139968-49-3
+metamifop,C[C@H](C(=O)N(C)C1=CC=CC=C1F)OC2=CC=C(C=C2)OC3=NC4=C(O3)C=C(C=C4)Cl,440.093913,1,No,Not PFAS,Other,Unknown,256412-89-2
+methiozolin,CC1=C(SC=C1)C2=NOC(C2)(C)COCC3=C(C=CC=C3F)F,337.0948062,2,No,Not PFAS,Other,Unknown,403640-27-7
+metofluthrin,C/C=C/C1C(C1(C)C)C(=O)OCC2=C(C(=C(C(=C2F)F)COC)F)F,360.1348574,4,No,Not PFAS,Other,Unknown,240494-70-6
+momfluorothrin,C/C(=C/C1C(C1(C)C)C(=O)OCC2=C(C(=C(C(=C2F)F)COC)F)F)/C#N,385.1301063,4,No,Not PFAS,Other,Fluorochemical / Surfactant,1462343-40-3
+norflurazon,CNC1=C(C(=O)N(N=C1)C2=CC=CC(=C2)C(F)(F)F)Cl,303.0386242,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,27314-13-2
+novaluron,C1=CC(=C(C(=C1)F)C(=O)NC(=O)NC2=CC(=C(C=C2)OC(C(OC(F)(F)F)F)(F)F)Cl)F,492.0123102,8,Yes,Other PFAS,Fluoroalkyl chain,Unknown,116714-46-6
+noviflumuron,C1=CC(=C(C(=C1)F)C(=O)NC(=O)NC2=CC(=C(C(=C2F)Cl)OC(C(C(F)(F)F)F)(F)F)Cl)F,527.9690014,9,Yes,Other PFAS,Fluoroalkyl chain,Pesticide,121451-02-3
+oxathiapiprolin,CC1=CC(=NN1CC(=O)N2CCC(CC2)C3=NC(=CS3)C4=NOC(C4)C5=C(C=CC=C5F)F)C(F)(F)F,539.141437,5,Yes,Other PFAS,Fluorinated heterocycle,Unknown,1003318-67-9
+penflufen,CC1=NN(C(=C1C(=O)NC2=CC=CC=C2C(C)CC(C)C)F)C,317.1903406,1,No,Not PFAS,Other,Unknown,494793-67-8
+penoxsulam,COC1=CN=C(N2C1=NC(=N2)NS(=O)(=O)C3=C(C=CC=C3OCC(F)F)C(F)(F)F)OC,483.0635806,5,Yes,Other PFAS,CF3 group structure,Unknown,219714-96-2
+penthiopyrad,CC(C)CC(C)C1=C(C=CS1)NC(=O)C2=CN(N=C2C(F)(F)F)C,359.1279179,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,183675-82-3
+pentoxazone,CC(=C1C(=O)N(C(=O)O1)C2=CC(=C(C=C2F)Cl)OC3CCCC3)C,353.0830139,1,No,Not PFAS,Other,Unknown,110956-75-7
+picolinafen,C1=CC(=CC(=C1)OC2=CC=CC(=N2)C(=O)NC3=CC=C(C=C3)F)C(F)(F)F,376.0834905,4,Yes,Other PFAS,Fluoroalkyl chain,Unknown,137641-05-5
+picoxystrobin,CO/C=C(\C1=CC=CC=C1COC2=CC=CC(=N2)C(F)(F)F)/C(=O)OC,367.1031427,3,Yes,PFCA,Fluoroalkyl chain,Unknown,117428-22-5
+primisulfuron,C1=CC=C(C(=C1)C(=O)O)S(=O)(=O)NC(=O)NC2=NC(=CC(=N2)OC(F)F)OC(F)F,454.0206325,4,Yes,PFCA,Sulfonate structure,Unknown,113036-87-6
+primisulfuron-methyl,COC(=O)C1=CC=CC=C1S(=O)(=O)NC(=O)NC2=NC(=CC(=N2)OC(F)F)OC(F)F,468.0362826,4,Yes,Other PFAS,Sulfonate structure,Unknown,86209-51-0
+prodiamine,CCCN(CCC)C1=C(C=C(C(=C1[N+](=O)[O-])N)C(F)(F)F)[N+](=O)[O-],350.1201897,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,29091-21-2
+prosulfuron,CC1=NC(=NC(=N1)OC)NC(=O)NS(=O)(=O)C2=CC=CC=C2CCC(F)(F)F,419.0875097,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,94125-34-5
+pydiflumetofen,CC(CC1=C(C=C(C=C1Cl)Cl)Cl)N(C(=O)C2=CN(N=C2C(F)F)C)OC,425.0276162,2,Yes,Other PFAS,Other,Pesticide,1228284-64-7
+pyflubumide,CC1=C(C(=NN1C)C)C(=O)N(C2=CC(=C(C=C2)C(C(F)(F)F)(C(F)(F)F)OC)CC(C)C)C(=O)C(C)C,535.2269612,6,Yes,Other PFAS,Fluorinated heterocycle,Unknown,926914-55-8
+pyraflufen-ethyl,CCOC(=O)COC1=C(C=C(C(=C1)C2=NN(C(=C2Cl)OC(F)F)C)F)Cl,412.0204469,3,Yes,Other PFAS,Other,Unknown,129630-19-9
+pyrasulfotole,CC1=C(C(=O)N(N1)C)C(=O)C2=C(C=C(C=C2)C(F)(F)F)S(=O)(=O)C,362.0548126,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,365400-11-9
+pyraziflumid,C1=CC=C(C(=C1)C2=CC(=C(C=C2)F)F)NC(=O)C3=NC=CN=C3C(F)(F)F,379.074403,5,Yes,Other PFAS,Fluoroalkyl chain,Pesticide,942515-63-1
+pyridalyl,C1=CC(=NC=C1C(F)(F)F)OCCCOC2=C(C=C(C=C2Cl)OCC=C(Cl)Cl)Cl,488.9679887,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,179101-81-6
+pyrifluquinazon,CC(=O)N1C2=C(CN(C1=O)NCC3=CN=CC=C3)C=C(C=C2)C(C(F)(F)F)(C(F)(F)F)F,464.1083233,7,Yes,Other PFAS,Fluorinated heterocycle,Unknown,337458-27-2
+pyriminostrobin,CO/C=C(\C1=CC=CC=C1COC2=NC(=NC(=C2)C(F)(F)F)NC3=C(C=C(C=C3)Cl)Cl)/C(=O)OC,527.0626461,3,Yes,PFCA,Fluoroalkyl chain,Unknown,1257598-43-8
+pyrimisulfan,COCC1=C(C(=CC=C1)C(C2=NC(=CC(=N2)OC)OC)O)NS(=O)(=O)C(F)F,419.0962628,2,Yes,Other PFAS,Sulfonate structure,Unknown,221205-90-9
+pyroxasulfone,CC1(CC(=NO1)S(=O)(=O)CC2=C(N(N=C2C(F)(F)F)C)OC(F)F)C,391.062518,5,Yes,Other PFAS,CF3 group structure,Unknown,447399-55-5
+pyroxsulam,COC1=CC(=NC2=NC(=NN12)NS(=O)(=O)C3=C(C=CN=C3OC)C(F)(F)F)OC,434.0620232,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,422556-08-9
+quinoxyfen,C1=CC(=CC=C1OC2=C3C(=CC(=CC3=NC=C2)Cl)Cl)F,306.9966975,1,No,Not PFAS,Other,Unknown,124495-18-7
+saflufenacil,CC(C)N(C)S(=O)(=O)NC(=O)C1=CC(=C(C=C1Cl)F)N2C(=O)C=C(N(C2=O)C)C(F)(F)F,500.0544312,4,Yes,Other PFAS,Fluoroalkyl chain,Unknown,372137-35-4
+sedaxane,CN1C=C(C(=N1)C(F)F)C(=O)NC2=CC=CC=C2C3CC3C4CC4,331.1496187,2,Yes,Other PFAS,Fluorinated heterocycle,Unknown,874967-67-6
+silafluofen,CCOC1=CC=C(C=C1)[Si](C)(C)CCCC2=CC(=C(C=C2)F)OC3=CC=CC=C3,408.1920849,1,No,Not PFAS,Other,Unknown,105024-66-6
+simeconazole,C[Si](C)(C)CC(CN1C=NC=N1)(C2=CC=C(C=C2)F)O,293.135967,1,No,Not PFAS,Fluorinated heterocycle,Unknown,149508-90-7
+sodium fluoroacetate,C(C(=O)[O-])F.[Na+],99.9936518,1,No,Not PFAS,Other,Fluorochemical / Surfactant,62-74-8
+sulfentrazone,CC1=NN(C(=O)N1C(F)F)C2=C(C=C(C(=C2)NS(=O)(=O)C)Cl)Cl,385.981873,2,Yes,Other PFAS,Fluorinated heterocycle,Unknown,122836-35-5
+sulfluramid,CCNS(=O)(=O)C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,526.9847792,17,Yes,Other PFAS,Fluoroalkyl chain,Unknown,4151-50-2
+sulfoxaflor,CC(C1=CN=C(C=C1)C(F)(F)F)S(=NC#N)(=O)C,277.0496676,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,946578-00-3
+tau-fluvalinate,CC(C)[C@H](C(=O)OC(C#N)C1=CC(=CC=C1)OC2=CC=CC=C2)NC3=C(C=C(C=C3)C(F)(F)F)Cl,502.1271049,3,Yes,PFCA,Fluoroalkyl chain,Unknown,102851-06-9
+tebufloquin,CC1=C(N=C2C(=CC(=CC2=C1OC(=O)C)C(C)(C)C)F)C,289.1478071,1,No,Not PFAS,Other,Unknown,376645-78-2
+teflubenzuron,C1=CC(=C(C(=C1)F)C(=O)NC(=O)NC2=CC(=C(C(=C2F)Cl)F)Cl)F,379.9742457,4,No,Not PFAS,Other,Unknown,83121-18-0
+tefluthrin,CC1=C(C(=C(C(=C1F)F)COC(=O)[C@H]2[C@H](C2(C)C)/C=C(/C(F)(F)F)\Cl)F)F,418.0570549,7,Yes,Other PFAS,Fluoroalkyl chain,Unknown,CID:11534837
+tembotrione,CS(=O)(=O)C1=C(C(=C(C=C1)C(=O)C2C(=O)CCCC2=O)Cl)COCC(F)(F)F,440.0308216,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,335104-84-2
+tetraconazole,C1=CC(=C(C=C1Cl)Cl)C(CN2C=NC=N2)COC(C(F)F)(F)F,371.0215302,4,Yes,Other PFAS,Other,Unknown,112281-77-3
+tetramethylfluthrin,CC1(C(C1(C)C)C(=O)OCC2=C(C(=C(C(=C2F)F)COC)F)F)C,348.1348574,4,No,Not PFAS,Other,Unknown,84937-88-2
+tetraniliprole,CC1=CC(=CC(=C1NC(=O)C2=CC(=NN2C3=C(C=CC=N3)Cl)CN4N=C(N=N4)C(F)(F)F)C(=O)NC)C#N,544.1098321,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,810-161-6
+thiazopyr,CC(C)CC1=C(C(=NC(=C1C(=O)OC)C(F)F)C(F)(F)F)C2=NCCS2,396.0930899,5,Yes,PFCA,CF3 group structure,Unknown,117718-60-2
+thifluzamide,CC1=NC(=C(S1)C(=O)NC2=C(C=C(C=C2Br)OC(F)(F)F)Br)C(F)(F)F,525.842092,6,Yes,Sulfonamide,Fluoroalkyl chain,Unknown,130000-40-7
+tiafenacil,CC(C(=O)NCCC(=O)OC)SC1=C(C=C(C(=C1)N2C(=O)C=C(N(C2=O)C)C(F)(F)F)F)Cl,511.0591822,4,Yes,PFCA,Fluoroalkyl chain,Unknown,1220411-29-9
+tolprocarb,CC1=CC=C(C=C1)C(=O)NC[C@H](C(C)C)NC(=O)OCC(F)(F)F,346.1504272,3,Yes,PFCA,Fluoroalkyl chain,Unknown,911499-62-2
+tolylfluanid,CC1=CC=C(C=C1)N(SC(F)(Cl)Cl)S(=O)(=O)N(C)C,345.9779532,1,No,Not PFAS,Fluoroalkyl chain,Unknown,731-27-1
+transfluthrin,CC1([C@@H]([C@H]1C(=O)OCC2=C(C(=CC(=C2F)F)F)F)C=C(Cl)Cl)C,370.0150479,4,No,Not PFAS,Other,Unknown,118712-89-3
+triafamone,CN(C1=C(C=CC=C1F)C(=O)C2=NC(=NC(=N2)OC)OC)S(=O)(=O)C(F)F,406.0558752,3,Yes,Other PFAS,Sulfonate structure,Unknown,874195-61-6
+trifloxystrobin,C/C(=N\OCC1=CC=CC=C1/C(=N\OC)/C(=O)OC)/C2=CC(=CC=C2)C(F)(F)F,408.1296917,3,Yes,PFCA,Fluoroalkyl chain,Unknown,141517-21-7
+trifloxysulfuron,COC1=CC(=NC(=N1)NC(=O)NS(=O)(=O)C2=C(C=CC=N2)OCC(F)(F)F)OC,437.0616888,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,145099-21-4
+trifludimoxazin,CN1C(=O)N(C(=O)N(C1=S)C)C2=CC3=C(C=C2F)OC(C(=O)N3CC#C)(F)F,412.0453105,3,Yes,Other PFAS,Fluorinated heterocycle,Unknown,1258836-72-4
+triflumezopyrim,C1=CC2=[N+](C(=C(C(=O)N2C=C1)C3=CC(=CC=C3)C(F)(F)F)[O-])CC4=CN=CN=C4,398.0990603,3,Yes,Other PFAS,Fluoroalkyl chain,Pesticide,1263133-33-0
+triflumizole,CCCOCC(=NC1=C(C=C(C=C1)Cl)C(F)(F)F)N2C=CN=C2,345.0855744,3,Yes,Other PFAS,Fluoroalkyl chain,Pesticide,68694-11-1
+triflumuron,C1=CC=C(C(=C1)C(=O)NC(=O)NC2=CC=C(C=C2)OC(F)(F)F)Cl,358.0332045,3,Yes,Other PFAS,Fluoroalkyl chain,Pesticide,64628-44-0
+triflusulfuron,CC1=C(C(=CC=C1)C(=O)O)S(=O)(=O)NC(=O)NC2=NC(=NC(=N2)OCC(F)(F)F)N(C)C,478.0882379,3,Yes,PFCA,Fluoroalkyl chain,Unknown,135990-29-3
+triflusulfuron-methyl,CC1=C(C(=CC=C1)C(=O)OC)S(=O)(=O)NC(=O)NC2=NC(=NC(=N2)OCC(F)(F)F)N(C)C,492.103888,3,Yes,PFCA,Fluoroalkyl chain,Unknown,126535-15-7
+tritosulfuron,COC1=NC(=NC(=N1)NC(=O)NS(=O)(=O)C2=CC=CC=C2C(F)(F)F)C(F)(F)F,445.0279441,6,Yes,Other PFAS,Fluorinated heterocycle,Unknown,142469-14-5
+Trifluoromethylphenol,C1=CC=C(C(=C1)C(F)(F)F)O,162.0292494,3,Yes,Other PFAS,Fluoroalkyl chain,Fluorochemical / Surfactant,444-30-4
+Trifluoromethylbenzene-diol,OC1=CC=C(C=C1O)C(F)(F)F,178.0241641,3,Yes,Other PFAS,Fluoroalkyl chain,Fluorochemical / Surfactant,37519-09-8
+Chloro-(trifluoromethyl)phenol,OC1=CC(=CC=C1Cl)C(F)(F)F,195.9902771,3,Yes,Other PFAS,Fluoroalkyl chain,Fluorochemical / Surfactant,40889-91-6
+Nitro-(trifluoromethyl)phenol,OC1=CC(=CC=C1[N+](=O)[O-])C(F)(F)F,207.0143276,3,Yes,Other PFAS,Fluoroalkyl chain,Fluorochemical / Surfactant,402-17-5
+Trifluoromethylaniline,C1=CC=C(C=C1)NC(F)(F)F,161.0452339,3,Yes,Other PFAS,Fluoroalkyl chain,Industrial Intermediate,2070-47-5
+N-methyl-(trifluoromethyl)aniline,CNc1ccc(cc1)C(F)(F)F,175.0608839,3,Yes,Other PFAS,Fluorinated aromatic,Industrial Intermediate,22864-65-9
+Trifluoromethylbenzoic acid,C1=CC=C(C(=C1)C(=O)O)C(F)(F)F,190.0241641,3,Yes,PFCA,Fluoroalkyl chain,Industrial Intermediate,433-97-6
+3-Chloro-5-(trifluoromethyl)pyridine-2-carboxylic acid,C1=C(C=NC(=C1Cl)C(=O)O)C(F)(F)F,224.9804407,3,Yes,PFCA,Fluoroalkyl chain,Industrial Intermediate,692-407-0
+5-Trifluoromethylpyridone,C1=CC(=C(C(=O)N1)C(F)(F)F),163.0244984,3,Yes,Other PFAS,Fluorinated heterocycle,Fluorochemical / Surfactant,671-273-7
+1-(6-(Trifluoromethyl)pyridin-3-yl)ethanol,CC(C1=CN=C(C=C1)C(F)(F)F)O,191.0557985,3,Yes,Other PFAS,Fluoroalkyl chain,Fluorochemical / Surfactant,1228631-54-6
+2-Amino-3-chloro-5-trifluoromethylpyridine,NC1=NC=C(C=C1Cl)C(F)(F)F,196.0015105,3,Yes,Other PFAS,Fluoroalkyl chain,Fluorochemical / Surfactant,401-670-0
+"2,6-Dichloro-4-(trifluoromethyl)aniline",C1=C(C=C(C(=C1Cl)N)Cl)C(F)(F)F,228.9672891,3,Yes,Other PFAS,Fluoroalkyl chain,Industrial Intermediate,24279-39-8
+Flufenacet OXA,CC(C)N(C1=CC=C(C=C1)F)C(=O)C(=O)O,225.0801215,1,No,Not PFAS,Other,Unknown,201668-31-7
+Flufenacet ESA,CC(C)N(C1=CC=C(C=C1)F)C(=O)CS(=O)(=O)O,275.0627571,1,No,Not PFAS,Sulfonate structure,Unknown,201668-32-8
+Thiadone,C1(=NNC(=O)S1)C(F)(F)F,169.9761683,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,84352-75-0
+Isoxaflutole diketonitrile,CC1=CC(=C(C=C1C(=O)C=C(C#N)C2CC2)S(=O)(=O)C)C(F)(F)F,357.064649,3,Yes,Other PFAS,Fluoroalkyl chain,Pesticide,Unknown
+Isoxaflutole benzoic acid derivative,CCS(=O)(=O)C1=CC(C(F)(F)F)=CC=C1C(=O)O,282.0173644,3,Yes,PFCA,Fluoroalkyl chain,Pesticide,CID:140230456
+PFBA,C(=O)(C(C(C(F)(F)F)(F)F)(F)F)O,213.9864768,7,Yes,Other PFAS,Fluoroalkyl chain,Unknown,375-22-4
+PFPeA,C(=O)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)O,263.9832833,9,Yes,Other PFAS,Fluoroalkyl chain,Unknown,2706-90-3
+PFHxA,C(=O)(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)O,313.9800897,11,Yes,Other PFAS,Fluoroalkyl chain,Unknown,307-24-4
+PFHpA,C(=O)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O,363.9768961,13,Yes,Other PFAS,Fluoroalkyl chain,Unknown,375-85-9
+PFOA,C(=O)(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O,413.9737026,15,Yes,Other PFAS,Fluoroalkyl chain,Fluorochemical / Surfactant,335-67-1
+PFNA,C(=O)(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O,463.970509,17,Yes,Other PFAS,Fluoroalkyl chain,Unknown,375-95-1
+PFDA,C(=O)(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O,513.9673155,19,Yes,Other PFAS,Fluoroalkyl chain,Unknown,335-76-2
+PFUdA,C(=O)(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O,563.9641219,21,Yes,Other PFAS,Fluoroalkyl chain,Unknown,218-165-4
+PFDoA,C(=O)(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O,613.9609283,23,Yes,Other PFAS,Fluoroalkyl chain,Unknown,307-55-1
+PFTrDA,C(=O)(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O,663.9577348,25,Yes,Other PFAS,Fluoroalkyl chain,Unknown,276-745-2
+PFTeDA,C(=O)(C(C(C(C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O,713.9545412,27,Yes,Other PFAS,Fluoroalkyl chain,Unknown,376-06-7
+L-PFBS,C(C(C(F)(F)S(=O)(=O)O)(F)F)(C(F)(F)F)(F)F,299.9502689,9,Yes,PFSA,Fluoroalkyl chain,Unknown,375-73-5
+L-PFPeS,C(C(C(F)(F)F)(F)F)(C(C(F)(F)S(=O)(=O)O)(F)F)(F)F,349.9470753,11,Yes,PFSA,Fluoroalkyl chain,Unknown,220-301-2
+br-PFHxS,C(C(C(C(F)(F)S(=O)(=O)O)(F)F)(F)F)(C(C(F)(F)F)(F)F)(F)F,399.9438818,13,Yes,PFSA,Fluoroalkyl chain,Unknown,355-46-4
+L-PFHpS,C(C(C(C(F)(F)F)(F)F)(F)F)(C(C(C(F)(F)S(=O)(=O)O)(F)F)(F)F)(F)F,449.9406882,15,Yes,PFSA,Fluoroalkyl chain,Unknown,206-800-8
+br-PFOS,C(C(C(C(C(F)(F)S(=O)(=O)O)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)(F)F,499.9374946,17,Yes,PFSA,Fluoroalkyl chain,Fluorochemical / Surfactant,1763-23-1
+L-PFNS,C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F,549.9343011,19,Yes,PFSA,Fluoroalkyl chain,Unknown,474511-07-4
+L-PFDS,C(C(C(C(C(C(F)(F)S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F,599.9311075,21,Yes,PFSA,Fluoroalkyl chain,Unknown,335-77-3
+FBSA,C(C(C(F)(F)S(=O)(=O)N)(F)F)(C(F)(F)F)(F)F,298.9662533,9,Yes,Other PFAS,Fluoroalkyl chain,Unknown,816-392-9
+FHxSA,C(C(C(C(F)(F)S(=O)(=O)N)(F)F)(F)F)(C(C(F)(F)F)(F)F)(F)F,398.9598662,13,Yes,Other PFAS,Fluoroalkyl chain,Unknown,41997-13-1
+FOSA,C(C(C(C(C(F)(F)S(=O)(=O)N)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)(F)F,498.953479,17,Yes,Other PFAS,Fluoroalkyl chain,Unknown,754-91-6
+MeFOSAA,CN(CC(=O)O)S(=O)(=O)C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,570.9746084,17,Yes,PFCA,Fluoroalkyl chain,Unknown,2355-31-9
+EtFOSAA,CCN(CC(=O)O)S(=O)(=O)C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,584.9902585,17,Yes,PFCA,Fluoroalkyl chain,Unknown,2991-50-6
+4:2 FTSA,C(CS(=O)(=O)O)C(C(C(C(F)(F)F)(F)F)(F)F)(F)F,327.981569,9,Yes,PFSA,Fluoroalkyl chain,Unknown,816-391-3
+6:2 FTSA,C(CS(=O)(=O)O)C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,427.9751819,13,Yes,PFSA,Fluoroalkyl chain,Unknown,248-580-6
+8:2 FTSA,C(CS(=O)(=O)O)C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,527.9687948,17,Yes,PFSA,Fluoroalkyl chain,Unknown,39108-34-4
+3:3 FTCA,C(CC(C(C(F)(F)F)(F)F)(F)F)C(=O)O,242.0177769,7,Yes,PFCA,Fluoroalkyl chain,Unknown,356-02-5
+5:3 FTCA,C(CC(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)C(=O)O,342.0113898,11,Yes,PFCA,Fluoroalkyl chain,Unknown,811-572-3
+7:3 FTCA,C(CC(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)C(=O)O,442.0050027,15,Yes,PFCA,Fluoroalkyl chain,Unknown,812-70-4
+NaDONA,C(C(C(=O)[O-])(F)F)(OC(C(C(OC(F)(F)F)(F)F)(F)F)(F)F)F.[Na+],399.9580914,12,Yes,Ether acid,Fluoroalkyl chain,Unknown,2250081-67-3
+6:2 Cl-PFESA,C(C(C(C(F)(F)Cl)(F)F)(F)F)(C(C(OC(C(F)(F)S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F,531.9028587,16,Yes,PFSA,Fluoroalkyl chain,Unknown,756426-58-1
+8:2 Cl-PFESA,C(C(C(C(C(F)(F)Cl)(F)F)(F)F)(F)F)(C(C(C(OC(C(F)(F)S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F,631.8964716,20,Yes,PFSA,Fluoroalkyl chain,Unknown,763051-92-9
+6:2 diPAP,C(COP(=O)(O)OCCC(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,789.9823291,26,Yes,Other PFAS,Fluoroalkyl chain,Unknown,975-653-6
+8:2 diPAP,C(COP(=O)(O)OCCC(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,989.9695549,34,Yes,Other PFAS,Fluoroalkyl chain,Unknown,678-41-1
+diSAmPAP,CCN(CCOP(=O)(O)OCCN(CC)S(=O)(=O)C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)S(=O)(=O)C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,1203.977754,34,Yes,Other PFAS,Fluoroalkyl chain,Unknown,2965-52-8
+6:6 PFPi,C(C(C(C(F)(F)P(=O)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O)(F)F)(F)F)(C(C(F)(F)F)(F)F)(F)F,701.9298996,26,Yes,Other PFAS,Fluoroalkyl chain,Unknown,40143-77-9
+6:8 PFPi,C(C(C(C(C(F)(F)P(=O)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)(F)F,801.9235125,30,Yes,Other PFAS,Fluoroalkyl chain,Unknown,610800-34-5
+8:8 PFPi,C(C(C(C(C(F)(F)P(=O)(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)(F)F,901.9171254,34,Yes,Other PFAS,Fluoroalkyl chain,Unknown,40143-79-1
+GenX,C(=O)(C(C(F)(F)F)(OC(C(C(F)(F)F)(F)F)(F)F)F)O,329.9750043,11,Yes,Ether acid,Fluoroalkyl chain,Fluorochemical / Surfactant,236-236-8
+"1H,1H,2H,2H-Perfluorohexan-1-ol",C(CO)C(C(C(C(F)(F)F)(F)F)(F)F)(F)F,264.0196688,9,Yes,Other PFAS,Fluoroalkyl chain,Fluorochemical / Surfactant,2043-47-2
+"1H,1H,2H,2H-Perfluorooctan-1-ol",C(CO)C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,364.0132816,13,Yes,Other PFAS,Fluoroalkyl chain,Fluorochemical / Surfactant,647-42-7
+"1H,1H,2H,2H-Perfluorodecan-1-ol",C(CO)C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,464.0068945,17,Yes,Other PFAS,Fluoroalkyl chain,Fluorochemical / Surfactant,678-39-7
+"1H,1H,2H,2H-Perfluoro-1-dodecanol",C(CO)C(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,564.0005074,21,Yes,Other PFAS,Fluoroalkyl chain,Fluorochemical / Surfactant,865-86-1
+"1H,1H,2H,2H-Perfluorohexyl acrylate",C=CC(=O)OCCC(C(C(C(F)(F)F)(F)F)(F)F)(F)F,318.0302334,9,Yes,PFCA,Fluoroalkyl chain,Fluorochemical / Surfactant,808-163-7
+"1H,1H,2H,2H-Perfluorooctyl acrylate",C=CC(=O)OCCC(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,418.0238463,13,Yes,PFCA,Fluoroalkyl chain,Fluorochemical / Surfactant,17527-29-6
+"1H,1H,2H,2H-Heptadecafluorodecyl acrylate",C=CC(=O)OCCC(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,518.0174592,17,Yes,PFCA,Fluoroalkyl chain,Fluorochemical / Surfactant,27905-45-9
+2-(Perfluorodecyl)ethyl acrylate,C=CC(=O)OCCC(C(C(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,618.0110721,21,Yes,PFCA,Fluoroalkyl chain,Fluorochemical / Surfactant,17741-60-5
+"1H,1H,2H,2H-Perfluorohexyl methacrylate",CC(=C)C(=O)OCCC(C(C(C(F)(F)F)(F)F)(F)F)(F)F,332.0458835,9,Yes,PFCA,Fluoroalkyl chain,Fluorochemical / Surfactant,217-287-5
+"1H,1H,2H,2H-Perfluorooctyl methacrylate",CC(=C)C(=O)OCCC(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,432.0394964,13,Yes,PFCA,Fluoroalkyl chain,Fluorochemical / Surfactant,218-407-9
+"1H,1H,2H,2H-Perfluorodecyl methacrylate",CC(=C)C(=O)OCCC(C(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,532.0331093,17,Yes,PFCA,Fluoroalkyl chain,Fluorochemical / Surfactant,217-877-2
+Fluoxetine,CNCCC(C1=CC=CC=C1)OC2=CC=C(C=C2)C(F)(F)F,309.1340489,3,Yes,Other PFAS,Fluoroalkyl chain,Pharmaceutical,54910-89-3
+Norfluoxetine,C1=CC=C(C=C1)C(CCN)OC2=CC=C(C=C2)C(F)(F)F,295.1183988,3,Yes,Other PFAS,Fluoroalkyl chain,Pharmaceutical,83891-03-6
+Flufenamic acid,C1=CC=C(C(=C1)C(=O)O)NC2=CC=CC(=C2)C(F)(F)F,281.0663632,3,Yes,PFCA,Fluoroalkyl chain,Industrial Intermediate,530-78-9
+Teriflunomide,C/C(=C(\C#N)/C(=O)NC1=CC=C(C=C1)C(F)(F)F)/O,270.0616122,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,163451-81-8
+Fipronil,C1=C(C=C(C(=C1Cl)N2C(=C(C(=N2)C#N)S(=O)C(F)(F)F)N)Cl)C(F)(F)F,435.9387064,6,Yes,Other PFAS,Fluoroalkyl chain,Unknown,120068-37-3
+Trifluralin,CCCN(CCC)C1=C(C=C(C=C1[N+](=O)[O-])C(F)(F)F)[N+](=O)[O-],335.1092907,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,1582-09-8
+Flufenacet,CC(C)N(C1=CC=C(C=C1)F)C(=O)COC2=NN=C(S2)C(F)(F)F,363.0664605,4,Yes,Other PFAS,Fluoroalkyl chain,Unknown,142459-58-3
+Celecoxib,CC1=CC=C(C=C1)C2=CC(=NN2C3=CC=C(C=C3)S(=O)(=O)N)C(F)(F)F,381.0758823,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,169590-42-5
+Oxyfluorfen,CCOC1=C(C=CC(=C1)OC2=C(C=C(C=C2)C(F)(F)F)Cl)[N+](=O)[O-],361.0328702,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,42874-03-3
+Fomesafen,CS(=O)(=O)NC(=O)C1=C(C=CC(=C1)OC2=C(C=C(C=C2)C(F)(F)F)Cl)[N+](=O)[O-],437.9900194,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,72178-02-0
+Sitagliptin,C1CN2C(=NN=C2C(F)(F)F)CN1C(=O)C[C@@H](CC3=CC(=C(C=C3F)F)F)N,407.1180794,6,Yes,Other PFAS,Fluorinated heterocycle,Unknown,486460-32-6
+Diflufenican,C1=CC(=CC(=C1)OC2=C(C=CC=N2)C(=O)NC3=C(C=C(C=C3)F)F)C(F)(F)F,394.0740687,5,Yes,Other PFAS,Fluoroalkyl chain,Pesticide,83164-33-4
+Fluazinam,C1=C(C=NC(=C1Cl)NC2=C(C=C(C(=C2[N+](=O)[O-])Cl)C(F)(F)F)[N+](=O)[O-])C(F)(F)F,463.9513793,6,Yes,Other PFAS,Fluoroalkyl chain,Unknown,79622-59-6
+Isoxaflutole,CS(=O)(=O)C1=C(C=CC(=C1)C(F)(F)F)C(=O)C2=C(ON=C2)C3CC3,359.0439135,3,Yes,Other PFAS,Fluoroalkyl chain,Pesticide,141112-29-0
+Fluometuron,CN(C)C(=O)NC1=CC=CC(=C1)C(F)(F)F,232.0823476,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,2164-17-2
+Penoxsulam,COC1=CN=C(N2C1=NC(=N2)NS(=O)(=O)C3=C(C=CC=C3OCC(F)F)C(F)(F)F)OC,483.0635806,5,Yes,Other PFAS,Fluoroalkyl chain,Unknown,219714-96-2
+Fluazifop-P-butyl,CCCCOC(=O)[C@@H](C)OC1=CC=C(C=C1)OC2=NC=C(C=C2)C(F)(F)F,383.1344428,3,Yes,Other PFAS,Fluoroalkyl chain,Unknown,79241-46-6
