@@ -9,7 +9,7 @@ from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 # 1. 页面配置
 st.set_page_config(page_title="PFAS Database", layout="wide")
 
-# 2. 读取数据
+# 2. 加载数据（请确保 pfas_fina.csv 位于同一目录）
 df = pd.read_csv("pfas_fina.csv")
 df.insert(0, "ID", range(1, len(df) + 1))
 
@@ -35,21 +35,24 @@ if sel_psc:  fdf = fdf[fdf["PFAS_Structure_Class"].isin(sel_psc)]
 if sel_sc:   fdf = fdf[fdf["Structure_Class"].isin(sel_sc)]
 if sel_use:  fdf = fdf[fdf["Use_Category"].isin(sel_use)]
 
-# 6. AgGrid 表格
+# 6. 渲染 AgGrid 表格
 gb = GridOptionsBuilder.from_dataframe(fdf)
 gb.configure_selection("single", use_checkbox=False)
 gb.configure_column("SMILES", hide=True)
-grid_opts = gb.build()
-grid_resp = AgGrid(
+grid_options = gb.build()
+
+grid_response = AgGrid(
     fdf,
-    gridOptions=grid_opts,
+    gridOptions=grid_options,
     update_mode=GridUpdateMode.SELECTION_CHANGED,
-    height=500,
     fit_columns_on_grid_load=True,
     allow_unsafe_jscode=True
 )
 
-# 7. 列说明
+# 7. 强制触发一次 window.resize，让 AgGrid 立刻正确布局
+html("<script>window.dispatchEvent(new Event('resize'))</script>", height=0)
+
+# 8. 列说明
 with st.expander("ℹ️ Column Descriptions"):
     st.markdown("""
 - **Use Category**: e.g. Pharmaceutical, Pesticide…  
@@ -58,26 +61,28 @@ with st.expander("ℹ️ Column Descriptions"):
 - **PFAS Status**: Yes/No per OECD PFAS definition  
     """)
 
-# 8. PubChem CID 获取函数
+# 9. PubChem CID 获取函数
 def get_cid(smiles, name):
     try:
-        c = pcp.get_compounds(smiles, namespace="smiles")
-        if c: return c[0].cid
-    except: pass
+        comps = pcp.get_compounds(smiles, namespace="smiles")
+        if comps: return comps[0].cid
+    except:
+        pass
     try:
-        c = pcp.get_compounds(name, namespace="name")
-        if c: return c[0].cid
-    except: pass
+        comps = pcp.get_compounds(name, namespace="name")
+        if comps: return comps[0].cid
+    except:
+        pass
     return None
 
-# 9. 详情 & 2D/3D 预览
-sel = pd.DataFrame(grid_resp["selected_rows"])
-if not sel.empty:
-    row = sel.iloc[0]
+# 10. 详情 & 2D/3D 预览
+selected = pd.DataFrame(grid_response["selected_rows"])
+if not selected.empty:
+    row = selected.iloc[0]
     st.markdown("### 🧬 Selected Compound Info")
-    col1, col2 = st.columns([1,2])
+    col1, col2 = st.columns([1, 2])
 
-    # 确定 CID
+    # 确定 PubChem CID
     raw_id = str(row.get("CAS_or_Identifier", ""))
     if raw_id.startswith("CID:"):
         cid = int(raw_id.split("CID:")[1])
@@ -85,14 +90,14 @@ if not sel.empty:
         cid = get_cid(row["SMILES"], row["Name"])
 
     with col1:
-        # 2D 图
+        # 2D 结构图
         if cid:
             png_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/PNG"
-            st.image(png_url, caption="2D structure", use_column_width=True)
+            st.image(png_url, caption="2D Structure", use_column_width=True)
         else:
             st.warning("No CID → cannot fetch 2D image")
 
-        # 3D 模型
+        # 3D 交互式模型
         if cid:
             sdf_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/SDF?record_type=3d"
             r = requests.get(sdf_url)
@@ -121,11 +126,15 @@ if not sel.empty:
 else:
     st.info("Click a row to view details and structure.")
 
-# 10. 页脚
+# 11. 页脚
 st.markdown("""
 <div style="
-    position: fixed; bottom:10px; right:10px;
-    font-size:14px; color:#888; opacity:0.7;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: #888;
+    opacity: 0.7;
 ">
     Created by Josslyn
 </div>
