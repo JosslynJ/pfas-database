@@ -2,9 +2,10 @@ streamlit==1.29.0
 pandas
 rdkit-pypi
 pubchempy
-st-aggrid
+streamlit-aggrid   # 注意不是 st-aggrid
 py3Dmol
 streamlit-lottie
 requests
-rich<14
+rich<14            # 保持与 Streamlit 兼容
+
 
