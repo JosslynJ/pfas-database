@@ -1,5 +1,10 @@
-streamlit==1.29.0
-pandas>=1.5
-rdkit
-streamlit-aggrid
+streamlit
+pandas
+rdkit-pypi
+pubchempy
+st-aggrid
+py3Dmol
+streamlit-lottie
+requests
+
 
