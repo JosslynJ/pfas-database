@@ -9,7 +9,7 @@ from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 # 1. 页面配置
 st.set_page_config(page_title="PFAS Database", layout="wide")
 
-# 2. 加载数据（请确保 pfas_fina.csv 位于同一目录）
+# 2. 载入数据
 df = pd.read_csv("pfas_fina.csv")
 df.insert(0, "ID", range(1, len(df) + 1))
 
@@ -18,10 +18,10 @@ st.title("🔬 PFAS Chemical Database")
 
 # 4. 侧边栏筛选
 st.sidebar.header("🔍 Filter Options")
-opts_pfas = df["Is_PFAS"].dropna().unique()
-opts_psc  = df["PFAS_Structure_Class"].dropna().unique()
-opts_sc   = df["Structure_Class"].dropna().unique()
-opts_use  = df["Use_Category"].dropna().unique()
+opts_pfas = df["Is_PFAS"].dropna().unique().tolist()
+opts_psc  = df["PFAS_Structure_Class"].dropna().unique().tolist()
+opts_sc   = df["Structure_Class"].dropna().unique().tolist()
+opts_use  = df["Use_Category"].dropna().unique().tolist()
 
 sel_pfas = st.sidebar.multiselect("PFAS Status", opts_pfas)
 sel_psc  = st.sidebar.multiselect("PFAS Structure Class", opts_psc)
@@ -35,22 +35,23 @@ if sel_psc:  fdf = fdf[fdf["PFAS_Structure_Class"].isin(sel_psc)]
 if sel_sc:   fdf = fdf[fdf["Structure_Class"].isin(sel_sc)]
 if sel_use:  fdf = fdf[fdf["Use_Category"].isin(sel_use)]
 
-# 6. 渲染 AgGrid 表格
+# 6. 构建 AgGrid
 gb = GridOptionsBuilder.from_dataframe(fdf)
 gb.configure_selection("single", use_checkbox=False)
 gb.configure_column("SMILES", hide=True)
+# → 自动根据内容撑高，不用指定死高度
+gb.configure_grid_options(domLayout="autoHeight")
 grid_options = gb.build()
 
+# 7. 渲染表格（这里给一个最大高度，防止数据过多时撑破页面）
 grid_response = AgGrid(
     fdf,
     gridOptions=grid_options,
     update_mode=GridUpdateMode.SELECTION_CHANGED,
     fit_columns_on_grid_load=True,
-    allow_unsafe_jscode=True
+    allow_unsafe_jscode=True,
+    height=500,      # 必须给一个非零高度
 )
-
-# 7. 强制触发一次 window.resize，让 AgGrid 立刻正确布局
-html("<script>window.dispatchEvent(new Event('resize'))</script>", height=0)
 
 # 8. 列说明
 with st.expander("ℹ️ Column Descriptions"):
@@ -61,18 +62,16 @@ with st.expander("ℹ️ Column Descriptions"):
 - **PFAS Status**: Yes/No per OECD PFAS definition  
     """)
 
-# 9. PubChem CID 获取函数
+# 9. PubChem CID 获取
 def get_cid(smiles, name):
     try:
         comps = pcp.get_compounds(smiles, namespace="smiles")
         if comps: return comps[0].cid
-    except:
-        pass
+    except: pass
     try:
         comps = pcp.get_compounds(name, namespace="name")
         if comps: return comps[0].cid
-    except:
-        pass
+    except: pass
     return None
 
 # 10. 详情 & 2D/3D 预览
@@ -82,22 +81,22 @@ if not selected.empty:
     st.markdown("### 🧬 Selected Compound Info")
     col1, col2 = st.columns([1, 2])
 
-    # 确定 PubChem CID
-    raw_id = str(row.get("CAS_or_Identifier", ""))
-    if raw_id.startswith("CID:"):
-        cid = int(raw_id.split("CID:")[1])
+    # 确定 CID
+    raw = str(row.get("CAS_or_Identifier", ""))
+    if raw.startswith("CID:"):
+        cid = int(raw.split("CID:")[1])
     else:
         cid = get_cid(row["SMILES"], row["Name"])
 
     with col1:
-        # 2D 结构图
+        # 2D
         if cid:
             png_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/PNG"
             st.image(png_url, caption="2D Structure", use_column_width=True)
         else:
             st.warning("No CID → cannot fetch 2D image")
 
-        # 3D 交互式模型
+        # 3D
         if cid:
             sdf_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/SDF?record_type=3d"
             r = requests.get(sdf_url)
