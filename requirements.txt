@@ -3,9 +3,8 @@ pandas
 rdkit-pypi
 pubchempy
 st-aggrid
-py3Dmol           # 3Dmol.js Python wrapper
+py3Dmol
 streamlit-lottie
 requests
-rich<14          # force a version compatible with Streamlit 1.29.0
-
+rich<14
 
