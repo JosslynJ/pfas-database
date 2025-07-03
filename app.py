@@ -57,7 +57,7 @@ grid_response = AgGrid(
     fdf,
     gridOptions=grid_options,
     update_mode=GridUpdateMode.SELECTION_CHANGED,
-    height=400,               # 表格区域固定 400px，高于部分会出现内部滚动
+    height=400,               # 表格区域固定 400px，高于部分出现内部滚动
     fit_columns_on_grid_load=True,
     allow_unsafe_jscode=True
 )
@@ -90,6 +90,7 @@ if not selected.empty:
     st.markdown("### 🧬 Selected Compound Info")
     col1, col2 = st.columns([1, 2])
 
+    # 优先从 CAS_or_Identifier 提取 CID
     raw = str(row.get("CAS_or_Identifier", ""))
     if raw.startswith("CID:"):
         cid = int(raw.split("CID:")[1])
@@ -97,12 +98,14 @@ if not selected.empty:
         cid = get_cid(row["SMILES"], row["Name"])
 
     with col1:
+        # 2D 图像
         if cid:
             png = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/PNG"
             st.image(png, caption="2D Structure", use_column_width=True)
         else:
             st.warning("No CID → cannot fetch 2D image")
 
+        # 3D 预览
         if cid:
             sdf_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/SDF?record_type=3d"
             r = requests.get(sdf_url)
