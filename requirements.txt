@@ -6,4 +6,3 @@ streamlit-aggrid
 py3Dmol
 streamlit-lottie
 requests
-rich<14
