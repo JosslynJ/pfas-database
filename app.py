@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import requests
 import pubchempy as pcp
-import py3Dmol                            # pip install py3Dmol
+import py3Dmol                         # pip install py3Dmol
 from streamlit.components.v1 import html
 from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 
@@ -75,21 +75,20 @@ sel = pd.DataFrame(grid_resp["selected_rows"])
 if not sel.empty:
     row = sel.iloc[0]
     st.markdown("### 🧬 Selected Compound Info")
-    c1, c2 = st.columns([1,2])
+    col1, col2 = st.columns([1,2])
 
     # 确定 CID
-    raw_id = str(row.get("CAS_or_Identifier",""))
-    cid = None
+    raw_id = str(row.get("CAS_or_Identifier", ""))
     if raw_id.startswith("CID:"):
         cid = int(raw_id.split("CID:")[1])
     else:
         cid = get_cid(row["SMILES"], row["Name"])
 
-    with c1:
+    with col1:
         # 2D 图
         if cid:
-            png = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/PNG"
-            st.image(png, caption="2D structure", use_column_width=True)
+            png_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/PNG"
+            st.image(png_url, caption="2D structure", use_column_width=True)
         else:
             st.warning("No CID → cannot fetch 2D image")
 
@@ -108,7 +107,7 @@ if not sel.empty:
         else:
             st.info("3D preview unavailable")
 
-    with c2:
+    with col2:
         st.markdown(f"""
 **ID:** {row['ID']}  
 **Name:** {row['Name']}  
