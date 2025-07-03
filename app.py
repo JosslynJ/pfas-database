@@ -3,9 +3,10 @@ import pandas as pd
 from rdkit import Chem
 from rdkit.Chem import Draw, AllChem
 
-# 3Dmol import with fallback
+# 3Dmol lazy import
+HAS_3D = False
 try:
-    import py3Dmol
+    import py3Dmol   # 只在这里尝试一次，如果失败就跳过
     HAS_3D = True
 except ImportError:
     HAS_3D = False
@@ -30,10 +31,10 @@ pfas_structure_classes = df["PFAS_Structure_Class"].dropna().unique()
 structure_classes      = df["Structure_Class"].dropna().unique()
 use_categories         = df["Use_Category"].dropna().unique()
 
-selected_is_pfas  = st.sidebar.multiselect("PFAS Status (Is_PFAS)", is_pfas_options)
-selected_pfas     = st.sidebar.multiselect("PFAS Structure Class", pfas_structure_classes)
-selected_struct   = st.sidebar.multiselect("Structure Class",      structure_classes)
-selected_use      = st.sidebar.multiselect("Use Category",         use_categories)
+selected_is_pfas = st.sidebar.multiselect("PFAS Status (Is_PFAS)", is_pfas_options)
+selected_pfas    = st.sidebar.multiselect("PFAS Structure Class", pfas_structure_classes)
+selected_struct  = st.sidebar.multiselect("Structure Class",      structure_classes)
+selected_use     = st.sidebar.multiselect("Use Category",         use_categories)
 
 # 5. Apply filters
 filtered_df = df.copy()
@@ -73,7 +74,7 @@ grid_response = AgGrid(
     allow_unsafe_jscode=True
 )
 
-# 3D helper
+# 3D helper (only if HAS_3D)
 def show_3d(smiles):
     mol = Chem.AddHs(Chem.MolFromSmiles(smiles))
     AllChem.EmbedMolecule(mol)
@@ -85,7 +86,7 @@ def show_3d(smiles):
     view.zoomTo()
     return view
 
-# 9. Show details & 3D preview
+# 9. Show details & optional 3D
 selected = pd.DataFrame(grid_response["selected_rows"])
 if not selected.empty:
     row = selected.iloc[0]
@@ -93,17 +94,17 @@ if not selected.empty:
     col1, col2 = st.columns([1, 2])
 
     with col1:
-        # 2D image
+        # 2D
         mol2d = Chem.MolFromSmiles(row["SMILES"])
         img = Draw.MolToImage(mol2d, size=(300, 300))
         st.image(img, caption=f"2D Structure of {row['Name']}")
 
-        # 3D model (if available)
+        # 3D if available
         if HAS_3D:
             view = show_3d(row["SMILES"])
             html(view._make_html(), height=300)
         else:
-            st.warning("3D preview unavailable (py3Dmol not installed)")
+            st.info("3D preview unavailable (py3Dmol not installed)")
 
     with col2:
         st.markdown(f"""
