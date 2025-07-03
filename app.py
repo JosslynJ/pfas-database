@@ -2,7 +2,14 @@ import streamlit as st
 import pandas as pd
 from rdkit import Chem
 from rdkit.Chem import Draw, AllChem
-import py3Dmol                         # pip install py3Dmol
+
+# 3Dmol import with fallback
+try:
+    import py3Dmol
+    HAS_3D = True
+except ImportError:
+    HAS_3D = False
+
 from streamlit.components.v1 import html
 from st_aggrid import AgGrid, GridOptionsBuilder, GridUpdateMode
 
@@ -84,15 +91,20 @@ if not selected.empty:
     row = selected.iloc[0]
     st.markdown("### 🧬 Selected Compound Info")
     col1, col2 = st.columns([1, 2])
+
     with col1:
         # 2D image
         mol2d = Chem.MolFromSmiles(row["SMILES"])
         img = Draw.MolToImage(mol2d, size=(300, 300))
         st.image(img, caption=f"2D Structure of {row['Name']}")
 
-        # 3D model
-        view = show_3d(row["SMILES"])
-        html(view._make_html(), height=300)
+        # 3D model (if available)
+        if HAS_3D:
+            view = show_3d(row["SMILES"])
+            html(view._make_html(), height=300)
+        else:
+            st.warning("3D preview unavailable (py3Dmol not installed)")
+
     with col2:
         st.markdown(f"""
 **ID:** {row['ID']}  
