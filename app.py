@@ -35,25 +35,23 @@ if sel_psc:  fdf = fdf[fdf["PFAS_Structure_Class"].isin(sel_psc)]
 if sel_sc:   fdf = fdf[fdf["Structure_Class"].isin(sel_sc)]
 if sel_use:  fdf = fdf[fdf["Use_Category"].isin(sel_use)]
 
-# 6. 构建 AgGrid
+# 6. 构建 AgGrid （固定高度、内部滚动）
 gb = GridOptionsBuilder.from_dataframe(fdf)
 gb.configure_selection("single", use_checkbox=False)
 gb.configure_column("SMILES", hide=True)
-# → 自动根据内容撑高，不用指定死高度
-gb.configure_grid_options(domLayout="autoHeight")
+# 不再使用 autoHeight
 grid_options = gb.build()
 
-# 7. 渲染表格（这里给一个最大高度，防止数据过多时撑破页面）
 grid_response = AgGrid(
     fdf,
     gridOptions=grid_options,
     update_mode=GridUpdateMode.SELECTION_CHANGED,
+    height=400,               # 固定 400px 高度，内部自动出现滚动条
     fit_columns_on_grid_load=True,
-    allow_unsafe_jscode=True,
-    height=500,      # 必须给一个非零高度
+    allow_unsafe_jscode=True
 )
 
-# 8. 列说明
+# 7. 列说明
 with st.expander("ℹ️ Column Descriptions"):
     st.markdown("""
 - **Use Category**: e.g. Pharmaceutical, Pesticide…  
@@ -62,7 +60,7 @@ with st.expander("ℹ️ Column Descriptions"):
 - **PFAS Status**: Yes/No per OECD PFAS definition  
     """)
 
-# 9. PubChem CID 获取
+# 8. PubChem CID 获取函数
 def get_cid(smiles, name):
     try:
         comps = pcp.get_compounds(smiles, namespace="smiles")
@@ -74,14 +72,14 @@ def get_cid(smiles, name):
     except: pass
     return None
 
-# 10. 详情 & 2D/3D 预览
+# 9. 详情 & 2D/3D 预览
 selected = pd.DataFrame(grid_response["selected_rows"])
 if not selected.empty:
     row = selected.iloc[0]
     st.markdown("### 🧬 Selected Compound Info")
     col1, col2 = st.columns([1, 2])
 
-    # 确定 CID
+    # 确定 PubChem CID
     raw = str(row.get("CAS_or_Identifier", ""))
     if raw.startswith("CID:"):
         cid = int(raw.split("CID:")[1])
@@ -89,14 +87,14 @@ if not selected.empty:
         cid = get_cid(row["SMILES"], row["Name"])
 
     with col1:
-        # 2D
+        # 2D 结构图
         if cid:
             png_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/PNG"
             st.image(png_url, caption="2D Structure", use_column_width=True)
         else:
             st.warning("No CID → cannot fetch 2D image")
 
-        # 3D
+        # 3D 交互式模型
         if cid:
             sdf_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/SDF?record_type=3d"
             r = requests.get(sdf_url)
@@ -125,15 +123,11 @@ if not selected.empty:
 else:
     st.info("Click a row to view details and structure.")
 
-# 11. 页脚
+# 10. 页脚
 st.markdown("""
 <div style="
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    font-size: 14px;
-    color: #888;
-    opacity: 0.7;
+    position: fixed; bottom: 10px; right: 10px;
+    font-size: 14px; color: #888; opacity: 0.7;
 ">
     Created by Josslyn
 </div>
