@@ -141,11 +141,26 @@ if not selected.empty:
 else:
     st.info("Click a row to view molecule details.")
 
-# 11. 页脚
-st.markdown("""
-<div style="
-    position: fixed; bottom: 10px; right: 10px;
-    font-size: 14px; color: #888; opacity: 0.7;
+
+
+# 11. 页脚：固定在右下角显示“Created by Josslyn”
+st.markdown(
+    """
+    <div style="
+        position: fixed;
+        bottom: 16px;
+        right: 10px;
+        font-size: 14px;
+        color: #888;
+        opacity: 0.7;
+        z-index: 1000;
+    ">
+        Created by Josslyn
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 ">
     Created by Josslyn
 </div>
