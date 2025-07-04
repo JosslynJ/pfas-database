@@ -151,7 +151,7 @@ st.markdown(
         position: fixed;
         bottom: 60px;        /* 在 Manage 按钮上方 */
         right: 20px;
-        font-size: 16px;
+        font-size: 20px;
         color: #888;
         opacity: 0.7;
         z-index: 9999;
