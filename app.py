@@ -143,16 +143,16 @@ else:
 
 
 
-# 页脚：固定在右上角，灰色适中
+# 11. 页脚：右下角 Manage app 上方
 st.markdown(
     """
     <style>
       .josslyn-footer {
         position: fixed;
-        top: 20px;
-        right: 20px;      /* 右上角 */
-        font-size: 16px;  /* 适中字号 */
-        color: #888;      /* 原先的灰色 */
+        bottom: 60px;        /* 在 Manage 按钮上方 */
+        right: 20px;
+        font-size: 16px;
+        color: #888;
         opacity: 0.7;
         z-index: 9999;
       }
