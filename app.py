@@ -124,6 +124,7 @@ if not selected.empty:
         st.markdown(f"""
 **ID:** {row['ID']}  
 **Name:** {row['Name']}  
+**Formula:** {row.get('Formula','')}
 **SMILES:** {row['SMILES']}  
 **CAS/CID:** {row.get('CAS_or_Identifier','')}  
 **Exact Mass:** {row.get('Exact_Mass_Calc','')}  
