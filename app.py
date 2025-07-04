@@ -143,18 +143,17 @@ else:
 
 
 
-# 11. 页脚：固定在左下角，红色大字，最高 z-index
+# 页脚：固定在右上角，灰色适中
 st.markdown(
     """
     <style>
       .josslyn-footer {
         position: fixed;
-        bottom: 20px;
-        left: 20px;      /* 左下角 */
-        font-size: 20px; /* 更大字号 */
-        color: #e63946;  /* 鲜艳红 */
-        font-weight: bold;
-        text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        top: 20px;
+        right: 20px;      /* 右上角 */
+        font-size: 16px;  /* 适中字号 */
+        color: #888;      /* 原先的灰色 */
+        opacity: 0.7;
         z-index: 9999;
       }
     </style>
