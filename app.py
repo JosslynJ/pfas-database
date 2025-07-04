@@ -53,7 +53,7 @@ st.title("🔬 PFAS Chemical Database")
 # 7. 构建 AgGrid：固定高度 400px，内部滚动
 gb = GridOptionsBuilder.from_dataframe(fdf)
 gb.configure_selection("single", use_checkbox=False)
-gb.configure_column("SMILES", hide=True)
+# gb.configure_column("SMILES", hide=True)  # <--- 注释掉这行，SMILES将会显示
 grid_options = gb.build()
 
 grid_response = AgGrid(
@@ -124,8 +124,9 @@ if not selected.empty:
         st.markdown(f"""
 **ID:** {row['ID']}  
 **Name:** {row['Name']}  
+**SMILES:** {row['SMILES']}  
 **CAS/CID:** {row.get('CAS_or_Identifier','')}  
-**Exact Mass:** {row.get('Exact_Mass','')}  
+**Exact Mass:** {row.get('Exact_Mass_Calc','')}  
 **PFAS Status:** {row.get('Is_PFAS','')}  
 **PFAS Structure Class:** {row.get('PFAS_Structure_Class','')}  
 **Structure Class:** {row.get('Structure_Class','')}  
