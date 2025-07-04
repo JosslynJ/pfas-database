@@ -161,7 +161,3 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-">
-    Created by Josslyn
-</div>
-""", unsafe_allow_html=True)
