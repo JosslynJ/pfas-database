@@ -34,11 +34,13 @@ opts_pfas = df["Is_PFAS"].dropna().unique().tolist()
 opts_psc  = df["PFAS_Structure_Class"].dropna().unique().tolist()
 opts_sc   = df["Structure_Class"].dropna().unique().tolist()
 opts_use  = df["Use_Category"].dropna().unique().tolist()
+opts_inst = df["Instrument"].dropna().unique().tolist()    # 新增
 
 sel_pfas = st.sidebar.multiselect("PFAS Status", opts_pfas)
 sel_psc  = st.sidebar.multiselect("PFAS Structure Class", opts_psc)
 sel_sc   = st.sidebar.multiselect("Structure Class", opts_sc)
 sel_use  = st.sidebar.multiselect("Use Category", opts_use)
+sel_inst = st.sidebar.multiselect("Instrument", opts_inst)  # 新增
 
 # 5. 应用筛选
 fdf = df.copy()
@@ -46,6 +48,7 @@ if sel_pfas: fdf = fdf[fdf["Is_PFAS"].isin(sel_pfas)]
 if sel_psc:  fdf = fdf[fdf["PFAS_Structure_Class"].isin(sel_psc)]
 if sel_sc:   fdf = fdf[fdf["Structure_Class"].isin(sel_sc)]
 if sel_use:  fdf = fdf[fdf["Use_Category"].isin(sel_use)]
+if sel_inst: fdf = fdf[fdf["Instrument"].isin(sel_inst)]     # 新增
 
 # 6. 主标题
 st.title("🔬 PFAS Chemical Database")
@@ -72,6 +75,7 @@ with st.expander("ℹ️ Column Descriptions", expanded=False):
 - **Structure Class**: Aromatic, Heterocycle, Chain…  
 - **PFAS Structure Class**: CF₃-containing, CF₂-containing…  
 - **PFAS Status**: Yes/No per OECD PFAS definition  
+- **Instrument**: GC, LC, etc.  
     """)
 
 # 9. PubChem CID 获取函数
@@ -125,6 +129,7 @@ if not selected.empty:
 **ID:** {row['ID']}  
 **Name:** {row['Name']}  
 **Formula:** {row.get('Formula','')}  
+**Instrument:** {row.get('Instrument','')}  
 **SMILES:** {row['SMILES']}  
 **CAS/CID:** {row.get('CAS_or_Identifier','')}  
 **Exact Mass:** {row.get('Exact_Mass_Calc','')}  
