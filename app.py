@@ -143,18 +143,22 @@ else:
 
 
 
-# 11. 页脚：固定在右下角显示“Created by Josslyn”
+# 11. 页脚：固定在右下角显示“Created by Josslyn”，提高 z-index 并往左偏移 80px
 st.markdown(
     """
-    <div style="
+    <style>
+      /* 确保我们的 footer 在最顶层 */
+      .josslyn-footer {
         position: fixed;
         bottom: 16px;
-        right: 10px;
+        right: 80px;     /* 往左偏移，避开 Manage app */
         font-size: 14px;
         color: #888;
         opacity: 0.7;
-        z-index: 1000;
-    ">
+        z-index: 9999;   /* 足够大，压过 Streamlit 自带按钮 */
+      }
+    </style>
+    <div class="josslyn-footer">
         Created by Josslyn
     </div>
     """,
