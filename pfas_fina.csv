@@ -9,7 +9,7 @@ Norfluoxetine,C16H16F3NO,295.1183988,3,Yes,Other PFAS,Aromatic,LC,Pharmaceutical
 4-Trifluoromethylphenol,C7H5F3O,162.0292494,3,Yes,Other PFAS,Aromatic,LC,Fluorochemical / Surfactant,402-45-9,C1=CC(=CC=C1C(F)(F)F)O
 Norfluoxetine alcohol,C16H15F3O2,296.1024144,3,Yes,Other PFAS,Aromatic,LC,Pharmaceutical,CID:72756505,C1=CC=C(C=C1)C(CCO)OC2=CC=C(C=C2)C(F)(F)F
 Norfluoxetine acid,C16H13F3O3,310.0816789,3,Yes,Other PFAS,Aromatic,LC,Pharmaceutical,CID:85432033,C1=CC=C(C=C1)C(CC(=O)O)OC2=CC=C(C=C2)C(F)(F)F
-Norfluoxetine glucuronide,C22H24F3NO7,471.1504868,3,Yes,Ether acid (PFECA),Aromatic,LC,Pharmaceutical,96735-72-7,C1=CC=C(C=C1)C(CCN[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O)OC3=CC=C(C=C3)C(F)(F)F
+Norfluoxetine glucuronide,C22H24F3NO7,471.1504868,3,Yes,Other PFAS,Aromatic,LC,Pharmaceutical,96735-72-7,C1=CC=C(C=C1)C(CCN[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O)OC3=CC=C(C=C3)C(F)(F)F
 Norfluoxetine N-|A-D-Glucuronide,C22H24F3NO7,471.1504868,3,Yes,Ether acid (PFECA),Aromatic,LC,Pharmaceutical,96735-72-7,C1=CC=C(C=C1)C(CCN[C@H]2[C@@H]([C@H]([C@@H]([C@H](O2)C(=O)O)O)O)O)OC3=CC=C(C=C3)C(F)(F)F
 Fluoxetine glucuronide,C23H26F3NO7,485.1661368,3,Yes,Ether acid (PFECA),Aromatic,LC,Pharmaceutical,96735-71-6,CN(CCC(C1=CC=CC=C1)OC2=CC=C(C=C2)C(F)(F)F)[C@H]3[C@@H]([C@H]([C@@H]([C@H](O3)C(=O)O)O)O)O
 Paroxetine,C19H20FNO3,329.1427217,1,No,Not PFAS,Aromatic,LC,Pharmaceutical,61869-08-7,C1CNC[C@H]([C@@H]1C2=CC=C(C=C2)F)COC3=CC4=C(C=C3)OCO4
